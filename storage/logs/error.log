@@ -1,0 +1,8 @@
+2018-07-22 10:31:56 - PHP Warning:  unlink(C:/OSPanel/domains/photo-hunters.rus/storage/cache/cache.country.catalog.1532259116): Permission denied in C:\OSPanel\domains\photo-hunters.rus\system\library\cache\file.php on line 68
+2018-07-24 15:07:20 - PHP Warning:  unlink(C:/OSPanel/domains/photo-hunters.rus/storage/cache/cache.catalog.language.1532448440): No such file or directory in C:\OSPanel\domains\photo-hunters.rus\system\library\cache\file.php on line 68
+2018-08-14 13:38:54 - PHP Warning:  unlink(C:/OSPanel/domains/stellar.rus/storage/cache/cache.catalog.language.1534257534): Permission denied in C:\OSPanel\domains\stellar.rus\system\library\cache\file.php on line 68
+2018-08-14 14:26:13 - PHP Warning:  unlink(C:/OSPanel/domains/stellar.rus/storage/cache/cache.catalog.language.1534260373): No such file or directory in C:\OSPanel\domains\stellar.rus\system\library\cache\file.php on line 68
+2018-08-14 14:30:31 - PHP Warning:  unlink(C:/OSPanel/domains/stellar.rus/storage/cache/cache.catalog.language.1534260631): No such file or directory in C:\OSPanel\domains\stellar.rus\system\library\cache\file.php on line 68
+2018-08-14 14:33:11 - PHP Notice:  Undefined index: code in C:\OSPanel\domains\stellar.rus\admin\model\design\layout.php on line 38
+2018-08-14 14:33:11 - PHP Warning:  Cannot modify header information - headers already sent by (output started at C:\OSPanel\domains\stellar.rus\admin\controller\startup\error.php:34) in C:\OSPanel\domains\stellar.rus\system\library\response.php on line 36
+2018-08-14 15:28:24 - PHP Warning:  unlink(C:/OSPanel/domains/stellar.rus/storage/cache/cache.catalog.language.1534264103): No such file or directory in C:\OSPanel\domains\stellar.rus\system\library\cache\file.php on line 68

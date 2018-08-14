@@ -1,0 +1,85 @@
+@import "catalog/view/javascript/bootstrap/scss/bootstrap-grid"
+@import "mixins/mixin.scss"
+@import "mixins/mixins"
+@import "fonts"
+@import "vars"
+
+html
+  font-size: 10px
+  height: 100%
+
+@media only screen and (max-width: 400px)
+  html
+    font-size: 9.411764705882353px
+
+body
+ 
+  background-color: #28423c
+  font-size: 1.7rem
+  font-style: normal
+  font-weight: normal
+  line-height: 1.941
+  color: rgba(0, 0, 0, 0.65)
+  margin: 0
+  padding: 0
+
+a
+  transition: all 0.3s ease-in-out
+  &:hover, &:focus, &:active
+    color: #035D5C
+  &:hover, &:active
+    outline: 0
+
+header
+	height: 100vh
+	background-image: url(/image/header.jpg)
+	background-position: center
+	background-size: cover
+	position: relative
+	border-bottom: 1px #fff solid
+	top: 0
+	bottom: 0
+	left: 0
+	right: 0
+
+.layout
+	position: absolute
+	top: 0
+	bottom: 0
+	left: 0
+	right: 0
+	background-color: rgba(44,71,67, 0.9)
+	z-index: 0
+.header-jumbotron
+	height: 100vh
+	margin-top: -70px
+.header-jumbotron .container
+	z-index: 1
+.navbar.navbar-default
+	margin-bottom: 0
+	border-radius: 0
+	background-color: transparent
+	border: none
+	padding-top: 20px
+	z-index: 2
+	position: relative
+#cart
+	margin-bottom: 0
+	margin-top: 5px
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover
+	background-color: transparent
+	color: #fff
+.navbar-default .navbar-nav>li>a
+	color: #fff
+.navbar-default .navbar-brand
+	color: #fff
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover
+	color: #F26522
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover
+	color: #F26522
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover
+	color: #F26522
+
+
+footer
+	margin-top: 0
