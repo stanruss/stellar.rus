@@ -19,17 +19,18 @@ body
   font-style: normal
   font-weight: normal
   line-height: 1.941
-  color: rgba(0, 0, 0, 0.65)
+  color: rgba(0, 0, 0, 0.8)
   margin: 0
   padding: 0
 
 a
   transition: all 0.3s ease-in-out
-  &:hover, &:focus, &:active
-    color: #035D5C
+  
   &:hover, &:active
     outline: 0
-
+#top nav
+	position: relative
+	z-index: 5000
 header
 	height: 100vh
 	background-image: url(/image/header.jpg)
@@ -52,7 +53,7 @@ header
 	z-index: 0
 .header-jumbotron
 	height: 100vh
-	margin-top: -70px
+	margin-top: -120px
 .header-jumbotron .container
 	z-index: 1
 .navbar.navbar-default
@@ -76,10 +77,17 @@ header
 .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover
 	color: #F26522
 .navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover
-	color: #F26522
+	color: #fff
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover
 	color: #F26522
-
-
+.navbar-brand
+	font-size: 31px
+.navbar-nav
+	margin-left: 5%
+.betery
+	img
+		float: left
+	h3 
+		display: block
 footer
 	margin-top: 0
