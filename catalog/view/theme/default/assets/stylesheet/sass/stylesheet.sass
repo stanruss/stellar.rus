@@ -27,7 +27,6 @@ html
 		align-items: center
 		flex-direction: column
 body
- 
   background-color: #28423c
   font-size: 1.7rem
   font-style: normal
@@ -42,9 +41,13 @@ a
   
   &:hover, &:active
     outline: 0
-#top nav
-	position: relative
-	z-index: 5000
+
+\:target:before
+  display: block
+  content: " "
+  
+  height: 60px
+  visibility: hidden
 
 .header-top
 	position: relative
@@ -66,8 +69,8 @@ a
 	h1
 		text-shadow: 1px 2px 3px #000
 		span
-			color: $accent-color
-			text-shadow: 1px 0 3px #222
+			color: red
+			text-shadow: 1px 1px 1px #fff
 	.filin-head
 		max-width: 400px
 		border-radius: 10px
@@ -77,7 +80,51 @@ a
 		flex-direction: column
 		justify-content: center
 		align-items: center
-			
+section
+	padding: 30px 0 
+section.services
+	padding: 0
+section.about	
+	border-bottom: 1px #fff solid
+	color: #eee
+	.about-h2
+		position: relative
+		font-weight: bold
+		text-align: center
+		display: block
+		+push-auto
+		text-transform: uppercase
+		animation-duration: 1000ms
+		animation-delay: .3s
+	.about-hr
+		width: 70px
+		height: 2px
+		background-color: $white
+		border: none
+		animation-delay: .3s
+		margin-bottom: 20px	
+.services-h2
+	position: relative
+	font-weight: bold
+	text-align: center
+	display: block
+	text-transform: uppercase
+	+push-auto
+	animation-duration: 1000ms
+	animation-delay: .3s
+.services-hr
+	width: 70px
+	height: 2px
+	background-color: $white
+	border: none
+	animation-delay: .3s
+	margin-bottom: 20px
+.services-p
+	animation-duration: 1000ms
+	animation-delay: .3s	
+	text-align: center	
+	color: $white
+	margin-bottom: 60px		
 .layout
 	position: absolute
 	width: 100%
@@ -97,7 +144,7 @@ a
 	height: 60px
 	border: none
 	z-index: 2
-	position: relative
+	
 #cart
 	max-width: 300px
 	width: 200px

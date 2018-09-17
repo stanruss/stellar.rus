@@ -498,3 +498,14 @@ $(document).delegate('.agree', 'click', function(e) {
 		});
 	}
 })(window.jQuery);
+$(window).scroll(function () {
+
+	if ($(this).scrollTop() > 90) {
+		$('.navbar-default').addClass('navbar-fixed-top animated fadeInDown');
+	} else {
+		$('.navbar-default').removeClass('navbar-fixed-top animated fadeInDown');
+	}
+
+});
+
+
