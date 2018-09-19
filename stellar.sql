@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Сен 17 2018 г., 19:04
+-- Время создания: Сен 19 2018 г., 08:03
 -- Версия сервера: 5.6.38
 -- Версия PHP: 5.5.38
 
@@ -291,7 +291,7 @@ CREATE TABLE `oc_cart` (
 --
 
 INSERT INTO `oc_cart` (`cart_id`, `api_id`, `customer_id`, `session_id`, `product_id`, `recurring_id`, `option`, `quantity`, `date_added`) VALUES
-(7, 0, 0, '7f0649d90bf0cc2148e16f418d', 30, 0, '[]', 2, '2018-09-17 18:31:25');
+(10, 0, 0, 'abdf49f12cf1e0b851790697c1', 30, 0, '[]', 1, '2018-09-19 07:57:53');
 
 -- --------------------------------------------------------
 
@@ -979,7 +979,7 @@ CREATE TABLE `oc_customer_online` (
 --
 
 INSERT INTO `oc_customer_online` (`ip`, `customer_id`, `url`, `referer`, `date_added`) VALUES
-('127.0.0.1', 0, 'http://stellar.rus/', 'http://stellar.rus/', '2018-09-17 16:01:19');
+('127.0.0.1', 0, 'http://stellar.rus/', 'http://localhost:3000/', '2018-09-19 05:02:33');
 
 -- --------------------------------------------------------
 
@@ -2685,6 +2685,7 @@ CREATE TABLE `oc_session` (
 --
 
 INSERT INTO `oc_session` (`session_id`, `data`, `expire`) VALUES
+('0217ed22f3a157dc4e5c6c10de', '{\"user_id\":\"1\",\"user_token\":\"1WCbkfYvtc6003NHAEohFqKCZfwMWbaL\",\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-09-19 05:02:23'),
 ('05ab0c932c75b7168ed1f4cd86', '{\"api_id\":\"1\",\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-07-22 10:48:43'),
 ('0a999481d1bdd37d0dcad4ed37', '{\"api_id\":\"1\",\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-07-22 12:07:43'),
 ('0bf5c6f034f95f0bdf55fc1584', '{\"api_id\":\"1\",\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-07-23 05:09:45'),
@@ -2728,6 +2729,7 @@ INSERT INTO `oc_session` (`session_id`, `data`, `expire`) VALUES
 ('a35109baab0fc64201f25291c8', '{\"language\":\"ru-ru\",\"currency\":\"RUB\",\"user_id\":\"1\",\"user_token\":\"55bJoeLY69FAJ49ozaDl7Lj25PIaUmOf\"}', '2018-08-18 09:18:16'),
 ('ab40fafbed33644dc6a4b51021', '{\"user_id\":\"1\",\"user_token\":\"9XN7ybzEudH0aUCMd0EOF7Zjarcw43bP\",\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-08-22 04:53:37'),
 ('ab4170f7aa36ffdd89bf960197', '{\"api_id\":\"1\"}', '2018-07-22 12:17:00'),
+('abdf49f12cf1e0b851790697c1', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-09-19 05:26:33'),
 ('ad69b0fbe0594a7c19821d32ff', '{\"language\":\"ru-ru\",\"currency\":\"RUB\",\"account\":\"guest\",\"guest\":{\"customer_group_id\":\"1\",\"firstname\":\"Stay \",\"lastname\":\"Plat\",\"email\":\"stan19781@gmail.com\",\"telephone\":\"+79201580108\",\"custom_field\":[],\"shipping_address\":false},\"payment_address\":{\"firstname\":\"Stay \",\"lastname\":\"Plat\",\"company\":\"\",\"address_1\":\"Krasina 2 74. 153\",\"address_2\":\"\",\"postcode\":\"170021\",\"city\":\"Tver\",\"country_id\":\"176\",\"zone_id\":\"2774\",\"country\":\"\\u0420\\u043e\\u0441\\u0441\\u0438\\u044f\",\"iso_code_2\":\"RU\",\"iso_code_3\":\"RUS\",\"address_format\":\"\",\"custom_field\":[],\"zone\":\"Perm\",\"zone_code\":\"PR\"},\"payment_methods\":{\"cheque\":{\"code\":\"cheque\",\"title\":\"\\u041e\\u043f\\u043b\\u0430\\u0442\\u0430 \\u043d\\u0430\\u043b\\u0438\\u0447\\u043d\\u044b\\u043c\\u0438\",\"terms\":\"\",\"sort_order\":\"\"}},\"payment_method\":{\"code\":\"cheque\",\"title\":\"\\u041e\\u043f\\u043b\\u0430\\u0442\\u0430 \\u043d\\u0430\\u043b\\u0438\\u0447\\u043d\\u044b\\u043c\\u0438\",\"terms\":\"\",\"sort_order\":\"\"},\"comment\":\"\",\"order_id\":18}', '2018-07-22 10:57:30'),
 ('ae848130664794b1da58783f02', '{\"api_id\":\"1\"}', '2018-07-22 12:22:57'),
 ('b5db705297ee171bf4f237c907', '{\"api_id\":\"1\"}', '2018-07-25 05:05:34'),
@@ -8504,7 +8506,7 @@ ALTER TABLE `oc_banner_image`
 -- AUTO_INCREMENT для таблицы `oc_cart`
 --
 ALTER TABLE `oc_cart`
-  MODIFY `cart_id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `cart_id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT для таблицы `oc_category`
