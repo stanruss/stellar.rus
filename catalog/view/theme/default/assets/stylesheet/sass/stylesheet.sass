@@ -5,99 +5,71 @@
 @import "vars"
 
 html
-  font-size: 10px
-  height: 100%
+	font-size: 14px
+	height: 100%
 
 @media only screen and (max-width: 400px)
-  html
-    font-size: 9.411764705882353px
+	html
+		font-size: 9.411764705882353px
 
 @media only screen and (max-width: 991px)
-	.navbar-default
-		.navbar-header
-			height: 60px 
-		.navbar-nav
-			margin-left: -15px
-			margin-top: 0
-			background-color: #222
+	//
 @media only screen and (min-width: 991px)
-	.header-top .header-text
-		display: flex
-		justify-content: center
-		align-items: center
-		flex-direction: column
+	//
 body
-  background-color: #273f3e
-  font-size: 1.7rem
-  font-style: normal
-  font-weight: normal
-  line-height: 1.941
-  color: rgba(0, 0, 0, 0.8)
-  margin: 0
-  padding: 0
-
+	background-color: $main-color
+	font-size: 1.2rem
+	font-style: normal
+	font-weight: normal
+	line-height: 1.941
+	color: $font-color
+	margin: 0
+	padding: 0
+	font-family: $default-font
 a
-  transition: all 0.3s ease-in-out
-  
-  &:hover, &:active
-    outline: 0
+	transition: all 0.3s ease-in-out
+	color: $font-color
+	&:hover, &:active
+		outline: 0
+		color: darken($font-color, 15%)
 
 \:target:before
-  display: block
-  content: " "
-  
-  height: 60px
-  visibility: hidden
+	display: block
+	content: " "
+	height: 60px
+	visibility: hidden
 
-.header-top
-	position: relative
-	background-image: url(/image/back-header.jpg)
-	background-position: center
-	background-size: cover
-	position: relative
-	border-bottom: 1px #fff solid
-	min-height: 550px
-	padding-top: 120px
-	p
-		font-size: 12px
-		letter-spacing: 1.9px
-		color: $white
-		text-shadow: 1px 2px 3px #000
-	h3
-		text-shadow: 1px 2px 3px #000
-		line-height: 2
-	h1
-		text-shadow: 1px 2px 3px #000
-		span
-			color: red
-			text-shadow: 1px 1px 1px #fff
-	.filin-head
-		max-width: 400px
-		border-radius: 10px
-		border: 1px $white solid
-	.row > div
-		display: flex
-		flex-direction: column
-		justify-content: center
-		align-items: center
+
+.alert-dismissible
+	position: fixed
+	top: 97px
+	right: 250px
+	z-index: 1000
+	a
+		color: $font-color
+.alert-dismissable .close, .alert-dismissible .close
+	right: -10px
 section
 	padding: 30px 0 
 section.services
 	padding: 0
 	.product-thumb
-		background-color: #fff
+		background-color: $white
+		border-radius: 6px
+		a
+			color: $font-color
 	p
 		font-size: 12px
 		&.lead
 			font-size: 20px
 	.price
-		color: #222
+		color: $font-color
 		text-align: center
 		font-size: 20px
 	span
-		color: #222
+		color: $font-color
 		&:hover
-			color: #666
+			color: darken($font-color, 15%)
 #product-product
 	.tab-content p
 		font-size: 15px
@@ -107,32 +79,14 @@ section.services
 #checkout-cart
 	padding-top: 90px
 	a
-		color: #222
+		color: $font-color
 #checkout-checkout, #error-not-found
 	padding-top: 70px
 	a
-		color: #222
+		color: $font-color
 #common-success
 	padding-top: 100px
-section.about	
-	border-bottom: 1px #fff solid
-	color: #eee
-	.about-h2
-		position: relative
-		font-weight: bold
-		text-align: center
-		display: block
-		+push-auto
-		text-transform: uppercase
-		animation-duration: 1000ms
-		animation-delay: .3s
-	.about-hr
-		width: 70px
-		height: 2px
-		background-color: $white
-		border: none
-		animation-delay: .3s
-		margin-bottom: 20px	
+
 .services-h2
 	position: relative
 	font-weight: bold
@@ -155,72 +109,69 @@ section.about
 	text-align: center	
 	color: $white
 	margin-bottom: 60px		
-.layout
-	position: absolute
+.main-top
+	height: 80px
+	border-bottom: 1px $accent-color solid
+	+grad-l($accent-color, darken($accent-color, 10%))
+	.navbar-brand
+		display: flex
+		flex-direction: row 
+		align-items: center
+		height: 80px
+		text-transform: uppercase
+		color: $white
+.main-cart
+	background-color: $accent-color
+	height: 80px
+	width: 600px
+	display: flex
+	flex-direction: row 
+	float: right
+	margin-right: 15px
+	+grad-l($accent-color, darken($accent-color, 10%))
+	position: relative
+	img
+		left: 50%
+		margin-left: -77px
+		bottom: 0
+		position: absolute
+	.link-left		
+		width: 200px
+		position: absolute
+		bottom: 5px
+		left: 20px
+		a
+			color: $white
+			font-size: 0.9rem
+	.link-right		
+		width: 200px
+		position: absolute
+		bottom: 5px
+		right: 20px
+		a
+			color: $white
+			font-size: 0.9rem
+			float: right
+.info-cart
+	background-color: $white
+	height: 30px
 	width: 100%
-	top: 0
-	bottom: 0
-	left: 0
-	right: 0
-	z-index: 0
-	background-color: rgba(40,66,60,.8)
-
-.btn-inverse 
-	color: #ffffff
-	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25)
-	background-color: red
-	background-image: linear-gradient(to bottom, red, #63040a)
-	background-repeat: repeat-x
-	border-color: #222222 #222222 #000000
-.btn-inverse:hover, .btn-inverse:active, .btn-inverse.active, .btn-inverse.disabled, .btn-inverse[disabled]
-	background-color: #63040a
-	background-image: linear-gradient(to bottom, #63040a, red)
-
-	
-
-
-.navbar.navbar-default
-	margin-bottom: 0
-	border-radius: 0
-	background-color: #273f3e
-	height: 60px
-	border: none
-	z-index: 2
-	&.navbar-fixed-top
-		background-color: #303030
-	
+	margin: 10px 10px 0 10px
+	font-size: .9rem
+	padding: 3px 15px
+	font-weight: bold
+	letter-spacing: 1px
+	display: flex
+	flex-direction: row
+	justify-content: center
+	a
+		text-decoration: underline
 #cart
-	max-width: 300px
-	width: 200px
-	right: 30px
-	top: 62px
-	position: absolute
-	z-index: 100
-	.checkout 
-		button
-			margin-bottom: 5px
-			&:hover
-				color: #fff
-.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover
-	background-color: transparent
-	color: #fff
-.navbar-default .navbar-nav	
-	& >li>a
-		color: #eee
-		padding: 20px 15px
-.navbar-default .navbar-brand
-	padding: 3px 0 0 15px
-.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover
-	color: darken(#eee, 25%)
-.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover
-	color: #fff
-.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover
-	color: darken(#eee, 25%)
-.navbar-toggle
-	margin-top: 13px
+	margin: 0
+	font-size: 0.7rem
+
 	
-.navbar-nav
-	margin-left: 5%
+
 
 
 footer
