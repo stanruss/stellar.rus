@@ -9,13 +9,66 @@ html
 	height: 100%
 
 @media only screen and (max-width: 400px)
-	html
-		font-size: 9.411764705882353px
+	//
 
-@media only screen and (max-width: 991px)
-	//
-@media only screen and (min-width: 991px)
-	//
+@media only screen and (max-width: 1450px)
+	body .main-top
+		height: 160px
+	body .info-block
+		width: 100%
+		margin: 0
+	body .main-cart
+		width: 100%
+		+grad-l(darken($accent-color, 5%), darken($accent-color, 5%))
+	body .info-cart
+		position: absolute
+		width: 80%
+		left: 50%
+		margin-left: -40%
+@media only screen and (max-width: 510px)
+	body .info-block 
+		height: 50px
+	body .main-cart 
+		height: 50px
+		.info-cart
+			padding: 3px 0
+			width: 100%
+			margin: 0
+			left: 0
+		img
+			display: none
+	body .main-top
+		height: 210px
+		+grad-l(darken($accent-color, 5%), darken($accent-color, 5%))
+		.navbar-brand
+			font-size: 1rem
+		.link-left
+			width: 100%
+			top: 50px
+			left: 0
+			right: 0
+			padding: 0
+			+grad-l(darken($accent-color, 5%), darken($accent-color, 5%))
+			a
+				display: block
+				text-align: center
+				&:hover
+					background-color: $accent
+					color: $accent-color
+		.link-right
+			width: 100%
+			top: 80px
+			left: 0
+			right: 0
+			padding: 0 
+			+grad-l(darken($accent-color, 5%), darken($accent-color, 5%))
+			a
+				display: block
+				float: none
+				text-align: center
+				&:hover
+					background-color: $accent
+					color: $accent-color
 body
 	background-color: $main-color
 	font-size: 1.2rem
@@ -27,6 +80,7 @@ body
 	padding: 0
 	font-family: $default-font
 	letter-spacing: 1px
+	overflow-x: auto
 a
 	transition: all 0.3s ease-in-out
 	color: $font-color
@@ -121,14 +175,16 @@ section.services
 		height: 80px
 		text-transform: uppercase
 		color: $white
+.info-block	
+	width: 600px
+	height: 80px
+	margin-right: 30px
 .main-cart
 	background-color: $accent-color
-	height: 80px
-	width: 600px
+	height: 80px	
 	display: flex
 	flex-direction: row 
-	float: right
-	margin-right: 15px
+	float: right	
 	+grad-l($accent-color, darken($accent-color, 10%))
 	position: relative
 	img
@@ -137,29 +193,37 @@ section.services
 		bottom: 0
 		position: absolute
 	.link-left		
-		width: 200px
+		width: 145px
 		position: absolute
 		bottom: 5px
+		height: 30px
 		left: 20px
+		line-height: 30px
 		a
 			color: $white
 			font-size: 0.9rem
+			&:hover
+				color: $accent
 	.link-right		
-		width: 200px
+		width: 145px
 		position: absolute
 		bottom: 5px
-		right: 20px
+		height: 30px
+		right: 35px
+		line-height: 30px
 		a
 			color: $white
 			font-size: 0.9rem
 			float: right
+			&:hover
+				color: $accent
 .info-cart
 	background-color: $white
 	height: 30px
-	width: 100%
+	width: 600px	
 	margin: 10px 10px 0 10px
 	font-size: .9rem
-	padding: 3px 15px
+	padding: 3px 35px
 	font-weight: bold
 	letter-spacing: 1px
 	display: flex
