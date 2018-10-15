@@ -33,3 +33,4 @@
 2018-09-26 8:45:28 - PHP Warning:  flock() expects parameter 1 to be resource, boolean given in C:\OSPanel\domains\stellar.rus\system\library\cache\file.php on line 57
 2018-09-26 8:45:28 - PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in C:\OSPanel\domains\stellar.rus\system\library\cache\file.php on line 59
 2018-09-26 8:45:28 - PHP Warning:  Cannot modify header information - headers already sent by (output started at C:\OSPanel\domains\stellar.rus\system\framework.php:42) in C:\OSPanel\domains\stellar.rus\catalog\controller\startup\startup.php on line 157
+2018-10-15 8:55:31 - PHP Notice:  Undefined index: name in C:\OSPanel\domains\stellar.rus\admin\controller\extension\module\html.php on line 112

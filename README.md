@@ -1,3 +1,3 @@
 # stellar.rus
 
-Сделано header
+Сделано header, Menu, smoothscroll
