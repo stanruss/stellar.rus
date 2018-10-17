@@ -502,10 +502,18 @@ $(window).scroll(function () {
 
 	if ($(this).scrollTop() > 90) {
 		$('.navbar-default').addClass('navbar-fixed-top animated fadeInDown');
+		$('.navbar-brand').addClass('navbar-brand-fix animated fadeInDown');
 	} else {
 		$('.navbar-default').removeClass('navbar-fixed-top animated fadeInDown');
+		$('.navbar-brand').removeClass('navbar-brand-fix animated fadeInDown');
 	}
 
 });
 $('body').scrollspy({ target: '#navbar-example' })
+$(function(){ 
+     var navMain = $(".navbar-collapse"); 
+     navMain.on("click", "a:not([data-toggle])", null, function () {
+         navMain.collapse('hide');
+     });
+ });
 

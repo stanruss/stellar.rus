@@ -1,6 +1,8 @@
 var gulp         = require('gulp');
 var	rename       = require('gulp-rename');
 var	postcss      = require('gulp-postcss');
+var changed      = require('gulp-changed');
+var imagemin     = require('gulp-imagemin');
 var	assets       = require('postcss-assets');
 var	nested       = require('postcss-nested');
 var	short        = require('postcss-short');
@@ -58,4 +60,17 @@ gulp.task('watch', ['sass', 'libs','browser-sync'], function() {
 	gulp.watch('catalog/view/theme/default/assets/stylesheet/sass/**/*.sass', ['sass']);
 	gulp.watch('*.php', browserSync.reload);
 });
+
+gulp.task('imagemin', function() {
+   var imgSrc = 'catalog/**/*.+(png|jpg|gif)',
+   imgDst = 'build/images';
+   
+   gulp.src(imgSrc)
+   .pipe(changed(imgDst))
+   .pipe(imagemin())
+   .pipe(gulp.dest(imgDst));
+});
+
+
+
 gulp.task('default', ['watch', 'sass']);
