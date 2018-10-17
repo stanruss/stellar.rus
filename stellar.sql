@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Окт 17 2018 г., 17:37
+-- Время создания: Окт 17 2018 г., 21:55
 -- Версия сервера: 5.6.38
 -- Версия PHP: 5.6.32
 
@@ -973,7 +973,7 @@ CREATE TABLE `oc_customer_online` (
 --
 
 INSERT INTO `oc_customer_online` (`ip`, `customer_id`, `url`, `referer`, `date_added`) VALUES
-('127.0.0.1', 0, 'http://stellar.rus/', 'http://stellar.rus/', '2018-10-17 14:36:38');
+('127.0.0.1', 0, 'http://stellar.rus/', 'http://localhost:3000/', '2018-10-17 18:54:10');
 
 -- --------------------------------------------------------
 
@@ -1500,8 +1500,9 @@ INSERT INTO `oc_layout_module` (`layout_module_id`, `layout_id`, `code`, `positi
 (68, 6, 'account', 'column_right', 1),
 (72, 3, 'category', 'column_left', 1),
 (73, 3, 'banner.30', 'column_left', 2),
-(135, 1, 'featured.28', 'content_bottom', 0),
-(134, 1, 'html.36', 'content_top', 0);
+(137, 1, 'html.32', 'content_top', 1),
+(136, 1, 'html.36', 'content_top', 0),
+(138, 1, 'featured.28', 'content_bottom', 0);
 
 -- --------------------------------------------------------
 
@@ -1524,7 +1525,7 @@ INSERT INTO `oc_layout_route` (`layout_route_id`, `layout_id`, `store_id`, `rout
 (38, 6, 0, 'account/%'),
 (17, 10, 0, 'affiliate/%'),
 (44, 3, 0, 'product/category'),
-(82, 1, 0, 'common/home'),
+(83, 1, 0, 'common/home'),
 (20, 2, 0, 'product/product'),
 (24, 11, 0, 'information/information'),
 (69, 7, 0, 'checkout/%'),
@@ -1700,8 +1701,8 @@ INSERT INTO `oc_module` (`module_id`, `name`, `code`, `setting`) VALUES
 (28, 'Главная', 'featured', '{\"name\":\"\\u0413\\u043b\\u0430\\u0432\\u043d\\u0430\\u044f\",\"product_name\":\"\",\"product\":[\"30\",\"31\"],\"limit\":\"4\",\"width\":\"200\",\"height\":\"200\",\"status\":\"1\"}'),
 (27, 'Главная', 'slideshow', '{\"name\":\"\\u0413\\u043b\\u0430\\u0432\\u043d\\u0430\\u044f\",\"banner_id\":\"7\",\"width\":\"1140\",\"height\":\"380\",\"status\":\"0\"}'),
 (31, 'Баннер 1', 'banner', '{\"name\":\"\\u0411\\u0430\\u043d\\u043d\\u0435\\u0440 1\",\"banner_id\":\"6\",\"width\":\"182\",\"height\":\"182\",\"status\":\"0\"}'),
-(32, 'header', 'html', '{\"name\":\"header\",\"module_description\":{\"1\":{\"title\":\"\",\"description\":\"&lt;p&gt;&lt;br&gt;&lt;\\/p&gt;\"},\"2\":{\"title\":\"\",\"description\":\"\"}},\"status\":\"1\"}'),
-(36, 'Main-menu', 'html', '{\"name\":\"Main-menu\",\"module_description\":{\"1\":{\"title\":\"\",\"description\":\" &lt;nav class=&quot;navbar navbar-default container&quot;&gt;\\r\\n\\r\\n    &lt;!-- Brand \\u0438 toggle \\u0441\\u0433\\u0440\\u0443\\u043f\\u043f\\u0438\\u0440\\u043e\\u0432\\u0430\\u043d\\u044b \\u0434\\u043b\\u044f \\u043b\\u0443\\u0447\\u0448\\u0435\\u0433\\u043e \\u043e\\u0442\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u044f \\u043d\\u0430 \\u043c\\u043e\\u0431\\u0438\\u043b\\u044c\\u043d\\u044b\\u0445 \\u0434\\u0438\\u0441\\u043f\\u043b\\u0435\\u044f\\u0445 --&gt;\\r\\n  &lt;div class=&quot;navbar-header&quot;&gt;\\r\\n      &lt;button type=&quot;button&quot; class=&quot;navbar-toggle collapsed align-self-center&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#bs-example-navbar-collapse-1&quot; aria-expanded=&quot;false&quot;&gt;\\r\\n        &lt;span class=&quot;sr-only&quot;&gt;Toggle navigation&lt;\\/span&gt;\\r\\n        &lt;span class=&quot;icon-bar&quot;&gt;&lt;\\/span&gt;\\r\\n        &lt;span class=&quot;icon-bar&quot;&gt;&lt;\\/span&gt;\\r\\n        &lt;span class=&quot;icon-bar&quot;&gt;&lt;\\/span&gt;\\r\\n      &lt;\\/button&gt;\\r\\n      \\r\\n    \\r\\n    &lt;\\/div&gt; \\r\\n    \\r\\n    &lt;!-- \\u0421\\u043e\\u0431\\u0435\\u0440\\u0438\\u0442\\u0435 \\u043d\\u0430\\u0432\\u0438\\u0433\\u0430\\u0446\\u0438\\u043e\\u043d\\u043d\\u044b\\u0435 \\u0441\\u0441\\u044b\\u043b\\u043a\\u0438, \\u0444\\u043e\\u0440\\u043c\\u044b, \\u0438 \\u0434\\u0440\\u0443\\u0433\\u043e\\u0439 \\u043a\\u043e\\u043d\\u0442\\u0435\\u043d\\u0442 \\u0434\\u043b\\u044f \\u043f\\u0435\\u0440\\u0435\\u043a\\u043b\\u044e\\u0447\\u0435\\u043d\\u0438\\u044f --&gt;\\r\\n   &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;bs-example-navbar-collapse-1&quot;&gt;\\r\\n     &lt;div id=&quot;navbar-example&quot;&gt;\\r\\n      &lt;ul class=&quot;nav navbar-nav&quot;&gt;\\r\\n        &lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#Catalog&quot;&gt;\\u041a\\u0430\\u0442\\u0430\\u043b\\u043e\\u0433&lt;\\/a&gt;&lt;\\/li&gt;\\r\\n        &lt;li&gt;&lt;a href=&quot;#Services&quot;&gt;\\u041e\\u043f\\u043b\\u0430\\u0442\\u0430&lt;\\/a&gt;&lt;\\/li&gt;\\r\\n        &lt;li&gt;&lt;a href=&quot;#Features&quot;&gt;\\u0414\\u043e\\u0441\\u0442\\u0430\\u0432\\u043a\\u0430&lt;\\/a&gt;&lt;\\/li&gt;\\r\\n        &lt;li&gt;&lt;a href=&quot;#Works&quot;&gt;\\u0413\\u0430\\u0440\\u0430\\u043d\\u0442\\u0438\\u0438&lt;\\/a&gt;&lt;\\/li&gt;\\r\\n        &lt;li&gt;&lt;a href=&quot;#Pricing&quot;&gt;\\u0418\\u043d\\u0441\\u0442\\u0440\\u0443\\u043a\\u0446\\u0438\\u044f&lt;\\/a&gt;&lt;\\/li&gt;\\r\\n                                   \\r\\n      &lt;\\/ul&gt;\\r\\n     \\r\\n      &lt;\\/div&gt;\\r\\n    &lt;\\/div&gt;\\r\\n \\r\\n   &lt;\\/nav&gt; \\r\\n \"},\"2\":{\"title\":\"\",\"description\":\"\"}},\"status\":\"1\"}');
+(32, 'header', 'html', '{\"name\":\"header\",\"module_description\":{\"1\":{\"title\":\"\",\"description\":\"&lt;header class=&quot;header-top&quot;&gt;\\r\\n  \\r\\n&lt;\\/header&gt;\"},\"2\":{\"title\":\"\",\"description\":\"\"}},\"status\":\"1\"}'),
+(36, 'Main-menu', 'html', '{\"name\":\"Main-menu\",\"module_description\":{\"1\":{\"title\":\"\",\"description\":\" &lt;nav class=&quot;navbar navbar-default container&quot;&gt;\\r\\n\\r\\n    &lt;!-- Brand \\u0438 toggle \\u0441\\u0433\\u0440\\u0443\\u043f\\u043f\\u0438\\u0440\\u043e\\u0432\\u0430\\u043d\\u044b \\u0434\\u043b\\u044f \\u043b\\u0443\\u0447\\u0448\\u0435\\u0433\\u043e \\u043e\\u0442\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u044f \\u043d\\u0430 \\u043c\\u043e\\u0431\\u0438\\u043b\\u044c\\u043d\\u044b\\u0445 \\u0434\\u0438\\u0441\\u043f\\u043b\\u0435\\u044f\\u0445 --&gt;\\r\\n  &lt;div class=&quot;navbar-header&quot;&gt;\\r\\n      &lt;button type=&quot;button&quot; class=&quot;navbar-toggle collapsed align-self-center&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#bs-example-navbar-collapse-1&quot; aria-expanded=&quot;false&quot;&gt;\\r\\n        &lt;span class=&quot;sr-only&quot;&gt;Toggle navigation&lt;\\/span&gt;\\r\\n        &lt;span class=&quot;icon-bar&quot;&gt;&lt;\\/span&gt;\\r\\n        &lt;span class=&quot;icon-bar&quot;&gt;&lt;\\/span&gt;\\r\\n        &lt;span class=&quot;icon-bar&quot;&gt;&lt;\\/span&gt;\\r\\n      &lt;\\/button&gt;\\r\\n      \\r\\n    \\r\\n    &lt;\\/div&gt; \\r\\n    \\r\\n    &lt;!-- \\u0421\\u043e\\u0431\\u0435\\u0440\\u0438\\u0442\\u0435 \\u043d\\u0430\\u0432\\u0438\\u0433\\u0430\\u0446\\u0438\\u043e\\u043d\\u043d\\u044b\\u0435 \\u0441\\u0441\\u044b\\u043b\\u043a\\u0438, \\u0444\\u043e\\u0440\\u043c\\u044b, \\u0438 \\u0434\\u0440\\u0443\\u0433\\u043e\\u0439 \\u043a\\u043e\\u043d\\u0442\\u0435\\u043d\\u0442 \\u0434\\u043b\\u044f \\u043f\\u0435\\u0440\\u0435\\u043a\\u043b\\u044e\\u0447\\u0435\\u043d\\u0438\\u044f --&gt;\\r\\n   &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;bs-example-navbar-collapse-1&quot;&gt;\\r\\n     &lt;div id=&quot;navbar-example&quot;&gt;\\r\\n      &lt;ul class=&quot;nav navbar-nav&quot;&gt;\\r\\n        &lt;li&gt;&lt;a href=&quot;#Catalog&quot;&gt;\\u041a\\u0430\\u0442\\u0430\\u043b\\u043e\\u0433&lt;\\/a&gt;&lt;\\/li&gt;\\r\\n        &lt;li&gt;&lt;a href=&quot;#Services&quot;&gt;\\u041e\\u043f\\u043b\\u0430\\u0442\\u0430&lt;\\/a&gt;&lt;\\/li&gt;\\r\\n        &lt;li&gt;&lt;a href=&quot;#Features&quot;&gt;\\u0414\\u043e\\u0441\\u0442\\u0430\\u0432\\u043a\\u0430&lt;\\/a&gt;&lt;\\/li&gt;\\r\\n        &lt;li&gt;&lt;a href=&quot;#Works&quot;&gt;\\u0413\\u0430\\u0440\\u0430\\u043d\\u0442\\u0438\\u0438&lt;\\/a&gt;&lt;\\/li&gt;\\r\\n        &lt;li&gt;&lt;a href=&quot;#Pricing&quot;&gt;\\u0418\\u043d\\u0441\\u0442\\u0440\\u0443\\u043a\\u0446\\u0438\\u044f&lt;\\/a&gt;&lt;\\/li&gt;\\r\\n                                   \\r\\n      &lt;\\/ul&gt;\\r\\n     \\r\\n      &lt;\\/div&gt;\\r\\n    &lt;\\/div&gt;\\r\\n \\r\\n   &lt;\\/nav&gt; \\r\\n \"},\"2\":{\"title\":\"\",\"description\":\"\"}},\"status\":\"1\"}');
 
 -- --------------------------------------------------------
 
@@ -2695,7 +2696,7 @@ INSERT INTO `oc_session` (`session_id`, `data`, `expire`) VALUES
 ('0bf5c6f034f95f0bdf55fc1584', '{\"api_id\":\"1\",\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-07-23 05:09:45'),
 ('122868f91570f538a98013cb5a', '{\"user_id\":\"1\",\"user_token\":\"etoFzhy5mmo7DXCwO6QE6Dd2hkVoafLi\",\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-08-18 14:56:01'),
 ('13070451e6d09cddbaabd8a6d5', '{\"api_id\":\"1\",\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-07-22 10:48:52'),
-('148840385310962bb2a59e5fba', '{\"user_id\":\"1\",\"user_token\":\"eSv4DZTcRMSFImmRAuwXrYtiEewBUIju\",\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-17 15:00:38'),
+('148840385310962bb2a59e5fba', '{\"user_id\":\"1\",\"user_token\":\"49Ia36Bl32Yvv2jrPut4oNArNTyzB5jr\",\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-17 18:36:02'),
 ('1599f253cadf17d85e717a880a', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-15 11:00:50'),
 ('1cd83dde509c45dcf3a93bb6f1', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-09 14:01:46'),
 ('1d87b401f219ac98d5e8d09e4c', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-09 16:16:34'),
@@ -2709,7 +2710,7 @@ INSERT INTO `oc_session` (`session_id`, `data`, `expire`) VALUES
 ('280fb98a926961a99977376124', '{\"user_id\":\"1\",\"user_token\":\"8d3lZruN38l6nGNYfq1TnZ7VmBTcORTj\",\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-09-14 06:57:14'),
 ('2ca8e1161e8de331cf81a254e6', '{\"api_id\":\"1\"}', '2018-07-18 04:39:03'),
 ('2e4bafa9773d2b6a8de4baecd0', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-08-14 16:15:02'),
-('30056bd6f1e9d712b14bb1e200', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-17 15:00:13'),
+('30056bd6f1e9d712b14bb1e200', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-17 19:18:10'),
 ('354ac35be920ce0d9938fb60c4', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-08-18 13:51:16'),
 ('35afda6dcdbceccdd8e757aba7', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-07-11 04:31:35'),
 ('389a10e1aa0220d25624530c64', '{\"language\":\"ru-ru\",\"currency\":\"RUB\",\"account\":\"guest\",\"guest\":{\"customer_group_id\":\"1\",\"firstname\":\"\\u0421\\u043e\\u043a\\u043e\\u043b\\u043e\\u0432 \\u0418\\u0432\\u0430\\u043d \\u041f\\u0435\\u0442\\u0440\\u043e\\u0432\\u0438\\u0447\",\"lastname\":\"\\u00a0\",\"email\":\"stan1978@pisem.net\",\"telephone\":\"5687456556\",\"custom_field\":[],\"shipping_address\":false},\"payment_address\":{\"firstname\":\"\\u0421\\u043e\\u043a\\u043e\\u043b\\u043e\\u0432 \\u0418\\u0432\\u0430\\u043d \\u041f\\u0435\\u0442\\u0440\\u043e\\u0432\\u0438\\u0447\",\"lastname\":\"\\u00a0\",\"company\":\"\",\"address_1\":\"\\u0430\\u0432\\u0430\\u0432\\u0430\\u0432\\u0430\\u0432\\u0430\\u0432\\u0432\\u0430\",\"address_2\":\"\",\"postcode\":\"\",\"city\":\"\\u041c\\u043e\\u0441\\u043a\\u0432\\u0430\",\"country_id\":\"176\",\"zone_id\":\"\",\"country\":\"\\u0420\\u043e\\u0441\\u0441\\u0438\\u044f\",\"iso_code_2\":\"RU\",\"iso_code_3\":\"RUS\",\"address_format\":\"\",\"custom_field\":[],\"zone\":\"\",\"zone_code\":\"\"},\"payment_methods\":{\"cheque\":{\"code\":\"cheque\",\"title\":\"\\u041e\\u043f\\u043b\\u0430\\u0442\\u0430 \\u043d\\u0430\\u043b\\u0438\\u0447\\u043d\\u044b\\u043c\\u0438\",\"terms\":\"\",\"sort_order\":\"\"}},\"payment_method\":{\"code\":\"cheque\",\"title\":\"\\u041e\\u043f\\u043b\\u0430\\u0442\\u0430 \\u043d\\u0430\\u043b\\u0438\\u0447\\u043d\\u044b\\u043c\\u0438\",\"terms\":\"\",\"sort_order\":\"\"},\"comment\":\"\",\"order_id\":32}', '2018-10-01 13:24:03'),
@@ -8549,7 +8550,7 @@ ALTER TABLE `oc_banner_image`
 -- AUTO_INCREMENT для таблицы `oc_cart`
 --
 ALTER TABLE `oc_cart`
-  MODIFY `cart_id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `cart_id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT для таблицы `oc_category`
@@ -8729,13 +8730,13 @@ ALTER TABLE `oc_layout`
 -- AUTO_INCREMENT для таблицы `oc_layout_module`
 --
 ALTER TABLE `oc_layout_module`
-  MODIFY `layout_module_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=136;
+  MODIFY `layout_module_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=139;
 
 --
 -- AUTO_INCREMENT для таблицы `oc_layout_route`
 --
 ALTER TABLE `oc_layout_route`
-  MODIFY `layout_route_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=83;
+  MODIFY `layout_route_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=84;
 
 --
 -- AUTO_INCREMENT для таблицы `oc_length_class`
