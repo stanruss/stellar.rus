@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Окт 17 2018 г., 21:55
+-- Время создания: Окт 18 2018 г., 10:00
 -- Версия сервера: 5.6.38
 -- Версия PHP: 5.6.32
 
@@ -285,6 +285,13 @@ CREATE TABLE `oc_cart` (
   `quantity` int(5) NOT NULL,
   `date_added` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Дамп данных таблицы `oc_cart`
+--
+
+INSERT INTO `oc_cart` (`cart_id`, `api_id`, `customer_id`, `session_id`, `product_id`, `recurring_id`, `option`, `quantity`, `date_added`) VALUES
+(1, 0, 0, 'c3283a301e72302de8d48a10c3', 31, 0, '[]', 1, '2018-10-18 09:23:55');
 
 -- --------------------------------------------------------
 
@@ -973,7 +980,7 @@ CREATE TABLE `oc_customer_online` (
 --
 
 INSERT INTO `oc_customer_online` (`ip`, `customer_id`, `url`, `referer`, `date_added`) VALUES
-('127.0.0.1', 0, 'http://stellar.rus/', 'http://localhost:3000/', '2018-10-17 18:54:10');
+('127.0.0.1', 0, 'http://stellar.rus/', 'http://localhost:3000/', '2018-10-18 06:55:16');
 
 -- --------------------------------------------------------
 
@@ -1701,7 +1708,7 @@ INSERT INTO `oc_module` (`module_id`, `name`, `code`, `setting`) VALUES
 (28, 'Главная', 'featured', '{\"name\":\"\\u0413\\u043b\\u0430\\u0432\\u043d\\u0430\\u044f\",\"product_name\":\"\",\"product\":[\"30\",\"31\"],\"limit\":\"4\",\"width\":\"200\",\"height\":\"200\",\"status\":\"1\"}'),
 (27, 'Главная', 'slideshow', '{\"name\":\"\\u0413\\u043b\\u0430\\u0432\\u043d\\u0430\\u044f\",\"banner_id\":\"7\",\"width\":\"1140\",\"height\":\"380\",\"status\":\"0\"}'),
 (31, 'Баннер 1', 'banner', '{\"name\":\"\\u0411\\u0430\\u043d\\u043d\\u0435\\u0440 1\",\"banner_id\":\"6\",\"width\":\"182\",\"height\":\"182\",\"status\":\"0\"}'),
-(32, 'header', 'html', '{\"name\":\"header\",\"module_description\":{\"1\":{\"title\":\"\",\"description\":\"&lt;header class=&quot;header-top&quot;&gt;\\r\\n  \\r\\n&lt;\\/header&gt;\"},\"2\":{\"title\":\"\",\"description\":\"\"}},\"status\":\"1\"}'),
+(32, 'header', 'html', '{\"name\":\"header\",\"module_description\":{\"1\":{\"title\":\"\",\"description\":\"&lt;header class=&quot;header-top&quot;&gt;\\r\\n&lt;div id=&quot;myCarousel&quot; class=&quot;carousel slide&quot; data-ride=&quot;carousel&quot;&gt;\\r\\n      &lt;!-- Indicators --&gt;\\r\\n      &lt;ol class=&quot;carousel-indicators&quot;&gt;\\r\\n        &lt;li data-target=&quot;#myCarousel&quot; data-slide-to=&quot;0&quot; class=&quot;active&quot;&gt;&lt;\\/li&gt;\\r\\n        &lt;li data-target=&quot;#myCarousel&quot; data-slide-to=&quot;1&quot; class=&quot;&quot;&gt;&lt;\\/li&gt;\\r\\n        &lt;li data-target=&quot;#myCarousel&quot; data-slide-to=&quot;2&quot; class=&quot;&quot;&gt;&lt;\\/li&gt;\\r\\n      &lt;\\/ol&gt;\\r\\n      &lt;div class=&quot;carousel-inner&quot;&gt;\\r\\n        &lt;div class=&quot;item active&quot;&gt;\\r\\n          \\r\\n          &lt;div class=&quot;container&quot;&gt;\\r\\n            &lt;div class=&quot;carousel-caption&quot;&gt;\\r\\n              &lt;h1&gt;Example headline.&lt;\\/h1&gt;\\r\\n              &lt;p&gt;Note: If you\'re viewing this page via a &lt;code&gt;file:\\/\\/&lt;\\/code&gt; URL, the &quot;next&quot; and &quot;previous&quot; Glyphicon buttons on the left and right might not load\\/display properly due to web browser security rules.&lt;\\/p&gt;\\r\\n              &lt;p&gt;&lt;a class=&quot;btn btn-lg btn-primary&quot; href=&quot;#&quot; role=&quot;button&quot;&gt;Sign up today&lt;\\/a&gt;&lt;\\/p&gt;\\r\\n            &lt;\\/div&gt;\\r\\n          &lt;\\/div&gt;\\r\\n        &lt;\\/div&gt;\\r\\n        &lt;div class=&quot;item&quot;&gt;\\r\\n         &lt;div class=&quot;container&quot;&gt;\\r\\n            &lt;div class=&quot;carousel-caption&quot;&gt;\\r\\n              &lt;h1&gt;Another example headline.&lt;\\/h1&gt;\\r\\n              &lt;p&gt;Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.&lt;\\/p&gt;\\r\\n              &lt;p&gt;&lt;a class=&quot;btn btn-lg btn-primary&quot; href=&quot;#&quot; role=&quot;button&quot;&gt;Learn more&lt;\\/a&gt;&lt;\\/p&gt;\\r\\n            &lt;\\/div&gt;\\r\\n          &lt;\\/div&gt;\\r\\n        &lt;\\/div&gt;\\r\\n        &lt;div class=&quot;item&quot;&gt;\\r\\n           &lt;div class=&quot;container&quot;&gt;\\r\\n            &lt;div class=&quot;carousel-caption&quot;&gt;\\r\\n              &lt;h1&gt;One more for good measure.&lt;\\/h1&gt;\\r\\n              &lt;p&gt;Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.&lt;\\/p&gt;\\r\\n              &lt;p&gt;&lt;a class=&quot;btn btn-lg btn-primary&quot; href=&quot;#&quot; role=&quot;button&quot;&gt;Browse gallery&lt;\\/a&gt;&lt;\\/p&gt;\\r\\n            &lt;\\/div&gt;\\r\\n          &lt;\\/div&gt;\\r\\n        &lt;\\/div&gt;\\r\\n      &lt;\\/div&gt;\\r\\n      &lt;a class=&quot;left carousel-control&quot; href=&quot;#myCarousel&quot; data-slide=&quot;prev&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-chevron-left&quot;&gt;&lt;\\/span&gt;&lt;\\/a&gt;\\r\\n      &lt;a class=&quot;right carousel-control&quot; href=&quot;#myCarousel&quot; data-slide=&quot;next&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-chevron-right&quot;&gt;&lt;\\/span&gt;&lt;\\/a&gt;\\r\\n    &lt;\\/div&gt;\\r\\n&lt;\\/header&gt;\"},\"2\":{\"title\":\"\",\"description\":\"\"}},\"status\":\"1\"}'),
 (36, 'Main-menu', 'html', '{\"name\":\"Main-menu\",\"module_description\":{\"1\":{\"title\":\"\",\"description\":\" &lt;nav class=&quot;navbar navbar-default container&quot;&gt;\\r\\n\\r\\n    &lt;!-- Brand \\u0438 toggle \\u0441\\u0433\\u0440\\u0443\\u043f\\u043f\\u0438\\u0440\\u043e\\u0432\\u0430\\u043d\\u044b \\u0434\\u043b\\u044f \\u043b\\u0443\\u0447\\u0448\\u0435\\u0433\\u043e \\u043e\\u0442\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u044f \\u043d\\u0430 \\u043c\\u043e\\u0431\\u0438\\u043b\\u044c\\u043d\\u044b\\u0445 \\u0434\\u0438\\u0441\\u043f\\u043b\\u0435\\u044f\\u0445 --&gt;\\r\\n  &lt;div class=&quot;navbar-header&quot;&gt;\\r\\n      &lt;button type=&quot;button&quot; class=&quot;navbar-toggle collapsed align-self-center&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#bs-example-navbar-collapse-1&quot; aria-expanded=&quot;false&quot;&gt;\\r\\n        &lt;span class=&quot;sr-only&quot;&gt;Toggle navigation&lt;\\/span&gt;\\r\\n        &lt;span class=&quot;icon-bar&quot;&gt;&lt;\\/span&gt;\\r\\n        &lt;span class=&quot;icon-bar&quot;&gt;&lt;\\/span&gt;\\r\\n        &lt;span class=&quot;icon-bar&quot;&gt;&lt;\\/span&gt;\\r\\n      &lt;\\/button&gt;\\r\\n      \\r\\n    \\r\\n    &lt;\\/div&gt; \\r\\n    \\r\\n    &lt;!-- \\u0421\\u043e\\u0431\\u0435\\u0440\\u0438\\u0442\\u0435 \\u043d\\u0430\\u0432\\u0438\\u0433\\u0430\\u0446\\u0438\\u043e\\u043d\\u043d\\u044b\\u0435 \\u0441\\u0441\\u044b\\u043b\\u043a\\u0438, \\u0444\\u043e\\u0440\\u043c\\u044b, \\u0438 \\u0434\\u0440\\u0443\\u0433\\u043e\\u0439 \\u043a\\u043e\\u043d\\u0442\\u0435\\u043d\\u0442 \\u0434\\u043b\\u044f \\u043f\\u0435\\u0440\\u0435\\u043a\\u043b\\u044e\\u0447\\u0435\\u043d\\u0438\\u044f --&gt;\\r\\n   &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;bs-example-navbar-collapse-1&quot;&gt;\\r\\n     &lt;div id=&quot;navbar-example&quot;&gt;\\r\\n      &lt;ul class=&quot;nav navbar-nav&quot;&gt;\\r\\n        &lt;li&gt;&lt;a href=&quot;#Catalog&quot;&gt;\\u041a\\u0430\\u0442\\u0430\\u043b\\u043e\\u0433&lt;\\/a&gt;&lt;\\/li&gt;\\r\\n        &lt;li&gt;&lt;a href=&quot;#Services&quot;&gt;\\u041e\\u043f\\u043b\\u0430\\u0442\\u0430&lt;\\/a&gt;&lt;\\/li&gt;\\r\\n        &lt;li&gt;&lt;a href=&quot;#Features&quot;&gt;\\u0414\\u043e\\u0441\\u0442\\u0430\\u0432\\u043a\\u0430&lt;\\/a&gt;&lt;\\/li&gt;\\r\\n        &lt;li&gt;&lt;a href=&quot;#Works&quot;&gt;\\u0413\\u0430\\u0440\\u0430\\u043d\\u0442\\u0438\\u0438&lt;\\/a&gt;&lt;\\/li&gt;\\r\\n        &lt;li&gt;&lt;a href=&quot;#Pricing&quot;&gt;\\u0418\\u043d\\u0441\\u0442\\u0440\\u0443\\u043a\\u0446\\u0438\\u044f&lt;\\/a&gt;&lt;\\/li&gt;\\r\\n                                   \\r\\n      &lt;\\/ul&gt;\\r\\n     \\r\\n      &lt;\\/div&gt;\\r\\n    &lt;\\/div&gt;\\r\\n \\r\\n   &lt;\\/nav&gt; \\r\\n \"},\"2\":{\"title\":\"\",\"description\":\"\"}},\"status\":\"1\"}');
 
 -- --------------------------------------------------------
@@ -2756,6 +2763,7 @@ INSERT INTO `oc_session` (`session_id`, `data`, `expire`) VALUES
 ('a0a34dfe6ce743509a4e47c425', '{\"api_id\":\"1\"}', '2018-07-17 17:39:40'),
 ('a35109baab0fc64201f25291c8', '{\"language\":\"ru-ru\",\"currency\":\"RUB\",\"user_id\":\"1\",\"user_token\":\"55bJoeLY69FAJ49ozaDl7Lj25PIaUmOf\"}', '2018-08-18 09:18:16'),
 ('a375b7aa459ee20263b51d33a4', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-15 09:12:33'),
+('a8d01533887bc2196162cf03c3', '{\"user_id\":\"1\",\"user_token\":\"frKvtNrZrWZx4SvU9FHInEcp3Tb9qg2u\"}', '2018-10-18 06:40:58'),
 ('a8f414a425ad03e2d895095f43', '{\"language\":\"ru-ru\",\"currency\":\"RUB\",\"user_id\":\"1\",\"user_token\":\"21d3fzudwKeh3uW2KnlN6e3LSKP7CXhv\"}', '2018-10-01 13:26:06'),
 ('ab40fafbed33644dc6a4b51021', '{\"user_id\":\"1\",\"user_token\":\"9XN7ybzEudH0aUCMd0EOF7Zjarcw43bP\",\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-08-22 04:53:37'),
 ('ab4170f7aa36ffdd89bf960197', '{\"api_id\":\"1\"}', '2018-07-22 12:17:00'),
@@ -2765,6 +2773,7 @@ INSERT INTO `oc_session` (`session_id`, `data`, `expire`) VALUES
 ('b5db705297ee171bf4f237c907', '{\"api_id\":\"1\"}', '2018-07-25 05:05:34'),
 ('b6a99a3d9aa10394b120e91ae8', '{\"user_id\":\"1\",\"user_token\":\"FdX9XpNpVoVqfNaHKYA5jnjWM4uNmjZj\",\"language\":\"ru-ru\",\"currency\":\"RUB\",\"account\":\"guest\",\"payment_address\":{\"firstname\":\"\\u0421\\u0442\\u0430\\u043d\\u0438\\u0441\\u043b\\u0430\\u0432\",\"lastname\":\"Platonov\",\"company\":\"\",\"address_1\":\"Krasina 2 74. 153\",\"address_2\":\"\",\"postcode\":\"170021\",\"city\":\"Tver\",\"country_id\":\"176\",\"zone_id\":\"2736\",\"country\":\"\\u0420\\u043e\\u0441\\u0441\\u0438\\u044f\",\"iso_code_2\":\"RU\",\"iso_code_3\":\"RUS\",\"address_format\":\"\",\"custom_field\":[],\"zone\":\"Elista\",\"zone_code\":\"EL\"}}', '2018-07-23 06:09:39'),
 ('bf80924d292dbe1f4ef6587bf8', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-07-08 19:11:27'),
+('c3283a301e72302de8d48a10c3', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-18 07:19:16'),
 ('c4b875abf6e955032214654a4f', '{\"api_id\":\"1\"}', '2018-07-22 12:07:48'),
 ('c61f7ca845ff8ccfbbb7df525c', '{\"language\":\"ru-ru\",\"currency\":\"RUB\",\"user_id\":\"1\",\"user_token\":\"fGxd8EvNJxrRQJtRBrxhAR1Drw5psZDD\"}', '2018-07-16 06:55:14'),
 ('ce55179dffbe4268bd69402b79', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-09 15:48:17'),
@@ -8550,7 +8559,7 @@ ALTER TABLE `oc_banner_image`
 -- AUTO_INCREMENT для таблицы `oc_cart`
 --
 ALTER TABLE `oc_cart`
-  MODIFY `cart_id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `cart_id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT для таблицы `oc_category`
