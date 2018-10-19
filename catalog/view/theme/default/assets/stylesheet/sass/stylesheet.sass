@@ -10,18 +10,7 @@ html
 	min-width: 320px
 	box-sizing: border-box
 
-@media only screen and (max-width: 450px)
-	#content .header-top, #myCarousel .item
-		height: 100vh
-	#content .carousel-inner .carousel-caption
-		height: 50vh
-		margin-bottom: 25vh
-		margin-top: 25vh
-		bottom: 0
-		p
-			font-size: .9rem
-		h1
-			font-size: 1.4rem
+
 @media only screen and (min-width: 992px)
 	body .navbar.navbar-default.container.navbar-fixed-top
 		max-width: 100%
@@ -393,6 +382,9 @@ section.services
 
 	
 .carousel-inner .carousel-caption
+	background-color: $main-color
+	opacity: .95
+	color: $font-color
 	height: 40vh
 	margin-bottom: 10vh
 	margin-top: 10vh
@@ -400,6 +392,8 @@ section.services
 	display: flex
 	flex-direction: column
 	justify-content: center
+	h1
+		color: $accent-color
 
 .navbar-toggle
 	margin: 0
