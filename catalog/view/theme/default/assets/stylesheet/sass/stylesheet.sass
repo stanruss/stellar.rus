@@ -9,6 +9,19 @@ html
 	height: 100%
 	min-width: 320px
 	box-sizing: border-box
+
+@media only screen and (max-width: 450px)
+	#content .header-top, #myCarousel .item
+		height: 100vh
+	#content .carousel-inner .carousel-caption
+		height: 50vh
+		margin-bottom: 25vh
+		margin-top: 25vh
+		bottom: 0
+		p
+			font-size: .9rem
+		h1
+			font-size: 1.4rem
 @media only screen and (min-width: 992px)
 	body .navbar.navbar-default.container.navbar-fixed-top
 		max-width: 100%
@@ -62,6 +75,7 @@ html
 		font-size: .6rem
 		font-weight: bold
 		font-family: Arial,Helvetica Neue,Helvetica,sans-serif
+	
 @media only screen and (max-width: 1500px)
 	#content .header-top
 		top: 0
@@ -352,7 +366,7 @@ section.services
 	height: 951px
 .header-top
 	width: 100%
-	height: 100vh	
+	height: 60vh	
 	top: 0
 	position: relative
 .carousel-inner
@@ -371,10 +385,21 @@ section.services
 	.item
 		+push-auto
 		width: 100%
-		height: 100vh
+		height: 60vh
 	p
-		width: 75%	
+		width: 85%	
 		+push-auto
+
+
+	
+.carousel-inner .carousel-caption
+	height: 40vh
+	margin-bottom: 10vh
+	margin-top: 10vh
+	bottom: 0
+	display: flex
+	flex-direction: column
+	justify-content: center
 
 .navbar-toggle
 	margin: 0
