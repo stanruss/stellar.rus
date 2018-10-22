@@ -4,7 +4,7 @@
 @import "fonts"
 @import "vars"
 
-html
+html, body
 	font-size: 14px
 	height: 100%
 	min-width: 320px
@@ -19,7 +19,7 @@ html
 	body .navbar.navbar-default.container
 		width: 100%
 		max-width: 100%
-		+border(1px, $accent-color, top-bottom)
+		+border(1px, $accent-color, bottom)
 		border:
 			right: 0
 			left: 0
@@ -115,6 +115,7 @@ html
 			font-size: 1rem
 		.link-left
 			width: 100%
+			+border(1px, $accent-color, bottom)
 			top: 50px
 			left: 0
 			right: 0
@@ -128,6 +129,7 @@ html
 					color: $main-color
 		.link-right
 			width: 100%
+
 			top: 80px
 			left: 0
 			right: 0
@@ -143,7 +145,7 @@ html
 body
 	background-color: $main-color
 	position: relative
-	font-size: 1.2rem
+	font-size: 1.1rem
 	font-style: normal
 	font-weight: normal
 	line-height: 1.941
@@ -232,7 +234,7 @@ section.services
 	animation-delay: .3s	
 	text-align: center	
 	color: $accent-color
-	margin-bottom: 60px		
+	margin-bottom: 28px		
 .main-top
 	height: 102px
 	border-bottom: 1px $accent-color solid
@@ -271,7 +273,7 @@ section.services
 		line-height: 30px
 		a
 			color: $accent-color
-			font-size: 0.9rem
+			font-size: 0.8rem
 			&:hover
 				color: darken($accent-color, 9%)
 	.link-right		
@@ -279,11 +281,11 @@ section.services
 		position: absolute
 		bottom: 5px
 		height: 30px
-		right: 35px
+		right: 20px
 		line-height: 30px
 		a
 			color: $accent-color
-			font-size: 0.9rem
+			font-size: 0.8rem
 			float: right
 			&:hover
 				color: darken($accent-color, 9%)
@@ -328,7 +330,7 @@ section.services
 	padding: 10px 15px
 .navbar
 	min-height: 42px
-	
+	max-width: 100%
 .navbar-default.navbar-fixed-top
 	width: 100%
 #content .navbar-default.navbar-fixed-top
@@ -347,8 +349,8 @@ section.services
 .navbar-collapse
 	padding: 0
 #Catalog
-	padding-top: 55px
-	margin-top: -55px
+	padding-top: 42px
+	margin-top: -42px
 	-webkit-background-clip: content-box
 	background-clip: content-box
 #Services
@@ -358,47 +360,60 @@ section.services
 	height: 60vh	
 	top: 0
 	position: relative
-.carousel-inner
-	.item:first-child
-		background-image: url(/image/back-header.jpg)
-		background-size: cover
-		background-position: center
-	.item:nth-child(2)
-		background-image: url(/image/hero-bg.jpg)
-		background-size: cover
-		background-position: center
-	.item:nth-child(3)
-		background-image: url(/image/hero-bg.jpg)
-		background-size: cover
-		background-position: center
-	.item
-		+push-auto
-		width: 100%
-		height: 60vh
-	p
-		width: 85%	
-		+push-auto
-
-
-	
-.carousel-inner .carousel-caption
-	background-color: $main-color
-	opacity: .95
-	color: $font-color
-	height: 40vh
-	margin-bottom: 10vh
-	margin-top: 10vh
-	bottom: 0
+// .carousel-inner
+// 	.item:first-child
+// 		background-image: url(/image/back-header.jpg)
+// 		background-size: cover
+// 		background-position: center
+// 	.item:nth-child(2)
+// 		background-image: url(/image/hero-bg.jpg)
+// 		background-size: cover
+// 		background-position: center
+// 	.item:nth-child(3)
+// 		background-image: url(/image/hero-bg.jpg)
+// 		background-size: cover
+// 		background-position: center
+// 	.item
+// 		+push-auto
+// 		width: 100%
+// 		height: 60vh
+// 	p
+// 		width: 85%	
+// 		+push-auto	
+// .carousel-inner .carousel-caption
+// 	background-color: $main-color
+// 	opacity: .95
+// 	color: $font-color
+// 	height: 40vh
+// 	margin-bottom: 10vh
+// 	margin-top: 10vh
+// 	bottom: 0
+// 	display: flex
+// 	flex-direction: column
+// 	justify-content: center
+// 	h1
+// 		color: $accent-color
+.product-layout .caption
 	display: flex
 	flex-direction: column
-	justify-content: center
-	h1
-		color: $accent-color
-
+	align-items: center
+	min-height: 80px
+	h4
+		+border(1px, $accent-color, top-bottom)
+		padding: 10px 0
 .navbar-toggle
 	margin: 0
 	padding: 12px
 footer
 	margin-top: 0
-
+	flex: 0 0 auto
+	
+.wrapper
+	display: flex
+	flex-direction: column
+	height: 100%
+.main-top
+	flex: 0 0 auto
+#common-home, #checkout-cart, #checkout-checkout, #error-not-found, #product-product
+	flex: 1 0 auto
 	
