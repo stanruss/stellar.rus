@@ -49,8 +49,8 @@ gulp.task('libs', function() {
 	return gulp.src([
 		// 'assets/templates/Stas/app/js/jquery.min.js',
 		// 'assets/templates/Stas/app/js/bootstrap.min.js',
-		// 'assets/templates/Stas/app/js/popper.min.js',
-		// 'assets/templates/Stas/app/js/common.js'
+		'catalog/view/theme/default/assets/libs/jQuery.equalHeights/jquery.equalheights.min.js',
+		'catalog/view/javascript/common.js'
 		])
 		.pipe(concat('libs.min.js'))
 		.pipe(uglify())
