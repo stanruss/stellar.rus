@@ -500,12 +500,12 @@ $(document).delegate('.agree', 'click', function(e) {
 })(window.jQuery);
 $(window).scroll(function () {
 
-	if ($(this).scrollTop() > 90) {
+	if ($(this).scrollTop() > 174) {
 		$('.navbar-default').addClass('navbar-fixed-top animated fadeInDown');
-		$('.navbar-brand').addClass('navbar-brand-fix animated fadeInDown');
+		
 	} else {
 		$('.navbar-default').removeClass('navbar-fixed-top animated fadeInDown');
-		$('.navbar-brand').removeClass('navbar-brand-fix animated fadeInDown');
+		
 	}
 
 });
