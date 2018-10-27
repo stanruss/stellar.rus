@@ -58,6 +58,7 @@ gulp.task('libs', function() {
 });
 gulp.task('watch', ['sass', 'libs','browser-sync'], function() {
 	gulp.watch('catalog/view/theme/default/assets/stylesheet/sass/**/*.sass', ['sass']);
+	gulp.watch(['catalog/view/javascript/**/*.js', 'catalog/view/javascript/common.js'], ['libs']);
 	gulp.watch('*.php', browserSync.reload);
 });
 

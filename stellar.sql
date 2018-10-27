@@ -1,15 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.7.7
+-- version 4.6.5.2
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Окт 24 2018 г., 21:39
--- Версия сервера: 5.6.38
--- Версия PHP: 5.6.32
+-- Время создания: Окт 27 2018 г., 09:47
+-- Версия сервера: 5.5.53
+-- Версия PHP: 5.5.38
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
-START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -838,7 +836,8 @@ INSERT INTO `oc_customer_activity` (`customer_activity_id`, `customer_id`, `key`
 (14, 0, 'order_guest', '{\"name\":\"Stanisalv \\u00a0\",\"order_id\":30}', '127.0.0.1', '2018-08-14 17:06:55'),
 (15, 0, 'order_guest', '{\"name\":\"gdfggf \\u00a0\",\"order_id\":31}', '127.0.0.1', '2018-09-17 18:40:58'),
 (16, 0, 'order_guest', '{\"name\":\"\\u0421\\u043e\\u043a\\u043e\\u043b\\u043e\\u0432 \\u0418\\u0432\\u0430\\u043d \\u041f\\u0435\\u0442\\u0440\\u043e\\u0432\\u0438\\u0447 \\u00a0\",\"order_id\":32}', '127.0.0.1', '2018-10-01 16:00:00'),
-(17, 0, 'order_guest', '{\"name\":\"\\u0430\\u043f\\u043f\\u0430\\u043f\\u0430\\u043f \\u00a0\",\"order_id\":33}', '127.0.0.1', '2018-10-22 12:43:48');
+(17, 0, 'order_guest', '{\"name\":\"\\u0430\\u043f\\u043f\\u0430\\u043f\\u0430\\u043f \\u00a0\",\"order_id\":33}', '127.0.0.1', '2018-10-22 12:43:48'),
+(18, 0, 'order_guest', '{\"name\":\"hggghg \\u00a0\",\"order_id\":34}', '127.0.0.1', '2018-10-26 16:59:31');
 
 -- --------------------------------------------------------
 
@@ -978,7 +977,7 @@ CREATE TABLE `oc_customer_online` (
 --
 
 INSERT INTO `oc_customer_online` (`ip`, `customer_id`, `url`, `referer`, `date_added`) VALUES
-('127.0.0.1', 0, 'http://stellar.rus/', 'http://stellar.rus/admin/index.php?route=common/dashboard&amp;user_token=iIEqbHfWFsTKC0kTXQMx09IRET1dIWuQ', '2018-10-24 18:36:17');
+('127.0.0.1', 0, 'http://stellar.rus/', '', '2018-10-26 17:04:39');
 
 -- --------------------------------------------------------
 
@@ -1707,7 +1706,7 @@ INSERT INTO `oc_module` (`module_id`, `name`, `code`, `setting`) VALUES
 (27, 'Главная', 'slideshow', '{\"name\":\"\\u0413\\u043b\\u0430\\u0432\\u043d\\u0430\\u044f\",\"banner_id\":\"7\",\"width\":\"1140\",\"height\":\"380\",\"status\":\"0\"}'),
 (31, 'Баннер 1', 'banner', '{\"name\":\"\\u0411\\u0430\\u043d\\u043d\\u0435\\u0440 1\",\"banner_id\":\"6\",\"width\":\"182\",\"height\":\"182\",\"status\":\"0\"}'),
 (32, 'header', 'html', '{\"name\":\"header\",\"module_description\":{\"1\":{\"title\":\"\",\"description\":\"&lt;header class=&quot;header-top hidden-xs&quot;&gt;\\r\\n&lt;div id=&quot;myCarousel&quot; class=&quot;carousel slide&quot; data-ride=&quot;carousel&quot;&gt;\\r\\n       \\r\\n      &lt;ol class=&quot;carousel-indicators&quot;&gt;\\r\\n        &lt;li data-target=&quot;#myCarousel&quot; data-slide-to=&quot;0&quot; class=&quot;active&quot;&gt;&lt;\\/li&gt;\\r\\n        &lt;li data-target=&quot;#myCarousel&quot; data-slide-to=&quot;1&quot; class=&quot;&quot;&gt;&lt;\\/li&gt;\\r\\n        &lt;li data-target=&quot;#myCarousel&quot; data-slide-to=&quot;2&quot; class=&quot;&quot;&gt;&lt;\\/li&gt;\\r\\n      &lt;\\/ol&gt;\\r\\n      &lt;div class=&quot;carousel-inner&quot;&gt;\\r\\n        &lt;div class=&quot;item active&quot;&gt;\\r\\n          \\r\\n          &lt;div class=&quot;container&quot;&gt;\\r\\n            &lt;div class=&quot;carousel-caption&quot;&gt;\\r\\n              &lt;h1&gt;\\u0414\\u043b\\u044f \\u0447\\u0435\\u0433\\u043e \\u043d\\u0443\\u0436\\u043d\\u044b?&lt;\\/h1&gt;\\r\\n              &lt;p&gt;\\u0424\\u043e\\u0442\\u043e\\u043b\\u043e\\u0432\\u0443\\u0448\\u043a\\u0430 - \\u044d\\u0442\\u043e \\u043d\\u0435\\u0437\\u0430\\u043c\\u0435\\u043d\\u0438\\u043c\\u044b\\u0439, \\u0446\\u0438\\u0444\\u0440\\u043e\\u0432\\u043e\\u0439 \\u043f\\u043e\\u043c\\u043e\\u0449\\u043d\\u0438\\u043a \\u0434\\u043b\\u044f \\u043e\\u0445\\u043e\\u0442\\u043d\\u0438\\u043a\\u043e\\u0432, \\u0435\\u0433\\u0435\\u0440\\u0435\\u0439 \\u0432 \\u043b\\u0435\\u0441\\u0442\\u043d\\u0438\\u0447\\u044c\\u0438\\u0445 \\u0445\\u043e\\u0437\\u044f\\u0439\\u0441\\u0442\\u0432\\u0430\\u0445, \\u0434\\u043b\\u044f \\u043e\\u043f\\u0440\\u0435\\u0434\\u0435\\u043b\\u0435\\u043d\\u0438\\u044f \\u043c\\u0435\\u0441\\u0442 \\u0447\\u0430\\u0441\\u0442\\u043e\\u0433\\u043e \\u0441\\u043a\\u043e\\u043f\\u043b\\u0435\\u043d\\u0438\\u044f \\u0436\\u0438\\u0432\\u043e\\u0442\\u043d\\u044b\\u0445.&lt;\\/p&gt;\\r\\n              &lt;p&gt; \\u0410 \\u0442\\u0430\\u043a \\u0436\\u0435 \\u0438\\u0441\\u043f\\u043e\\u043b\\u044c\\u0437\\u0443\\u0435\\u0442\\u0441\\u044f \\u0434\\u043b\\u044f \\u0432\\u0438\\u0434\\u0435\\u043e \\u043c\\u043e\\u043d\\u0438\\u0442\\u043e\\u0440\\u0438\\u043d\\u0433\\u0430 \\u0437\\u0430 \\u0447\\u0430\\u0441\\u0442\\u043d\\u044b\\u043c\\u0438 \\u0432\\u043b\\u0430\\u0434\\u0435\\u043d\\u0438\\u044f\\u043c\\u0438 \\u0432 \\u043e\\u0445\\u0440\\u0430\\u043d\\u043d\\u044b\\u0445 \\u0446\\u0435\\u043b\\u044f\\u0445.&lt;\\/p&gt;\\r\\n            &lt;\\/div&gt;\\r\\n          &lt;\\/div&gt;\\r\\n        &lt;\\/div&gt;\\r\\n        &lt;div class=&quot;item&quot;&gt;\\r\\n         &lt;div class=&quot;container&quot;&gt;\\r\\n            &lt;div class=&quot;carousel-caption&quot;&gt;\\r\\n              &lt;h1&gt;&lt;\\/h1&gt;\\r\\n              &lt;p&gt;&lt;\\/p&gt;\\r\\n              &lt;p&gt;&lt;\\/p&gt;\\r\\n            &lt;\\/div&gt;\\r\\n          &lt;\\/div&gt;\\r\\n        &lt;\\/div&gt;\\r\\n        &lt;div class=&quot;item&quot;&gt;\\r\\n           &lt;div class=&quot;container&quot;&gt;\\r\\n            &lt;div class=&quot;carousel-caption&quot;&gt;\\r\\n              &lt;h1&gt;&lt;\\/h1&gt;\\r\\n              &lt;p&gt;&lt;\\/p&gt;\\r\\n              &lt;p&gt;&lt;\\/p&gt;\\r\\n            &lt;\\/div&gt;\\r\\n          &lt;\\/div&gt;\\r\\n        &lt;\\/div&gt;\\r\\n      &lt;\\/div&gt;\\r\\n      &lt;a class=&quot;left carousel-control&quot; href=&quot;#myCarousel&quot; data-slide=&quot;prev&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-chevron-left&quot;&gt;&lt;\\/span&gt;&lt;\\/a&gt;\\r\\n      &lt;a class=&quot;right carousel-control&quot; href=&quot;#myCarousel&quot; data-slide=&quot;next&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-chevron-right&quot;&gt;&lt;\\/span&gt;&lt;\\/a&gt;\\r\\n    &lt;\\/div&gt;\\r\\n&lt;\\/header&gt; \"},\"2\":{\"title\":\"\",\"description\":\"\"}},\"status\":\"1\"}'),
-(36, 'Main-menu', 'html', '{\"name\":\"Main-menu\",\"module_description\":{\"1\":{\"title\":\"\",\"description\":\" &lt;nav class=&quot;navbar navbar-default container&quot;&gt;\\r\\n\\r\\n    &lt;!-- Brand \\u0438 toggle \\u0441\\u0433\\u0440\\u0443\\u043f\\u043f\\u0438\\u0440\\u043e\\u0432\\u0430\\u043d\\u044b \\u0434\\u043b\\u044f \\u043b\\u0443\\u0447\\u0448\\u0435\\u0433\\u043e \\u043e\\u0442\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u044f \\u043d\\u0430 \\u043c\\u043e\\u0431\\u0438\\u043b\\u044c\\u043d\\u044b\\u0445 \\u0434\\u0438\\u0441\\u043f\\u043b\\u0435\\u044f\\u0445 --&gt;\\r\\n  &lt;div class=&quot;navbar-header&quot;&gt;\\r\\n      &lt;button type=&quot;button&quot; class=&quot;navbar-toggle collapsed align-self-center&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#bs-example-navbar-collapse-1&quot; aria-expanded=&quot;false&quot;&gt;\\r\\n        &lt;span class=&quot;sr-only&quot;&gt;Toggle navigation&lt;\\/span&gt;\\r\\n        &lt;span class=&quot;icon-bar&quot;&gt;&lt;\\/span&gt;\\r\\n        &lt;span class=&quot;icon-bar&quot;&gt;&lt;\\/span&gt;\\r\\n        &lt;span class=&quot;icon-bar&quot;&gt;&lt;\\/span&gt;\\r\\n      &lt;\\/button&gt;\\r\\n      \\r\\n    \\r\\n    &lt;\\/div&gt; \\r\\n    \\r\\n    &lt;!-- \\u0421\\u043e\\u0431\\u0435\\u0440\\u0438\\u0442\\u0435 \\u043d\\u0430\\u0432\\u0438\\u0433\\u0430\\u0446\\u0438\\u043e\\u043d\\u043d\\u044b\\u0435 \\u0441\\u0441\\u044b\\u043b\\u043a\\u0438, \\u0444\\u043e\\u0440\\u043c\\u044b, \\u0438 \\u0434\\u0440\\u0443\\u0433\\u043e\\u0439 \\u043a\\u043e\\u043d\\u0442\\u0435\\u043d\\u0442 \\u0434\\u043b\\u044f \\u043f\\u0435\\u0440\\u0435\\u043a\\u043b\\u044e\\u0447\\u0435\\u043d\\u0438\\u044f --&gt;\\r\\n   &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;bs-example-navbar-collapse-1&quot;&gt;\\r\\n     &lt;div id=&quot;navbar-example&quot;&gt;\\r\\n      &lt;ul class=&quot;nav navbar-nav&quot;&gt;\\r\\n        &lt;li&gt;&lt;a href=&quot;#Catalog&quot;&gt;\\u041a\\u0430\\u0442\\u0430\\u043b\\u043e\\u0433&lt;\\/a&gt;&lt;\\/li&gt;\\r\\n        &lt;li&gt;&lt;a href=&quot;#Services&quot;&gt;\\u041e\\u043f\\u043b\\u0430\\u0442\\u0430&lt;\\/a&gt;&lt;\\/li&gt;\\r\\n        &lt;li&gt;&lt;a href=&quot;#Features&quot;&gt;\\u0414\\u043e\\u0441\\u0442\\u0430\\u0432\\u043a\\u0430&lt;\\/a&gt;&lt;\\/li&gt;\\r\\n        &lt;li&gt;&lt;a href=&quot;#Works&quot;&gt;\\u0413\\u0430\\u0440\\u0430\\u043d\\u0442\\u0438\\u0438&lt;\\/a&gt;&lt;\\/li&gt;\\r\\n        &lt;li&gt;&lt;a href=&quot;#Pricing&quot;&gt;\\u0418\\u043d\\u0441\\u0442\\u0440\\u0443\\u043a\\u0446\\u0438\\u044f&lt;\\/a&gt;&lt;\\/li&gt;\\r\\n                                   \\r\\n      &lt;\\/ul&gt;\\r\\n     \\r\\n      &lt;\\/div&gt;\\r\\n    &lt;\\/div&gt;\\r\\n \\r\\n   &lt;\\/nav&gt; \\r\\n \"},\"2\":{\"title\":\"\",\"description\":\"\"}},\"status\":\"1\"}'),
+(36, 'Main-menu', 'html', '{\"name\":\"Main-menu\",\"module_description\":{\"1\":{\"title\":\"\",\"description\":\" &lt;nav class=&quot;navbar navbar-expand-lg navbar-light bg-light&quot;&gt;\\r\\n\\r\\n    &lt;!-- Brand \\u0438 toggle \\u0441\\u0433\\u0440\\u0443\\u043f\\u043f\\u0438\\u0440\\u043e\\u0432\\u0430\\u043d\\u044b \\u0434\\u043b\\u044f \\u043b\\u0443\\u0447\\u0448\\u0435\\u0433\\u043e \\u043e\\u0442\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u044f \\u043d\\u0430 \\u043c\\u043e\\u0431\\u0438\\u043b\\u044c\\u043d\\u044b\\u0445 \\u0434\\u0438\\u0441\\u043f\\u043b\\u0435\\u044f\\u0445 --&gt;\\r\\n  \\r\\n      &lt;button class=&quot;navbar-toggler&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;navbarSupportedContent&quot; aria-label=&quot;Toggle navigation&quot; type=&quot;button&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#navbarSupportedContent&quot;&gt;\\r\\n    &lt;span class=&quot;navbar-toggler-icon&quot;&gt;&lt;\\/span&gt;\\r\\n  &lt;\\/button&gt;\\r\\n\\r\\n    \\r\\n    &lt;!-- \\u0421\\u043e\\u0431\\u0435\\u0440\\u0438\\u0442\\u0435 \\u043d\\u0430\\u0432\\u0438\\u0433\\u0430\\u0446\\u0438\\u043e\\u043d\\u043d\\u044b\\u0435 \\u0441\\u0441\\u044b\\u043b\\u043a\\u0438, \\u0444\\u043e\\u0440\\u043c\\u044b, \\u0438 \\u0434\\u0440\\u0443\\u0433\\u043e\\u0439 \\u043a\\u043e\\u043d\\u0442\\u0435\\u043d\\u0442 \\u0434\\u043b\\u044f \\u043f\\u0435\\u0440\\u0435\\u043a\\u043b\\u044e\\u0447\\u0435\\u043d\\u0438\\u044f --&gt;\\r\\n   &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;navbarSupportedContent&quot;&gt;\\r\\n    &lt;ul class=&quot;navbar-nav mx-auto&quot;&gt;\\r\\n\\t\\t&lt;li class=&quot;nav-item active&quot;&gt;&lt;a class=&quot;nav-link&quot; href=&quot;#Catalog&quot;&gt;\\u041a\\u0430\\u0442\\u0430\\u043b\\u043e\\u0433&lt;span class=&quot;sr-only&quot;&gt;(current)&lt;\\/span&gt;&lt;\\/a&gt;&lt;\\/li&gt;        \\r\\n       &lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link&quot; href=&quot;#Services&quot;&gt;\\u041e\\u043f\\u043b\\u0430\\u0442\\u0430&lt;\\/a&gt;&lt;\\/li&gt;\\r\\n       &lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link&quot; href=&quot;#Features&quot;&gt;\\u0414\\u043e\\u0441\\u0442\\u0430\\u0432\\u043a\\u0430&lt;\\/a&gt;&lt;\\/li&gt;\\r\\n       &lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link&quot; href=&quot;#Works&quot;&gt;\\u0413\\u0430\\u0440\\u0430\\u043d\\u0442\\u0438\\u0438&lt;\\/a&gt;&lt;\\/li&gt;\\r\\n       &lt;li class=&quot;nav-item&quot;&gt;&lt;a class=&quot;nav-link&quot; href=&quot;#Pricing&quot;&gt;\\u0418\\u043d\\u0441\\u0442\\u0440\\u0443\\u043a\\u0446\\u0438\\u044f&lt;\\/a&gt;&lt;\\/li&gt;\\r\\n                                   \\r\\n      &lt;\\/ul&gt;\\r\\n     \\r\\n      &lt;\\/div&gt;\\r\\n    \\r\\n \\r\\n   &lt;\\/nav&gt; \\r\\n \"},\"2\":{\"title\":\"\",\"description\":\"\"}},\"status\":\"1\"}'),
 (37, 'Support', 'html', '{\"name\":\"Support\",\"module_description\":{\"1\":{\"title\":\"\",\"description\":\"&lt;section class=&quot;support&quot;&gt;\\r\\n\\t\\t&lt;div class=&quot;container&quot;&gt;\\r\\n\\t\\t\\t&lt;div class=&quot;row&quot;&gt;\\r\\n\\t\\t\\t\\t&lt;div class=&quot;col-lg-4&quot;&gt;\\r\\n\\t\\t\\t\\t\\t&lt;div class=&quot;support-box-one&quot;&gt;\\r\\n\\t&lt;h3 class=&quot;support-h3&quot;&gt;Lorem ipsum&lt;\\/h3&gt;\\r\\n\\t&lt;p class=&quot;support-p&quot;&gt;Lorem ipsum&lt;\\/p&gt;\\r\\n&lt;\\/div&gt;\\r\\n\\t\\t\\t\\t&lt;\\/div&gt;\\r\\n\\t\\t\\t\\t&lt;div class=&quot;col-lg-4&quot;&gt;\\r\\n\\t\\t\\t\\t\\t&lt;div class=&quot;support-box-two&quot;&gt;\\r\\n\\t&lt;h3 class=&quot;support-h3&quot;&gt;Lorem ipsum&lt;\\/h3&gt;\\r\\n\\t&lt;p class=&quot;support-p&quot;&gt;Lorem ipsum&lt;\\/p&gt;\\r\\n&lt;\\/div&gt;\\r\\n\\t\\t\\t\\t&lt;\\/div&gt;\\r\\n\\t\\t\\t\\t&lt;div class=&quot;col-lg-4&quot;&gt;\\r\\n\\t\\t\\t\\t\\t&lt;div class=&quot;support-box-three&quot;&gt;\\r\\n\\t&lt;h3 class=&quot;support-h3&quot;&gt;Lorem ipsum&lt;\\/h3&gt;\\r\\n\\t&lt;p class=&quot;support-p&quot;&gt;Lorem ipsum&lt;\\/p&gt;\\r\\n&lt;\\/div&gt;\\r\\n\\t\\t\\t\\t&lt;\\/div&gt;\\r\\n\\t\\t\\t&lt;\\/div&gt;\\r\\n\\t\\t&lt;\\/div&gt;\\r\\n\\t&lt;\\/section&gt;\"},\"2\":{\"title\":\"\",\"description\":\"\"}},\"status\":\"1\"}');
 
 -- --------------------------------------------------------
@@ -1924,7 +1923,8 @@ INSERT INTO `oc_order` (`order_id`, `invoice_no`, `invoice_prefix`, `store_id`, 
 (17, 0, 'INV-2018-00', 0, 'Фотоловушки &quot;Филин&quot;', 'http://photo-hunters.rus/', 0, 1, 'Станислав', 'Platonov', 'stan19781@gmail.com', '+79201580108', '', '[]', 'Станислав', 'Platonov', '', 'Krasina 2 74. 153', '', 'Tver', '170021', 'Россия', 176, 'Gorno-Altaysk', 2738, '', '[]', 'Оплата наличными', 'cheque', '', '', '', '', '', '', '', '', 0, '', 0, '', '[]', '', '', '', '100.0000', 0, 0, '0.0000', 0, '', 1, 4, 'RUB', '1.00000000', '127.0.0.1', '', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36', 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7', '2018-07-18 09:30:00', '2018-07-18 09:30:00'),
 (27, 0, 'INV-2018-00', 0, 'Фотоловушки &quot;Филин&quot;', 'http://photo-hunters.rus/', 0, 1, 'Станислав', ' ', 'stan19781@gmail.com', '+79201580108', '', '[]', 'Станислав', ' ', '', 'велотренажер', '', 'Тверь', '19000', '', 0, '', 0, '', '[]', 'Оплата наличными', 'cheque', '', '', '', '', '', '', '', '', 0, '', 0, '', '[]', '', '', '', '100.0000', 0, 0, '0.0000', 0, '', 1, 4, 'RUB', '1.00000000', '127.0.0.1', '', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36', 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7', '2018-07-25 07:42:29', '2018-07-25 07:42:29'),
 (24, 0, 'INV-2018-00', 0, 'Фотоловушки &quot;Филин&quot;', 'http://photo-hunters.rus/', 0, 1, 'Станислав', 'Platonov', 'stan19781@gmail.com', '+79201580108', '', '[]', 'Станислав', 'Platonov', '', 'Krasina 2 74. 153', '', 'Tver', '170021', 'Россия', 176, '', 0, '', '[]', 'Оплата наличными', 'cheque', '', '', '', '', '', '', '', '', 0, '', 0, '', '[]', '', '', '', '100.0000', 0, 0, '0.0000', 0, '', 1, 4, 'RUB', '1.00000000', '127.0.0.1', '', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36', 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7', '2018-07-24 18:08:51', '2018-07-24 18:08:51'),
-(25, 0, 'INV-2018-00', 0, 'Фотоловушки &quot;Филин&quot;', 'http://photo-hunters.rus/', 0, 1, 'Станислав платонов', ' ', 'stan19781@gmail.com', '+79201580108', '', '[]', 'Станислав платонов', ' ', '', 'Krasina 2 74. 153', '', 'Tver', '170021', 'Россия', 176, '', 0, '', '[]', 'Оплата наличными', 'cheque', '', '', '', '', '', '', '', '', 0, '', 0, '', '[]', '', '', '', '100.0000', 0, 0, '0.0000', 0, '', 1, 4, 'RUB', '1.00000000', '127.0.0.1', '', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36', 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7', '2018-07-24 18:10:47', '2018-07-24 18:10:47');
+(25, 0, 'INV-2018-00', 0, 'Фотоловушки &quot;Филин&quot;', 'http://photo-hunters.rus/', 0, 1, 'Станислав платонов', ' ', 'stan19781@gmail.com', '+79201580108', '', '[]', 'Станислав платонов', ' ', '', 'Krasina 2 74. 153', '', 'Tver', '170021', 'Россия', 176, '', 0, '', '[]', 'Оплата наличными', 'cheque', '', '', '', '', '', '', '', '', 0, '', 0, '', '[]', '', '', '', '100.0000', 0, 0, '0.0000', 0, '', 1, 4, 'RUB', '1.00000000', '127.0.0.1', '', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36', 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7', '2018-07-24 18:10:47', '2018-07-24 18:10:47'),
+(34, 0, 'INV-2018-00', 0, 'Фотоловушки &quot;Филин&quot;', 'http://stellar.rus/', 0, 1, 'hggghg', ' ', 'hghggh@fdfdfd.ru', '545454544454', '', '[]', 'hggghg', ' ', '', '4545trfgfgfgfg', '', 'fgfgfgf', '4454545', 'Россия', 176, '', 0, '', '[]', 'Оплата наличными', 'cheque', '', '', '', '', '', '', '', '', 0, '', 0, '', '[]', '', '', '', '19500.0000', 1, 0, '0.0000', 0, '', 1, 4, 'RUB', '1.00000000', '127.0.0.1', '', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36 Edge/17.17134', 'ru-RU', '2018-10-26 16:59:13', '2018-10-26 16:59:32');
 
 -- --------------------------------------------------------
 
@@ -1940,6 +1940,13 @@ CREATE TABLE `oc_order_history` (
   `comment` text NOT NULL,
   `date_added` datetime NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+--
+-- Дамп данных таблицы `oc_order_history`
+--
+
+INSERT INTO `oc_order_history` (`order_history_id`, `order_id`, `order_status_id`, `notify`, `comment`, `date_added`) VALUES
+(35, 34, 1, 1, 'Получатель платежа: \nМагазин &quot;Филин&quot;\n\nПрием платежей по адресу: \nФотоловушки &quot;Филин&quot;\n\nВаш заказ не будет обработан, пока мы не получим оплату.\n', '2018-10-26 16:59:32');
 
 -- --------------------------------------------------------
 
@@ -1997,7 +2004,8 @@ INSERT INTO `oc_order_product` (`order_product_id`, `order_id`, `product_id`, `n
 (17, 17, 30, 'Canon EOS 5D', 'Product 3', 1, '100.0000', '100.0000', '0.0000', 0),
 (27, 27, 30, 'Canon EOS 5D', 'Product 3', 1, '100.0000', '100.0000', '0.0000', 0),
 (24, 24, 30, 'Canon EOS 5D', 'Product 3', 1, '100.0000', '100.0000', '0.0000', 0),
-(25, 25, 30, 'Canon EOS 5D', 'Product 3', 1, '100.0000', '100.0000', '0.0000', 0);
+(25, 25, 30, 'Canon EOS 5D', 'Product 3', 1, '100.0000', '100.0000', '0.0000', 0),
+(34, 34, 31, 'Филин 120 PRO EDITION', 'Филин 120 PRO EDITION', 3, '6500.0000', '19500.0000', '0.0000', 0);
 
 -- --------------------------------------------------------
 
@@ -2140,7 +2148,9 @@ INSERT INTO `oc_order_total` (`order_total_id`, `order_id`, `code`, `title`, `va
 (48, 24, 'total', 'Итого', '100.0000', 9),
 (49, 25, 'sub_total', 'Сумма', '100.0000', 1),
 (50, 25, 'total', 'Итого', '100.0000', 9),
-(54, 27, 'total', 'Итого', '100.0000', 9);
+(54, 27, 'total', 'Итого', '100.0000', 9),
+(67, 34, 'sub_total', 'Сумма', '19500.0000', 1),
+(68, 34, 'total', 'Итого', '19500.0000', 9);
 
 -- --------------------------------------------------------
 
@@ -2208,7 +2218,7 @@ CREATE TABLE `oc_product` (
 --
 
 INSERT INTO `oc_product` (`product_id`, `model`, `sku`, `upc`, `ean`, `jan`, `isbn`, `mpn`, `location`, `quantity`, `stock_status_id`, `image`, `manufacturer_id`, `shipping`, `price`, `points`, `tax_class_id`, `date_available`, `weight`, `weight_class_id`, `length`, `width`, `height`, `length_class_id`, `subtract`, `minimum`, `sort_order`, `status`, `viewed`, `date_added`, `date_modified`) VALUES
-(30, 'Product 3', '', '', '', '', '', '', '', 7, 6, 'catalog/demo/canon_eos_5d_1.jpg', 9, 0, '100.0000', 0, 9, '2009-02-03', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 0, 1, 0, 1, 66, '2009-02-03 16:59:00', '2018-10-01 15:52:40'),
+(30, 'Product 3', '', '', '', '', '', '', '', 7, 6, 'catalog/demo/canon_eos_5d_1.jpg', 9, 0, '100.0000', 0, 9, '2009-02-03', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 0, 1, 0, 1, 69, '2009-02-03 16:59:00', '2018-10-01 15:52:40'),
 (31, 'Филин 120 PRO EDITION', '', '', '', '', '', '', '', 100000, 6, '', 0, 0, '6500.0000', 0, 0, '2018-10-01', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 0, 1, 1, 1, 4, '2018-10-01 15:57:48', '2018-10-01 15:57:48');
 
 -- --------------------------------------------------------
@@ -2664,14 +2674,19 @@ CREATE TABLE `oc_session` (
 --
 
 INSERT INTO `oc_session` (`session_id`, `data`, `expire`) VALUES
+('00261f57a70f8744aaa7986c72', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-26 16:47:21'),
 ('0217ed22f3a157dc4e5c6c10de', '{\"user_id\":\"1\",\"user_token\":\"1WCbkfYvtc6003NHAEohFqKCZfwMWbaL\",\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-09-19 05:02:23'),
+('03c253fdc33676f246f8ae1ea1', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-26 15:34:11'),
+('0575097538ff11328676e70c48', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-26 14:15:42'),
 ('05ab0c932c75b7168ed1f4cd86', '{\"api_id\":\"1\",\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-07-22 10:48:43'),
 ('0a999481d1bdd37d0dcad4ed37', '{\"api_id\":\"1\",\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-07-22 12:07:43'),
 ('0ab346ed506696e043daf4329d', '{\"language\":\"ru-ru\",\"currency\":\"RUB\",\"user_id\":\"1\",\"user_token\":\"GX9QGsQOaRw3pCobLXct66E8EpWRVyFI\"}', '2018-10-11 07:55:35'),
 ('0bf5c6f034f95f0bdf55fc1584', '{\"api_id\":\"1\",\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-07-23 05:09:45'),
 ('122868f91570f538a98013cb5a', '{\"user_id\":\"1\",\"user_token\":\"etoFzhy5mmo7DXCwO6QE6Dd2hkVoafLi\",\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-08-18 14:56:01'),
 ('13070451e6d09cddbaabd8a6d5', '{\"api_id\":\"1\",\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-07-22 10:48:52'),
+('1415c1ebb6956e36201f5631e8', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-26 14:14:23'),
 ('148840385310962bb2a59e5fba', '{\"user_id\":\"1\",\"user_token\":\"49Ia36Bl32Yvv2jrPut4oNArNTyzB5jr\",\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-17 18:36:02'),
+('14c1d135c03ae8a20670ef2cb7', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-26 15:39:41'),
 ('1599f253cadf17d85e717a880a', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-15 11:00:50'),
 ('1cc739f263ca9f1ee90e1e1d59', '{\"api_id\":\"1\",\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-22 10:09:17'),
 ('1cd83dde509c45dcf3a93bb6f1', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-09 14:01:46'),
@@ -2682,87 +2697,146 @@ INSERT INTO `oc_session` (`session_id`, `data`, `expire`) VALUES
 ('23399b189d8c1bdc946d8dbea9', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-07-23 06:07:50'),
 ('24ba083df7fc67151195041153', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-07-18 06:49:07'),
 ('25227678a4f510b0572d3b2735', '{\"api_id\":\"1\"}', '2018-07-18 06:59:01'),
+('26c05abd0bb543884ea0e42745', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-26 16:22:59'),
 ('26ccb904948a251d488c37cade', '{\"api_id\":\"1\"}', '2018-07-22 12:17:03'),
 ('280375dff2b32711849f433f46', '{\"user_id\":\"1\",\"user_token\":\"aMo1mso8AyhK0umo45Ey88EXPe8RUNBs\",\"language\":\"ru-ru\",\"currency\":\"RUB\",\"account\":\"guest\",\"payment_address\":{\"firstname\":\"\\u0421\\u0442\\u0430\\u043d\\u0438\\u0441\\u043b\\u0430\\u0432\",\"lastname\":\"Platonov\",\"company\":\"\",\"address_1\":\"Krasina 2 74. 153\",\"address_2\":\"\",\"postcode\":\"170021\",\"city\":\"Tver\",\"country_id\":\"176\",\"zone_id\":\"2738\",\"country\":\"\\u0420\\u043e\\u0441\\u0441\\u0438\\u044f\",\"iso_code_2\":\"RU\",\"iso_code_3\":\"RUS\",\"address_format\":\"\",\"custom_field\":[],\"zone\":\"Gorno-Altaysk\",\"zone_code\":\"GA\"},\"guest\":{\"customer_group_id\":\"1\",\"firstname\":\"\\u0421\\u0442\\u0430\\u043d\\u0438\\u0441\\u043b\\u0430\\u0432\",\"lastname\":\"Platonov\",\"email\":\"stan19781@gmail.com\",\"telephone\":\"+79201580108\",\"custom_field\":[],\"shipping_address\":false},\"comment\":\"\",\"order_id\":17}', '2018-07-18 06:59:36'),
 ('280fb98a926961a99977376124', '{\"user_id\":\"1\",\"user_token\":\"8d3lZruN38l6nGNYfq1TnZ7VmBTcORTj\",\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-09-14 06:57:14'),
 ('2b30322a443ff223e77bb5f57e', '{\"user_id\":\"1\",\"user_token\":\"yFejVTqdetabEJXeZeeEFEfDdocPCoGx\",\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-23 19:30:09'),
 ('2ca8e1161e8de331cf81a254e6', '{\"api_id\":\"1\"}', '2018-07-18 04:39:03'),
+('2d8aa6094e62dc6b4b6803e62c', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-26 16:33:52'),
 ('2e4bafa9773d2b6a8de4baecd0', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-08-14 16:15:02'),
 ('2f113902dec4a235cf88ead5d9', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-19 13:35:24'),
 ('30056bd6f1e9d712b14bb1e200', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-17 19:18:10'),
+('30475638777497efec244794c1', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-26 14:40:46'),
+('308eaaab87ad40d07e90f7f1d7', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-26 16:14:48'),
+('339b9821e4836d0d3a3b53b87f', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-26 16:14:50'),
+('340e49546a8b2bf8a46bc1cb3f', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-26 16:51:53'),
 ('354ac35be920ce0d9938fb60c4', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-08-18 13:51:16'),
 ('35afda6dcdbceccdd8e757aba7', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-07-11 04:31:35'),
+('3656bbd4e56d04709c95e804c7', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-26 14:12:28'),
+('378d1cf7270767ba11d957d90d', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-25 09:16:05'),
 ('37c04aa2bcbb84b4b4b29cb099', '{\"language\":\"ru-ru\",\"currency\":\"RUB\",\"user_id\":\"1\",\"user_token\":\"sR4mNqkE87GtrKCv4MqoXXlkjPcGD8hO\"}', '2018-10-22 14:31:27'),
+('385d8ce6000a0d6a984c2e3407', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-26 15:02:42'),
 ('389a10e1aa0220d25624530c64', '{\"language\":\"ru-ru\",\"currency\":\"RUB\",\"account\":\"guest\",\"guest\":{\"customer_group_id\":\"1\",\"firstname\":\"\\u0421\\u043e\\u043a\\u043e\\u043b\\u043e\\u0432 \\u0418\\u0432\\u0430\\u043d \\u041f\\u0435\\u0442\\u0440\\u043e\\u0432\\u0438\\u0447\",\"lastname\":\"\\u00a0\",\"email\":\"stan1978@pisem.net\",\"telephone\":\"5687456556\",\"custom_field\":[],\"shipping_address\":false},\"payment_address\":{\"firstname\":\"\\u0421\\u043e\\u043a\\u043e\\u043b\\u043e\\u0432 \\u0418\\u0432\\u0430\\u043d \\u041f\\u0435\\u0442\\u0440\\u043e\\u0432\\u0438\\u0447\",\"lastname\":\"\\u00a0\",\"company\":\"\",\"address_1\":\"\\u0430\\u0432\\u0430\\u0432\\u0430\\u0432\\u0430\\u0432\\u0430\\u0432\\u0432\\u0430\",\"address_2\":\"\",\"postcode\":\"\",\"city\":\"\\u041c\\u043e\\u0441\\u043a\\u0432\\u0430\",\"country_id\":\"176\",\"zone_id\":\"\",\"country\":\"\\u0420\\u043e\\u0441\\u0441\\u0438\\u044f\",\"iso_code_2\":\"RU\",\"iso_code_3\":\"RUS\",\"address_format\":\"\",\"custom_field\":[],\"zone\":\"\",\"zone_code\":\"\"},\"payment_methods\":{\"cheque\":{\"code\":\"cheque\",\"title\":\"\\u041e\\u043f\\u043b\\u0430\\u0442\\u0430 \\u043d\\u0430\\u043b\\u0438\\u0447\\u043d\\u044b\\u043c\\u0438\",\"terms\":\"\",\"sort_order\":\"\"}},\"payment_method\":{\"code\":\"cheque\",\"title\":\"\\u041e\\u043f\\u043b\\u0430\\u0442\\u0430 \\u043d\\u0430\\u043b\\u0438\\u0447\\u043d\\u044b\\u043c\\u0438\",\"terms\":\"\",\"sort_order\":\"\"},\"comment\":\"\",\"order_id\":32}', '2018-10-01 13:24:03'),
 ('38e8445762c178b70c35aa2f00', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-19 15:07:13'),
 ('3a5c9f556a4672388a0f8326ae', '{\"user_id\":\"1\",\"user_token\":\"TpzSUpFgD2b1zpPUCDKbvqPMUgyNpR0i\",\"language\":\"ru-ru\",\"currency\":\"RUB\",\"account\":\"guest\",\"payment_address\":{\"firstname\":\"\\u0421\\u0442\\u0430\\u043d\\u0438\\u0441\\u043b\\u0430\\u0432\",\"lastname\":\"\\u00a0\",\"company\":\"\",\"address_1\":\"\\u0432\\u0435\\u043b\\u043e\\u0442\\u0440\\u0435\\u043d\\u0430\\u0436\\u0435\\u0440\",\"address_2\":\"\",\"postcode\":\"19000\",\"city\":\"\\u0422\\u0432\\u0435\\u0440\\u044c\",\"country_id\":\"\",\"zone_id\":\"0\",\"country\":\"\",\"iso_code_2\":\"\",\"iso_code_3\":\"\",\"address_format\":\"\",\"custom_field\":[],\"zone\":\"\",\"zone_code\":\"\"}}', '2018-07-25 05:10:53'),
 ('3a70b5528d3695cf4f2fdd76a1', '{\"api_id\":\"1\"}', '2018-07-18 06:54:48'),
 ('3b0db548adff3722dca2535091', '{\"api_id\":\"1\",\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-22 10:09:33'),
+('3bf166e4616e036ff9659a1400', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-26 15:38:16'),
+('3c1d0232489fc3499d15dda700', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-26 15:21:11'),
 ('3e72dd90f7c680f7e49d839116', '{\"api_id\":\"1\",\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-07-22 10:48:47'),
+('4085ef3118f3f3e7e938b66c80', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-26 15:27:37'),
 ('430e67a3618d34726bdbf0664f', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-15 08:59:15'),
+('43db7963c403f0cc1185f01658', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-26 14:14:20'),
 ('43ff706f440d6626ba7f3fc32f', '{\"user_id\":\"1\",\"user_token\":\"fXzKnWT8vVSZ4uioqWhBU2V5QpPiqARV\",\"language\":\"ru-ru\",\"currency\":\"RUB\",\"captcha\":\"1045ba\",\"account\":\"guest\",\"guest\":{\"customer_group_id\":\"1\",\"firstname\":\"Stanisalv\",\"lastname\":\"Platonov\",\"email\":\"stan19781@gmail.com\",\"telephone\":\"+79201580108\",\"custom_field\":[],\"shipping_address\":false},\"payment_address\":{\"firstname\":\"Stanisalv\",\"lastname\":\"Platonov\",\"company\":\"\",\"address_1\":\"Krasina 2 74. 153\",\"address_2\":\"\",\"postcode\":\"170021\",\"city\":\"Tver\",\"country_id\":\"176\",\"zone_id\":\"57\",\"country\":\"\\u0420\\u043e\\u0441\\u0441\\u0438\\u0439\\u0441\\u043a\\u0430\\u044f \\u0424\\u0435\\u0434\\u0435\\u0440\\u0430\\u0446\\u0438\\u044f\",\"iso_code_2\":\"RU\",\"iso_code_3\":\"RUS\",\"address_format\":\"\",\"custom_field\":[],\"zone\":\"\\u041a\\u0430\\u0440\\u0430\\u0447\\u0430\\u0435\\u0432\\u043e-\\u0427\\u0435\\u0440\\u043a\\u0435\\u0441\\u0438\\u044f\",\"zone_code\":\"KC\"},\"comment\":\"\",\"order_id\":1}', '2018-07-11 07:01:55'),
+('45616918b9feb20171a92dc88d', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-26 16:42:49'),
 ('457c8f5b19ef074771affa7d3a', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-09 10:26:19'),
 ('471a41a98af2d0492eabacf375', '{\"language\":\"ru-ru\",\"currency\":\"RUB\",\"account\":\"guest\",\"guest\":{\"customer_group_id\":\"1\",\"firstname\":\"Stanisalv\",\"lastname\":\"\\u00a0\",\"email\":\"stan19781@gmail.com\",\"telephone\":\"+79201580108\",\"custom_field\":[],\"shipping_address\":false},\"payment_address\":{\"firstname\":\"Stanisalv\",\"lastname\":\"\\u00a0\",\"company\":\"\",\"address_1\":\"Krasina 2 74. 153\",\"address_2\":\"\",\"postcode\":\"170021\",\"city\":\"Tver\",\"country_id\":\"176\",\"zone_id\":\"\",\"country\":\"\\u0420\\u043e\\u0441\\u0441\\u0438\\u044f\",\"iso_code_2\":\"RU\",\"iso_code_3\":\"RUS\",\"address_format\":\"\",\"custom_field\":[],\"zone\":\"\",\"zone_code\":\"\"},\"payment_methods\":{\"cheque\":{\"code\":\"cheque\",\"title\":\"\\u041e\\u043f\\u043b\\u0430\\u0442\\u0430 \\u043d\\u0430\\u043b\\u0438\\u0447\\u043d\\u044b\\u043c\\u0438\",\"terms\":\"\",\"sort_order\":\"\"}},\"payment_method\":{\"code\":\"cheque\",\"title\":\"\\u041e\\u043f\\u043b\\u0430\\u0442\\u0430 \\u043d\\u0430\\u043b\\u0438\\u0447\\u043d\\u044b\\u043c\\u0438\",\"terms\":\"\",\"sort_order\":\"\"},\"comment\":\"\",\"order_id\":30}', '2018-08-18 11:38:57'),
 ('48d5ce08e495aa53e04ccb982c', '{\"user_id\":\"1\",\"user_token\":\"G22EX1wjYsnw3us8XNiby35J2jhFTSAD\",\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-07-22 10:58:53'),
 ('4987308cc1b1cf22ce37721daf', '{\"user_id\":\"1\",\"user_token\":\"scHYY2bVFYS08MjhEL6NPjhD2UzFXIpf\"}', '2018-10-23 07:58:53'),
 ('4a39a3b4d98bfb7c83e8db8020', '{\"api_id\":\"1\"}', '2018-07-18 06:54:52'),
 ('4ded2619d1da10334cbd2d6aa5', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-07-12 13:21:44'),
+('52576d54027451ff79b6b36567', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-25 07:17:16'),
 ('53a164c03820c2784970a217a8', '{\"api_id\":\"1\"}', '2018-07-17 17:23:53'),
 ('53f661d535563d2e548c2a4488', '{\"api_id\":\"1\"}', '2018-07-22 12:11:33'),
 ('54d8d7eb9d6a9ede6460f884bf', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-21 15:22:34'),
+('5642a95258652aa265e57eec1c', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-26 17:15:11'),
+('56dc0fd73533b3ac63ae1c6b2b', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-26 15:15:16'),
 ('5b6d3882e825ca1bd44f47596b', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-11 10:14:55'),
 ('5bdb65ef65a86ebec1a75ebede', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-11 10:13:31'),
 ('5cb21383b95b59e03785394ff5', '{\"api_id\":\"1\"}', '2018-07-24 15:26:22'),
+('5d5e8593ca9cb5e1dff217cb65', '{\"language\":\"ru-ru\",\"currency\":\"RUB\",\"account\":\"guest\",\"guest\":{\"customer_group_id\":\"1\",\"firstname\":\"hggghg\",\"lastname\":\"\\u00a0\",\"email\":\"hghggh@fdfdfd.ru\",\"telephone\":\"545454544454\",\"custom_field\":[],\"shipping_address\":false},\"payment_address\":{\"firstname\":\"hggghg\",\"lastname\":\"\\u00a0\",\"company\":\"\",\"address_1\":\"4545trfgfgfgfg\",\"address_2\":\"\",\"postcode\":\"4454545\",\"city\":\"fgfgfgf\",\"country_id\":\"176\",\"zone_id\":\"\",\"country\":\"\\u0420\\u043e\\u0441\\u0441\\u0438\\u044f\",\"iso_code_2\":\"RU\",\"iso_code_3\":\"RUS\",\"address_format\":\"\",\"custom_field\":[],\"zone\":\"\",\"zone_code\":\"\"},\"comment\":\"\",\"order_id\":34}', '2018-10-26 17:28:39'),
 ('5d60d857382a2e15e595058dc3', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-07-11 07:01:39'),
+('5df33fe0e117304a617df10955', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-26 16:33:33'),
+('5f6f79e73e1f8799d2d6ead096', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-26 17:03:33'),
+('61840720c9be8fe7dbe354d4e2', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-26 16:47:38'),
 ('625d6bd86dec9df8b0b3c506d8', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-09 11:18:10'),
+('626155da0499a1d79beaeab859', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-26 16:56:33'),
 ('65b62c6c1550cfa6e24931a247', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-07-16 06:39:08'),
 ('66e3b52edd5c9ea8617600d48e', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-02 11:32:49'),
 ('678c5a13e069a9d32039be2338', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-09 14:07:45'),
 ('6812ff11525dad319eddf855a4', '{\"api_id\":\"1\",\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-07-22 10:48:40'),
 ('6824e3ac510f30b6853ebd0af7', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-24 18:32:47'),
+('6b753230a0e843d1924c58a652', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-26 14:48:07'),
+('6bdf494a5eac03469ebfd89a07', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-26 16:30:25'),
+('6ce96d735501752c74a1663ec1', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-26 14:23:33'),
+('6fb24962d0eac98fca81818253', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-26 15:41:12'),
+('6fb3872a21df6c81ea21ebaa40', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-26 16:17:28'),
 ('744112aa93df62695a0b62aa29', '{\"user_id\":\"1\",\"user_token\":\"1EcP7xFwB1nbvKuxzKbcPnDX2wYFzJjk\",\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-07-08 19:16:59'),
+('744d1924f1b02bd9fe14fb23da', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-26 16:22:28'),
 ('79079f94daa162494e7a1b38a6', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-11 08:59:04'),
 ('7acb12995860ea281a47e2a91f', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-09 14:02:24'),
+('7bf4b035c085257dc4f9388f39', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-26 16:16:16'),
 ('7e3c8d89d187e3b6f7638d6c98', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-09-14 06:55:11'),
 ('7f0649d90bf0cc2148e16f418d', '{\"language\":\"ru-ru\",\"currency\":\"RUB\",\"account\":\"guest\",\"guest\":{\"customer_group_id\":\"1\",\"firstname\":\"gdfggf\",\"lastname\":\"\\u00a0\",\"email\":\"platonov_stan@mail.ru\",\"telephone\":\"6565655656\",\"custom_field\":[],\"shipping_address\":false},\"payment_address\":{\"firstname\":\"gdfggf\",\"lastname\":\"\\u00a0\",\"company\":\"\",\"address_1\":\"fgfgfgfgfgfgf\",\"address_2\":\"\",\"postcode\":\"65656\",\"city\":\"fgfgfgf\",\"country_id\":\"176\",\"zone_id\":\"\",\"country\":\"\\u0420\\u043e\\u0441\\u0441\\u0438\\u044f\",\"iso_code_2\":\"RU\",\"iso_code_3\":\"RUS\",\"address_format\":\"\",\"custom_field\":[],\"zone\":\"\",\"zone_code\":\"\"},\"payment_methods\":{\"cheque\":{\"code\":\"cheque\",\"title\":\"\\u041e\\u043f\\u043b\\u0430\\u0442\\u0430 \\u043d\\u0430\\u043b\\u0438\\u0447\\u043d\\u044b\\u043c\\u0438\",\"terms\":\"\",\"sort_order\":\"\"}},\"payment_method\":{\"code\":\"cheque\",\"title\":\"\\u041e\\u043f\\u043b\\u0430\\u0442\\u0430 \\u043d\\u0430\\u043b\\u0438\\u0447\\u043d\\u044b\\u043c\\u0438\",\"terms\":\"\",\"sort_order\":\"\"},\"comment\":\"\",\"order_id\":31}', '2018-09-17 16:05:00'),
+('7f9c43e6f2ce07e0dbca2dbe5a', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-26 15:13:43'),
+('7fe90d44df7b68b6d3ad95e042', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-26 16:47:23'),
+('80264badb3da101abaa9da2d59', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-26 17:28:39'),
 ('80992e1acc09005d77b23ecdaa', '{\"api_id\":\"1\"}', '2018-07-23 05:09:56'),
 ('82da1b792fb5de31f7f0e71c42', 'false', '2018-10-11 07:54:33'),
 ('8716b136dd8bfb7989be772246', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-09 16:21:41'),
+('87de5ec410fad54cf44476bb8b', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-26 16:50:13'),
 ('8925ae123e3a841711a97f8382', '{\"language\":\"ru-ru\",\"currency\":\"RUB\",\"account\":\"guest\",\"guest\":{\"customer_group_id\":\"1\",\"firstname\":\"Stay \",\"lastname\":\"Plat\",\"email\":\"stan19781@gmail.com\",\"telephone\":\"+79201580108\",\"custom_field\":[],\"shipping_address\":false},\"payment_address\":{\"firstname\":\"Stay \",\"lastname\":\"Plat\",\"company\":\"\",\"address_1\":\"Krasina 2 74. 153\",\"address_2\":\"\",\"postcode\":\"170021\",\"city\":\"Tver\",\"country_id\":\"176\",\"zone_id\":\"2774\",\"country\":\"\\u0420\\u043e\\u0441\\u0441\\u0438\\u044f\",\"iso_code_2\":\"RU\",\"iso_code_3\":\"RUS\",\"address_format\":\"\",\"custom_field\":[],\"zone\":\"Perm\",\"zone_code\":\"PR\"},\"payment_methods\":{\"cheque\":{\"code\":\"cheque\",\"title\":\"\\u041e\\u043f\\u043b\\u0430\\u0442\\u0430 \\u043d\\u0430\\u043b\\u0438\\u0447\\u043d\\u044b\\u043c\\u0438\",\"terms\":\"\",\"sort_order\":\"\"}},\"payment_method\":{\"code\":\"cheque\",\"title\":\"\\u041e\\u043f\\u043b\\u0430\\u0442\\u0430 \\u043d\\u0430\\u043b\\u0438\\u0447\\u043d\\u044b\\u043c\\u0438\",\"terms\":\"\",\"sort_order\":\"\"},\"comment\":\"\",\"order_id\":20}', '2018-07-22 10:57:31'),
 ('896e0ca824042d4d09113def60', '{\"api_id\":\"1\",\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-07-22 12:07:47'),
+('8a57afcf20b845f66b867c3f51', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-26 15:09:53'),
 ('8cf9d41847735e1ac48d38850e', '{\"api_id\":\"1\"}', '2018-07-25 05:07:26'),
+('8dae980e2fdbd0a552c024dd6d', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-26 15:26:55'),
+('8e7a39aeecc7ecd3ecc75d65d9', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-26 15:32:48'),
 ('8ffb4394f2106fdc335745468c', '{\"user_id\":\"1\",\"user_token\":\"zscG0tFxrTX5d5NpgGmxs7CCaUI8qm7N\",\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-09 16:20:43'),
 ('92613a8ce7b9ac354d3676d21e', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-09 13:40:40'),
 ('927df18f2604b7ff61a6b4fa83', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-11 08:55:41'),
 ('9339fcc3fb89fe09318c1775b3', '{\"user_id\":\"1\",\"user_token\":\"uwBxFpYxiR8cecDjAPNNTpPOmhJkaTAV\",\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-19 15:23:28'),
 ('9894f2358bd7b8098d30408552', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-11 10:03:41'),
+('9a7aa79d3c8b2dd505d2fd33d9', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-26 15:23:00'),
+('9a94d81af71c58373fbd24859c', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-26 14:55:12'),
 ('9be0dd557acfa22ea60218803c', '{\"api_id\":\"1\",\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-22 10:09:29'),
 ('9d9cdbadc6631fb8f21f0fabdb', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-09 13:40:44'),
 ('9e4d23d606792142219e00b276', '{\"api_id\":\"1\"}', '2018-07-22 10:48:52'),
+('9f3a2db1fca5e811b1c6328341', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-26 16:07:27'),
 ('9fa0a960e29b5e505a04a494b8', '{\"language\":\"ru-ru\",\"currency\":\"RUB\",\"account\":\"guest\",\"guest\":{\"customer_group_id\":\"1\",\"firstname\":\"\\u0430\\u043f\\u043f\\u0430\\u043f\\u0430\\u043f\",\"lastname\":\"\\u00a0\",\"email\":\"sp.tver@rusalut.ru\",\"telephone\":\"545454545455\",\"custom_field\":[],\"shipping_address\":false},\"payment_address\":{\"firstname\":\"\\u0430\\u043f\\u043f\\u0430\\u043f\\u0430\\u043f\",\"lastname\":\"\\u00a0\",\"company\":\"\",\"address_1\":\"\\u0435\\u0430\\u043f\\u0430\\u043f\\u0430\\u043f\\u0430\\u043f\\u043f\\u043f\\u0430\",\"address_2\":\"\",\"postcode\":\"656565\",\"city\":\"\\u0430\\u043f\\u0430\\u043f\\u0430\\u043f\",\"country_id\":\"176\",\"zone_id\":\"\",\"country\":\"\\u0420\\u043e\\u0441\\u0441\\u0438\\u044f\",\"iso_code_2\":\"RU\",\"iso_code_3\":\"RUS\",\"address_format\":\"\",\"custom_field\":[],\"zone\":\"\",\"zone_code\":\"\"},\"comment\":\"\",\"order_id\":33}', '2018-10-22 14:21:21'),
 ('a06ef6526bb3320d9aa9509b63', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-11 09:02:05'),
 ('a0a34dfe6ce743509a4e47c425', '{\"api_id\":\"1\"}', '2018-07-17 17:39:40'),
+('a19543636efad87a37a61b8295', '{\"user_id\":\"1\",\"user_token\":\"vVqaRtAOS7JN2T14fwrxWGHEaV4tOCrL\"}', '2018-10-25 15:15:22'),
+('a32dcf85a0306821d9cc5c80df', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-26 17:26:08'),
 ('a35109baab0fc64201f25291c8', '{\"language\":\"ru-ru\",\"currency\":\"RUB\",\"user_id\":\"1\",\"user_token\":\"55bJoeLY69FAJ49ozaDl7Lj25PIaUmOf\"}', '2018-08-18 09:18:16'),
+('a35cffce2d605de7e57727a58c', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-25 15:32:17'),
 ('a375b7aa459ee20263b51d33a4', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-15 09:12:33'),
+('a390eb3674ac17b9813e0dd256', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-26 15:42:24'),
+('a83298d9a27ed57e9d66c1c361', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-26 14:25:13'),
 ('a8d01533887bc2196162cf03c3', '{\"user_id\":\"1\",\"user_token\":\"frKvtNrZrWZx4SvU9FHInEcp3Tb9qg2u\"}', '2018-10-18 06:40:58'),
 ('a8f414a425ad03e2d895095f43', '{\"language\":\"ru-ru\",\"currency\":\"RUB\",\"user_id\":\"1\",\"user_token\":\"21d3fzudwKeh3uW2KnlN6e3LSKP7CXhv\"}', '2018-10-01 13:26:06'),
 ('aa0450769aa7791ac67573e234', '{\"api_id\":\"1\"}', '2018-10-22 10:08:09'),
+('ab128c12fcb107a492f5c7a1cc', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-26 16:27:19'),
+('ab3cef98811034bfc32fe16629', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-26 14:13:54'),
 ('ab40fafbed33644dc6a4b51021', '{\"user_id\":\"1\",\"user_token\":\"9XN7ybzEudH0aUCMd0EOF7Zjarcw43bP\",\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-08-22 04:53:37'),
 ('ab4170f7aa36ffdd89bf960197', '{\"api_id\":\"1\"}', '2018-07-22 12:17:00'),
+('ab96b4d6e7b264f87946ad8c10', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-26 16:18:27'),
 ('abdf49f12cf1e0b851790697c1', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-09-19 05:26:33'),
 ('ad475736450e4e179855957bcd', '{\"user_id\":\"1\",\"user_token\":\"iIEqbHfWFsTKC0kTXQMx09IRET1dIWuQ\",\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-24 19:00:17'),
 ('ad69b0fbe0594a7c19821d32ff', '{\"language\":\"ru-ru\",\"currency\":\"RUB\",\"account\":\"guest\",\"guest\":{\"customer_group_id\":\"1\",\"firstname\":\"Stay \",\"lastname\":\"Plat\",\"email\":\"stan19781@gmail.com\",\"telephone\":\"+79201580108\",\"custom_field\":[],\"shipping_address\":false},\"payment_address\":{\"firstname\":\"Stay \",\"lastname\":\"Plat\",\"company\":\"\",\"address_1\":\"Krasina 2 74. 153\",\"address_2\":\"\",\"postcode\":\"170021\",\"city\":\"Tver\",\"country_id\":\"176\",\"zone_id\":\"2774\",\"country\":\"\\u0420\\u043e\\u0441\\u0441\\u0438\\u044f\",\"iso_code_2\":\"RU\",\"iso_code_3\":\"RUS\",\"address_format\":\"\",\"custom_field\":[],\"zone\":\"Perm\",\"zone_code\":\"PR\"},\"payment_methods\":{\"cheque\":{\"code\":\"cheque\",\"title\":\"\\u041e\\u043f\\u043b\\u0430\\u0442\\u0430 \\u043d\\u0430\\u043b\\u0438\\u0447\\u043d\\u044b\\u043c\\u0438\",\"terms\":\"\",\"sort_order\":\"\"}},\"payment_method\":{\"code\":\"cheque\",\"title\":\"\\u041e\\u043f\\u043b\\u0430\\u0442\\u0430 \\u043d\\u0430\\u043b\\u0438\\u0447\\u043d\\u044b\\u043c\\u0438\",\"terms\":\"\",\"sort_order\":\"\"},\"comment\":\"\",\"order_id\":18}', '2018-07-22 10:57:30'),
 ('ae848130664794b1da58783f02', '{\"api_id\":\"1\"}', '2018-07-22 12:22:57'),
+('af0578c11813072ab9927ce101', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-26 17:23:43'),
+('b2b43fab527756f614796cee3c', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-26 15:32:11'),
+('b37b1506749d9df4501166e7d4', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-26 15:23:07'),
 ('b4801e1a68b4b72e95f0db7ba1', '{\"api_id\":\"1\",\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-22 10:09:43'),
 ('b5db705297ee171bf4f237c907', '{\"api_id\":\"1\"}', '2018-07-25 05:05:34'),
 ('b678b75d734a43d47d10d74dd1', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-23 18:59:41'),
 ('b6a99a3d9aa10394b120e91ae8', '{\"user_id\":\"1\",\"user_token\":\"FdX9XpNpVoVqfNaHKYA5jnjWM4uNmjZj\",\"language\":\"ru-ru\",\"currency\":\"RUB\",\"account\":\"guest\",\"payment_address\":{\"firstname\":\"\\u0421\\u0442\\u0430\\u043d\\u0438\\u0441\\u043b\\u0430\\u0432\",\"lastname\":\"Platonov\",\"company\":\"\",\"address_1\":\"Krasina 2 74. 153\",\"address_2\":\"\",\"postcode\":\"170021\",\"city\":\"Tver\",\"country_id\":\"176\",\"zone_id\":\"2736\",\"country\":\"\\u0420\\u043e\\u0441\\u0441\\u0438\\u044f\",\"iso_code_2\":\"RU\",\"iso_code_3\":\"RUS\",\"address_format\":\"\",\"custom_field\":[],\"zone\":\"Elista\",\"zone_code\":\"EL\"}}', '2018-07-23 06:09:39'),
+('b9f6d78db6f00eb37d6c27d787', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-26 16:33:03'),
+('ba0c4d1491571f333e6bbb9bce', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-26 14:14:20'),
+('bf377097cc7774663c047db3a0', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-26 17:26:25'),
 ('bf80924d292dbe1f4ef6587bf8', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-07-08 19:11:27'),
 ('c3283a301e72302de8d48a10c3', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-18 07:19:16'),
+('c475eaf3d0568ba9669b77fad2', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-26 16:59:16'),
 ('c4b875abf6e955032214654a4f', '{\"api_id\":\"1\"}', '2018-07-22 12:07:48'),
+('c4cabd2e2bc5321a8a01e4699b', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-26 16:36:22'),
+('c588062d1fd0b4af435baadd93', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-26 15:43:04'),
 ('c61f7ca845ff8ccfbbb7df525c', '{\"language\":\"ru-ru\",\"currency\":\"RUB\",\"user_id\":\"1\",\"user_token\":\"fGxd8EvNJxrRQJtRBrxhAR1Drw5psZDD\"}', '2018-07-16 06:55:14'),
 ('c633b50e2e8d78a68b23db7142', '{\"api_id\":\"1\",\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-22 10:09:37'),
+('c690d245f676aa115917e302f6', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-26 15:23:37'),
+('ca002a8a4646154a83305776d7', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-25 14:50:16'),
 ('ce55179dffbe4268bd69402b79', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-09 15:48:17'),
+('d154fd6b22a4088aec71a1d4ac', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-26 09:51:25'),
 ('d1a5cdb56da755592bdc3c5e98', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-23 19:46:04'),
 ('d2d2afdc4d6c0648f79d6a8100', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-09 14:27:55'),
 ('d2fbd07a2777b815c5d2706d24', '{\"user_id\":\"1\",\"user_token\":\"g9Gsz9JrHZX3V8AyD7itSNXZ0iEudkZO\",\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-15 11:00:28'),
@@ -2770,20 +2844,32 @@ INSERT INTO `oc_session` (`session_id`, `data`, `expire`) VALUES
 ('d5203db06b63968aef74705402', '{\"api_id\":\"1\",\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-07-23 05:09:56'),
 ('d6efed3f6a7119593c7cfcb5c8', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-09-26 09:12:32'),
 ('d8678884f93055a20654d90776', '{\"api_id\":\"1\"}', '2018-10-22 10:09:43'),
+('d9035c88d6b1a502d8fdfbbfde', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-26 15:08:52'),
+('da81310ec843145c369025ea0a', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-26 16:47:47'),
+('da924f3f0c2365c799fbb161df', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-26 16:32:28'),
+('dc195b8b1a9c74130ede6ebdb2', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-26 14:27:28'),
+('dce100585b77888685d2d560c4', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-26 15:41:13'),
 ('dcfda98b40a1859e3d28b2b8e5', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-19 14:56:28'),
 ('dfda07c7e0ea657918815890a1', '{\"api_id\":\"1\",\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-07-25 05:05:34'),
 ('e2d6f475658e6fb89124a08d15', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-09 14:07:45'),
 ('e32852057035472fb209115f0e', '{\"user_id\":\"1\",\"user_token\":\"nQKilkY55NO2zxJ4NaPmxiAlP4rqykec\",\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-16 06:17:23'),
 ('e8e7e6fc7228f75debc51103be', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-07-11 07:01:02'),
+('e902bd879983fdd0251f82bd01', '{\"user_id\":\"1\",\"user_token\":\"qjD0CWe6tBtl0E9L1GJtnchx4SjNxyIz\",\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-26 16:51:49'),
 ('eb3e73679c21e6956a8b866906', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-09 10:21:16'),
 ('ed3c1104bb912b08b9b8f29028', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-11 09:00:37'),
+('ed4415f7e4f5dc4bec853519da', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-26 17:23:47'),
+('f125b07e2e0c2df6dc5c291282', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-26 14:14:16'),
+('f184c596898d7c5bce38db9dc9', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-26 16:20:26'),
+('f18f48b46e2e96a962fdfb9e98', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-26 14:56:23'),
 ('f4c768207c128141b27d38778e', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-10 12:06:07'),
+('f721ec16cb3fc82d4473165b43', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-26 14:50:18'),
 ('f826a9bcd3bd9e2aa6fb4d2411', '{\"api_id\":\"1\",\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-07-22 10:48:35'),
 ('fa6eb5d016cf0e70b8332bca6e', 'false', '2018-10-11 07:54:28'),
 ('fafb03030c32f3ce28e96bd5f1', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-15 09:12:34'),
 ('fcc667e1fb4fc88b5096ce5b71', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-09 14:02:24'),
 ('fcf5f2f49c6043c7db86ff31f0', '{\"api_id\":\"1\"}', '2018-07-25 05:07:30'),
 ('fd6e4618228d754ecc2f33897b', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-23 08:43:30'),
+('fdaa8fa88b3ccb704ef82cb0cf', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-10-26 16:29:18'),
 ('fe62a032625858506448d269fb', '{\"language\":\"ru-ru\",\"currency\":\"RUB\"}', '2018-09-17 16:25:23'),
 ('fe6e4f8a2400bea892caf10b1c', '{\"api_id\":\"1\"}', '2018-10-22 10:08:15');
 
@@ -3052,7 +3138,7 @@ CREATE TABLE `oc_statistics` (
 --
 
 INSERT INTO `oc_statistics` (`statistics_id`, `code`, `value`) VALUES
-(1, 'order_sale', '9000.0000'),
+(1, 'order_sale', '28500.0000'),
 (2, 'order_processing', '0.0000'),
 (3, 'order_complete', '0.0000'),
 (4, 'order_other', '0.0000'),
@@ -3222,9 +3308,9 @@ INSERT INTO `oc_theme` (`theme_id`, `store_id`, `theme`, `route`, `code`, `date_
 (292, 0, 'default', 'common/cart', '&lt;div id=&quot;cart&quot;&gt;\n  &lt;!--&lt;a class=&quot;checkout&quot; href=&quot;{{ checkout }}&quot; title=&quot;{{ text_checkout }}&quot;&gt;&lt;button  class=&quot;btn btn-inverse btn-block btn-lg&quot;&gt;&lt;i class=&quot;fa fa-share&quot;&gt;&lt;/i&gt; &lt;span&gt;{{ text_checkout }}&lt;/span&gt;&lt;/button&gt;&lt;/a&gt; --&gt;\n  &lt;button type=&quot;button&quot; data-toggle=&quot;dropdown&quot; data-loading-text=&quot;{{ text_loading }}&quot; class=&quot;dropdown-toggle float-right&quot;&gt; &lt;span id=&quot;cart-total&quot;&gt;{{ text_items }}&lt;/span&gt;&lt;/button&gt;\n  \n  &lt;ul class=&quot;dropdown-menu pull-right&quot;&gt;\n    {% if products or vouchers %}\n    &lt;li&gt;\n      &lt;table class=&quot;table table-striped&quot;&gt;\n        {% for product in products %}\n        &lt;tr&gt;\n          &lt;td class=&quot;text-center&quot;&gt;{% if product.thumb %} &lt;a href=&quot;{{ product.href }}&quot;&gt;&lt;img src=&quot;{{ product.thumb }}&quot; alt=&quot;{{ product.name }}&quot; title=&quot;{{ product.name }}&quot; class=&quot;img-thumbnail&quot; /&gt;&lt;/a&gt; {% endif %}&lt;/td&gt;\n          &lt;td class=&quot;text-left&quot;&gt;&lt;a href=&quot;{{ product.href }}&quot;&gt;{{ product.name }}&lt;/a&gt; {% if product.option %}\n            {% for option in product.option %} &lt;br /&gt;\n            - &lt;small&gt;{{ option.name }} {{ option.value }}&lt;/small&gt; {% endfor %}\n            {% endif %}\n            {% if product.recurring %} &lt;br /&gt;\n            - &lt;small&gt;{{ text_recurring }} {{ product.recurring }}&lt;/small&gt; {% endif %}&lt;/td&gt;\n          &lt;td class=&quot;text-right&quot;&gt;x {{ product.quantity }}&lt;/td&gt;\n          &lt;td class=&quot;text-right&quot;&gt;{{ product.total }}&lt;/td&gt;\n          &lt;td class=&quot;text-center&quot;&gt;&lt;button type=&quot;button&quot; onclick=&quot;cart.remove(\'{{ product.cart_id }}\');&quot; title=&quot;{{ button_remove }}&quot; class=&quot;btn btn-danger btn-xs&quot;&gt;&lt;i class=&quot;fa fa-times&quot;&gt;&lt;/i&gt;&lt;/button&gt;&lt;/td&gt;\n        &lt;/tr&gt;\n        {% endfor %}\n        {% for voucher in vouchers %}\n        &lt;tr&gt;\n          &lt;td class=&quot;text-center&quot;&gt;&lt;/td&gt;\n          &lt;td class=&quot;text-left&quot;&gt;{{ voucher.description }}&lt;/td&gt;\n          &lt;td class=&quot;text-right&quot;&gt;x&amp;nbsp;1&lt;/td&gt;\n          &lt;td class=&quot;text-right&quot;&gt;{{ voucher.amount }}&lt;/td&gt;\n          &lt;td class=&quot;text-center text-danger&quot;&gt;&lt;button type=&quot;button&quot; onclick=&quot;voucher.remove(\'{{ voucher.key }}\');&quot; title=&quot;{{ button_remove }}&quot; class=&quot;btn btn-danger btn-xs&quot;&gt;&lt;i class=&quot;fa fa-times&quot;&gt;&lt;/i&gt;&lt;/button&gt;&lt;/td&gt;\n        &lt;/tr&gt;\n        {% endfor %}\n      &lt;/table&gt;\n    &lt;/li&gt;\n    &lt;li&gt;\n      &lt;div&gt;\n        &lt;table class=&quot;table table-bordered&quot;&gt;\n          {% for total in totals %}\n          &lt;tr&gt;\n            &lt;td class=&quot;text-right&quot;&gt;&lt;strong&gt;{{ total.title }}&lt;/strong&gt;&lt;/td&gt;\n            &lt;td class=&quot;text-right&quot;&gt;{{ total.text }}&lt;/td&gt;\n          &lt;/tr&gt;\n          {% endfor %}\n        &lt;/table&gt;\n        &lt;p class=&quot;text-right&quot;&gt;&lt;a href=&quot;{{ cart }}&quot;&gt;&lt;strong&gt;&lt;i class=&quot;fa fa-shopping-cart&quot;&gt;&lt;/i&gt; {{ text_cart }}&lt;/strong&gt;&lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;a href=&quot;{{ checkout }}&quot;&gt;&lt;strong&gt;&lt;i class=&quot;fa fa-share&quot;&gt;&lt;/i&gt; {{ text_checkout }}&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;\n      &lt;/div&gt;\n    &lt;/li&gt;\n    {% else %}\n    &lt;li&gt;\n      &lt;p class=&quot;text-center&quot;&gt;{{ text_empty }}&lt;/p&gt;\n    &lt;/li&gt;\n    {% endif %}\n  &lt;/ul&gt;\n  \n&lt;/div&gt;\n', '2018-10-09 16:54:20'),
 (359, 0, 'default', 'product/product', '{{ header }}\n&lt;div id=&quot;product-product&quot; class=&quot;container&quot;&gt;\n  \n  &lt;div class=&quot;row&quot;&gt;{{ column_left }}\n    {% if column_left and column_right %}\n    {% set class = \'col-sm-6\' %}\n    {% elseif column_left or column_right %}\n    {% set class = \'col-sm-9\' %}\n    {% else %}\n    {% set class = \'col-sm-12\' %}\n    {% endif %}\n    &lt;div id=&quot;content&quot; class=&quot;{{ class }}&quot;&gt;{{ content_top }}\n      &lt;div class=&quot;row&quot;&gt; {% if column_left or column_right %}\n        {% set class = \'col-sm-6\' %}\n        {% else %}\n        {% set class = \'col-sm-8\' %}\n        {% endif %}\n        &lt;div class=&quot;{{ class }}&quot;&gt; {% if thumb or images %}\n          &lt;ul class=&quot;thumbnails&quot;&gt;\n            {% if thumb %}\n            &lt;li&gt;&lt;a class=&quot;thumbnail&quot; href=&quot;{{ popup }}&quot; title=&quot;{{ heading_title }}&quot;&gt;&lt;img src=&quot;{{ thumb }}&quot; title=&quot;{{ heading_title }}&quot; alt=&quot;{{ heading_title }}&quot; /&gt;&lt;/a&gt;&lt;/li&gt;\n            {% endif %}\n            {% if images %}\n            {% for image in images %}\n            &lt;li class=&quot;image-additional&quot;&gt;&lt;a class=&quot;thumbnail&quot; href=&quot;{{ image.popup }}&quot; title=&quot;{{ heading_title }}&quot;&gt; &lt;img src=&quot;{{ image.thumb }}&quot; title=&quot;{{ heading_title }}&quot; alt=&quot;{{ heading_title }}&quot; /&gt;&lt;/a&gt;&lt;/li&gt;\n            {% endfor %}\n            {% endif %}\n          &lt;/ul&gt;\n          {% endif %}\n          &lt;ul class=&quot;nav nav-tabs&quot;&gt;\n            &lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#tab-description&quot; data-toggle=&quot;tab&quot;&gt;{{ tab_description }}&lt;/a&gt;&lt;/li&gt;\n            {% if attribute_groups %}\n            &lt;li&gt;&lt;a href=&quot;#tab-specification&quot; data-toggle=&quot;tab&quot;&gt;{{ tab_attribute }}&lt;/a&gt;&lt;/li&gt;\n            {% endif %}\n            {% if review_status %}\n            &lt;li&gt;&lt;a href=&quot;#tab-review&quot; data-toggle=&quot;tab&quot;&gt;{{ tab_review }}&lt;/a&gt;&lt;/li&gt;\n            {% endif %}\n          &lt;/ul&gt;\n          &lt;div class=&quot;tab-content&quot;&gt;\n            &lt;div class=&quot;tab-pane active&quot; id=&quot;tab-description&quot;&gt;{{ description }}&lt;/div&gt;\n            {% if attribute_groups %}\n            &lt;div class=&quot;tab-pane&quot; id=&quot;tab-specification&quot;&gt;\n              &lt;table class=&quot;table table-bordered&quot;&gt;\n                {% for attribute_group in attribute_groups %}\n                &lt;thead&gt;\n                  &lt;tr&gt;\n                    &lt;td colspan=&quot;2&quot;&gt;&lt;strong&gt;{{ attribute_group.name }}&lt;/strong&gt;&lt;/td&gt;\n                  &lt;/tr&gt;\n                &lt;/thead&gt;\n                &lt;tbody&gt;\n                {% for attribute in attribute_group.attribute %}\n                &lt;tr&gt;\n                  &lt;td&gt;{{ attribute.name }}&lt;/td&gt;\n                  &lt;td&gt;{{ attribute.text }}&lt;/td&gt;\n                &lt;/tr&gt;\n                {% endfor %}\n                  &lt;/tbody&gt;\n                {% endfor %}\n              &lt;/table&gt;\n            &lt;/div&gt;\n            {% endif %}\n            {% if review_status %}\n            &lt;div class=&quot;tab-pane&quot; id=&quot;tab-review&quot;&gt;\n              &lt;form class=&quot;form-horizontal&quot; id=&quot;form-review&quot;&gt;\n                &lt;div id=&quot;review&quot;&gt;&lt;/div&gt;\n                &lt;h2&gt;{{ text_write }}&lt;/h2&gt;\n                {% if review_guest %}\n                &lt;div class=&quot;form-group required&quot;&gt;\n                  &lt;div class=&quot;col-sm-12&quot;&gt;\n                    &lt;label class=&quot;control-label&quot; for=&quot;input-name&quot;&gt;{{ entry_name }}&lt;/label&gt;\n                    &lt;input type=&quot;text&quot; name=&quot;name&quot; value=&quot;{{ customer_name }}&quot; id=&quot;input-name&quot; class=&quot;form-control&quot; /&gt;\n                  &lt;/div&gt;\n                &lt;/div&gt;\n                &lt;div class=&quot;form-group required&quot;&gt;\n                  &lt;div class=&quot;col-sm-12&quot;&gt;\n                    &lt;label class=&quot;control-label&quot; for=&quot;input-review&quot;&gt;{{ entry_review }}&lt;/label&gt;\n                    &lt;textarea name=&quot;text&quot; rows=&quot;5&quot; id=&quot;input-review&quot; class=&quot;form-control&quot;&gt;&lt;/textarea&gt;\n                    &lt;div class=&quot;help-block&quot;&gt;{{ text_note }}&lt;/div&gt;\n                  &lt;/div&gt;\n                &lt;/div&gt;\n                &lt;div class=&quot;form-group required&quot;&gt;\n                  &lt;div class=&quot;col-sm-12&quot;&gt;\n                    &lt;label class=&quot;control-label&quot;&gt;{{ entry_rating }}&lt;/label&gt;\n                    &amp;nbsp;&amp;nbsp;&amp;nbsp; {{ entry_bad }}&amp;nbsp;\n                    &lt;input type=&quot;radio&quot; name=&quot;rating&quot; value=&quot;1&quot; /&gt;\n                    &amp;nbsp;\n                    &lt;input type=&quot;radio&quot; name=&quot;rating&quot; value=&quot;2&quot; /&gt;\n                    &amp;nbsp;\n                    &lt;input type=&quot;radio&quot; name=&quot;rating&quot; value=&quot;3&quot; /&gt;\n                    &amp;nbsp;\n                    &lt;input type=&quot;radio&quot; name=&quot;rating&quot; value=&quot;4&quot; /&gt;\n                    &amp;nbsp;\n                    &lt;input type=&quot;radio&quot; name=&quot;rating&quot; value=&quot;5&quot; /&gt;\n                    &amp;nbsp;{{ entry_good }}&lt;/div&gt;\n                &lt;/div&gt;\n                {{ captcha }}\n                &lt;div class=&quot;buttons clearfix&quot;&gt;\n                  &lt;div class=&quot;pull-right&quot;&gt;\n                    &lt;button type=&quot;button&quot; id=&quot;button-review&quot; data-loading-text=&quot;{{ text_loading }}&quot; class=&quot;btn btn-primary&quot;&gt;{{ button_continue }}&lt;/button&gt;\n                  &lt;/div&gt;\n                &lt;/div&gt;\n                {% else %}\n                {{ text_login }}\n                {% endif %}\n              &lt;/form&gt;\n            &lt;/div&gt;\n            {% endif %}&lt;/div&gt;\n        &lt;/div&gt;\n        {% if column_left or column_right %}\n        {% set class = \'col-sm-6\' %}\n        {% else %}\n        {% set class = \'col-sm-4\' %}\n        {% endif %}\n        &lt;div class=&quot;{{ class }}&quot;&gt;\n          \n          &lt;h1&gt;{{ heading_title }}&lt;/h1&gt;\n          &lt;ul class=&quot;list-unstyled&quot;&gt;\n            {% if manufacturer %}\n            &lt;li&gt;{{ text_manufacturer }} &lt;a href=&quot;{{ manufacturers }}&quot;&gt;{{ manufacturer }}&lt;/a&gt;&lt;/li&gt;\n            {% endif %}\n            &lt;li&gt;{{ text_model }} {{ model }}&lt;/li&gt;\n            {% if reward %}\n            &lt;li&gt;{{ text_reward }} {{ reward }}&lt;/li&gt;\n            {% endif %}\n            &lt;li&gt;{{ text_stock }} {{ stock }}&lt;/li&gt;\n          &lt;/ul&gt;\n          {% if price %}\n          &lt;ul class=&quot;list-unstyled&quot;&gt;\n            {% if not special %}\n            &lt;li&gt;\n              &lt;h2&gt;{{ price }}&lt;/h2&gt;\n            &lt;/li&gt;\n            {% else %}\n            &lt;li&gt;&lt;span style=&quot;text-decoration: line-through;&quot;&gt;{{ price }}&lt;/span&gt;&lt;/li&gt;\n            &lt;li&gt;\n              &lt;h2&gt;{{ special }}&lt;/h2&gt;\n            &lt;/li&gt;\n            {% endif %}\n            {% if tax %}\n           \n            {% endif %}\n            {% if points %}\n            &lt;li&gt;{{ text_points }} {{ points }}&lt;/li&gt;\n            {% endif %}\n            {% if discounts %}\n            &lt;li&gt;\n              &lt;hr&gt;\n            &lt;/li&gt;\n            {% for discount in discounts %}\n            &lt;li&gt;{{ discount.quantity }}{{ text_discount }}{{ discount.price }}&lt;/li&gt;\n            {% endfor %}\n            {% endif %}\n          &lt;/ul&gt;\n          {% endif %}\n          &lt;div id=&quot;product&quot;&gt; {% if options %}\n            &lt;hr&gt;\n            &lt;h3&gt;{{ text_option }}&lt;/h3&gt;\n            {% for option in options %}\n            {% if option.type == \'select\' %}\n            &lt;div class=&quot;form-group{% if option.required %} required {% endif %}&quot;&gt;\n              &lt;label class=&quot;control-label&quot; for=&quot;input-option{{ option.product_option_id }}&quot;&gt;{{ option.name }}&lt;/label&gt;\n              &lt;select name=&quot;option[{{ option.product_option_id }}]&quot; id=&quot;input-option{{ option.product_option_id }}&quot; class=&quot;form-control&quot;&gt;\n                &lt;option value=&quot;&quot;&gt;{{ text_select }}&lt;/option&gt;\n                {% for option_value in option.product_option_value %}\n                &lt;option value=&quot;{{ option_value.product_option_value_id }}&quot;&gt;{{ option_value.name }}\n                {% if option_value.price %}\n                ({{ option_value.price_prefix }}{{ option_value.price }})\n                {% endif %} &lt;/option&gt;\n                {% endfor %}\n              &lt;/select&gt;\n            &lt;/div&gt;\n            {% endif %}\n            {% if option.type == \'radio\' %}\n            &lt;div class=&quot;form-group{% if option.required %} required {% endif %}&quot;&gt;\n              &lt;label class=&quot;control-label&quot;&gt;{{ option.name }}&lt;/label&gt;\n              &lt;div id=&quot;input-option{{ option.product_option_id }}&quot;&gt; {% for option_value in option.product_option_value %}\n                &lt;div class=&quot;radio&quot;&gt;\n                  &lt;label&gt;\n                    &lt;input type=&quot;radio&quot; name=&quot;option[{{ option.product_option_id }}]&quot; value=&quot;{{ option_value.product_option_value_id }}&quot; /&gt;\n                    {% if option_value.image %} &lt;img src=&quot;{{ option_value.image }}&quot; alt=&quot;{{ option_value.name }} {% if option_value.price %} {{ option_value.price_prefix }} {{ option_value.price }} {% endif %}&quot; class=&quot;img-thumbnail&quot; /&gt; {% endif %}                  \n                    {{ option_value.name }}\n                    {% if option_value.price %}\n                    ({{ option_value.price_prefix }}{{ option_value.price }})\n                    {% endif %} &lt;/label&gt;\n                &lt;/div&gt;\n                {% endfor %} &lt;/div&gt;\n            &lt;/div&gt;\n            {% endif %}\n            {% if option.type == \'checkbox\' %}\n            &lt;div class=&quot;form-group{% if option.required %} required {% endif %}&quot;&gt;\n              &lt;label class=&quot;control-label&quot;&gt;{{ option.name }}&lt;/label&gt;\n              &lt;div id=&quot;input-option{{ option.product_option_id }}&quot;&gt; {% for option_value in option.product_option_value %}\n                &lt;div class=&quot;checkbox&quot;&gt;\n                  &lt;label&gt;\n                    &lt;input type=&quot;checkbox&quot; name=&quot;option[{{ option.product_option_id }}][]&quot; value=&quot;{{ option_value.product_option_value_id }}&quot; /&gt;\n                    {% if option_value.image %} &lt;img src=&quot;{{ option_value.image }}&quot; alt=&quot;{{ option_value.name }} {% if option_value.price %} {{ option_value.price_prefix }} {{ option_value.price }} {% endif %}&quot; class=&quot;img-thumbnail&quot; /&gt; {% endif %}\n                    {{ option_value.name }}\n                    {% if option_value.price %}\n                    ({{ option_value.price_prefix }}{{ option_value.price }})\n                    {% endif %} &lt;/label&gt;\n                &lt;/div&gt;\n                {% endfor %} &lt;/div&gt;\n            &lt;/div&gt;\n            {% endif %}\n            {% if option.type == \'text\' %}\n            &lt;div class=&quot;form-group{% if option.required %} required {% endif %}&quot;&gt;\n              &lt;label class=&quot;control-label&quot; for=&quot;input-option{{ option.product_option_id }}&quot;&gt;{{ option.name }}&lt;/label&gt;\n              &lt;input type=&quot;text&quot; name=&quot;option[{{ option.product_option_id }}]&quot; value=&quot;{{ option.value }}&quot; placeholder=&quot;{{ option.name }}&quot; id=&quot;input-option{{ option.product_option_id }}&quot; class=&quot;form-control&quot; /&gt;\n            &lt;/div&gt;\n            {% endif %}\n            {% if option.type == \'textarea\' %}\n            &lt;div class=&quot;form-group{% if option.required %} required {% endif %}&quot;&gt;\n              &lt;label class=&quot;control-label&quot; for=&quot;input-option{{ option.product_option_id }}&quot;&gt;{{ option.name }}&lt;/label&gt;\n              &lt;textarea name=&quot;option[{{ option.product_option_id }}]&quot; rows=&quot;5&quot; placeholder=&quot;{{ option.name }}&quot; id=&quot;input-option{{ option.product_option_id }}&quot; class=&quot;form-control&quot;&gt;{{ option.value }}&lt;/textarea&gt;\n            &lt;/div&gt;\n            {% endif %}\n            {% if option.type == \'file\' %}\n            &lt;div class=&quot;form-group{% if option.required %} required {% endif %}&quot;&gt;\n              &lt;label class=&quot;control-label&quot;&gt;{{ option.name }}&lt;/label&gt;\n              &lt;button type=&quot;button&quot; id=&quot;button-upload{{ option.product_option_id }}&quot; data-loading-text=&quot;{{ text_loading }}&quot; class=&quot;btn btn-default btn-block&quot;&gt;&lt;i class=&quot;fa fa-upload&quot;&gt;&lt;/i&gt; {{ button_upload }}&lt;/button&gt;\n              &lt;input type=&quot;hidden&quot; name=&quot;option[{{ option.product_option_id }}]&quot; value=&quot;&quot; id=&quot;input-option{{ option.product_option_id }}&quot; /&gt;\n            &lt;/div&gt;\n            {% endif %}\n            {% if option.type == \'date\' %}\n            &lt;div class=&quot;form-group{% if option.required %} required {% endif %}&quot;&gt;\n              &lt;label class=&quot;control-label&quot; for=&quot;input-option{{ option.product_option_id }}&quot;&gt;{{ option.name }}&lt;/label&gt;\n              &lt;div class=&quot;input-group date&quot;&gt;\n                &lt;input type=&quot;text&quot; name=&quot;option[{{ option.product_option_id }}]&quot; value=&quot;{{ option.value }}&quot; data-date-format=&quot;YYYY-MM-DD&quot; id=&quot;input-option{{ option.product_option_id }}&quot; class=&quot;form-control&quot; /&gt;\n                &lt;span class=&quot;input-group-btn&quot;&gt;\n                &lt;button class=&quot;btn btn-default&quot; type=&quot;button&quot;&gt;&lt;i class=&quot;fa fa-calendar&quot;&gt;&lt;/i&gt;&lt;/button&gt;\n                &lt;/span&gt;&lt;/div&gt;\n            &lt;/div&gt;\n            {% endif %}\n            {% if option.type == \'datetime\' %}\n            &lt;div class=&quot;form-group{% if option.required %} required {% endif %}&quot;&gt;\n              &lt;label class=&quot;control-label&quot; for=&quot;input-option{{ option.product_option_id }}&quot;&gt;{{ option.name }}&lt;/label&gt;\n              &lt;div class=&quot;input-group datetime&quot;&gt;\n                &lt;input type=&quot;text&quot; name=&quot;option[{{ option.product_option_id }}]&quot; value=&quot;{{ option.value }}&quot; data-date-format=&quot;YYYY-MM-DD HH:mm&quot; id=&quot;input-option{{ option.product_option_id }}&quot; class=&quot;form-control&quot; /&gt;\n                &lt;span class=&quot;input-group-btn&quot;&gt;\n                &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;&lt;i class=&quot;fa fa-calendar&quot;&gt;&lt;/i&gt;&lt;/button&gt;\n                &lt;/span&gt;&lt;/div&gt;\n            &lt;/div&gt;\n            {% endif %}\n            {% if option.type == \'time\' %}\n            &lt;div class=&quot;form-group{% if option.required %} required {% endif %}&quot;&gt;\n              &lt;label class=&quot;control-label&quot; for=&quot;input-option{{ option.product_option_id }}&quot;&gt;{{ option.name }}&lt;/label&gt;\n              &lt;div class=&quot;input-group time&quot;&gt;\n                &lt;input type=&quot;text&quot; name=&quot;option[{{ option.product_option_id }}]&quot; value=&quot;{{ option.value }}&quot; data-date-format=&quot;HH:mm&quot; id=&quot;input-option{{ option.product_option_id }}&quot; class=&quot;form-control&quot; /&gt;\n                &lt;span class=&quot;input-group-btn&quot;&gt;\n                &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;&lt;i class=&quot;fa fa-calendar&quot;&gt;&lt;/i&gt;&lt;/button&gt;\n                &lt;/span&gt;&lt;/div&gt;\n            &lt;/div&gt;\n            {% endif %}\n            {% endfor %}\n            {% endif %}\n            {% if recurrings %}\n            &lt;hr&gt;\n            &lt;h3&gt;{{ text_payment_recurring }}&lt;/h3&gt;\n            &lt;div class=&quot;form-group required&quot;&gt;\n              &lt;select name=&quot;recurring_id&quot; class=&quot;form-control&quot;&gt;\n                &lt;option value=&quot;&quot;&gt;{{ text_select }}&lt;/option&gt;\n                {% for recurring in recurrings %}\n                &lt;option value=&quot;{{ recurring.recurring_id }}&quot;&gt;{{ recurring.name }}&lt;/option&gt;\n                {% endfor %}\n              &lt;/select&gt;\n              &lt;div class=&quot;help-block&quot; id=&quot;recurring-description&quot;&gt;&lt;/div&gt;\n            &lt;/div&gt;\n            {% endif %}\n            &lt;div class=&quot;form-group&quot;&gt;\n              &lt;label class=&quot;control-label&quot; for=&quot;input-quantity&quot;&gt;{{ entry_qty }}&lt;/label&gt;\n              &lt;input type=&quot;text&quot; name=&quot;quantity&quot; value=&quot;{{ minimum }}&quot; size=&quot;2&quot; id=&quot;input-quantity&quot; class=&quot;form-control&quot; /&gt;\n              &lt;input type=&quot;hidden&quot; name=&quot;product_id&quot; value=&quot;{{ product_id }}&quot; /&gt;\n              &lt;br /&gt;\n              &lt;button type=&quot;button&quot; id=&quot;button-cart&quot; data-loading-text=&quot;{{ text_loading }}&quot; class=&quot;btn btn-info btn-lg btn-block&quot;&gt;{{ button_cart }}&lt;/button&gt;&lt;br&gt;\n              &lt;a href=&quot;/#Catalog&quot;&gt; &lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-lg btn-block&quot;&gt;Продолжить &lt;br&gt; покупки&lt;/button&gt;&lt;/a&gt;\n            &lt;/div&gt;\n            {% if minimum &gt; 1 %}\n            &lt;div class=&quot;alert alert-info&quot;&gt;&lt;i class=&quot;fa fa-info-circle&quot;&gt;&lt;/i&gt; {{ text_minimum }}&lt;/div&gt;\n            {% endif %}&lt;/div&gt;\n          {% if review_status %}\n          &lt;div class=&quot;rating&quot;&gt;\n            &lt;p&gt;{% for i in 1..5 %}\n              {% if rating &lt; i %}&lt;span class=&quot;fa fa-stack&quot;&gt;&lt;i class=&quot;fa fa-star-o fa-stack-1x&quot;&gt;&lt;/i&gt;&lt;/span&gt;{% else %}&lt;span class=&quot;fa fa-stack&quot;&gt;&lt;i class=&quot;fa fa-star fa-stack-1x&quot;&gt;&lt;/i&gt;&lt;i class=&quot;fa fa-star-o fa-stack-1x&quot;&gt;&lt;/i&gt;&lt;/span&gt;{% endif %}\n              {% endfor %} &lt;a href=&quot;&quot; onclick=&quot;$(\'a[href=\\\'#tab-review\\\']\').trigger(\'click\'); return false;&quot;&gt;{{ reviews }}&lt;/a&gt; / &lt;a href=&quot;&quot; onclick=&quot;$(\'a[href=\\\'#tab-review\\\']\').trigger(\'click\'); return false;&quot;&gt;{{ text_write }}&lt;/a&gt;&lt;/p&gt;\n            &lt;hr&gt;\n            &lt;!-- AddThis Button BEGIN --&gt;\n            &lt;div class=&quot;addthis_toolbox addthis_default_style&quot; data-url=&quot;{{ share }}&quot;&gt;&lt;a class=&quot;addthis_button_facebook_like&quot; fb:like:layout=&quot;button_count&quot;&gt;&lt;/a&gt; &lt;a class=&quot;addthis_button_tweet&quot;&gt;&lt;/a&gt; &lt;a class=&quot;addthis_button_pinterest_pinit&quot;&gt;&lt;/a&gt; &lt;a class=&quot;addthis_counter addthis_pill_style&quot;&gt;&lt;/a&gt;&lt;/div&gt;\n            &lt;script type=&quot;text/javascript&quot; src=&quot;//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-515eeaf54693130e&quot;&gt;&lt;/script&gt; \n            &lt;!-- AddThis Button END --&gt; \n          &lt;/div&gt;\n          {% endif %} &lt;/div&gt;\n      &lt;/div&gt;\n      {% if products %}\n      &lt;h3&gt;{{ text_related }}&lt;/h3&gt;\n      &lt;div class=&quot;row&quot;&gt; {% set i = 0 %}\n        {% for product in products %}\n        {% if column_left and column_right %}\n        {% set class = \'col-xs-8 col-sm-6\' %}\n        {% elseif column_left or column_right %}\n        {% set class = \'col-xs-6 col-md-4\' %}\n        {% else %}\n        {% set class = \'col-xs-6 col-sm-3\' %}\n        {% endif %}\n        &lt;div class=&quot;{{ class }}&quot;&gt;\n          &lt;div class=&quot;product-thumb transition&quot;&gt;\n            &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;{{ product.href }}&quot;&gt;&lt;img src=&quot;{{ product.thumb }}&quot; alt=&quot;{{ product.name }}&quot; title=&quot;{{ product.name }}&quot; class=&quot;img-responsive&quot; /&gt;&lt;/a&gt;&lt;/div&gt;\n            &lt;div class=&quot;caption&quot;&gt;\n              &lt;h4&gt;&lt;a href=&quot;{{ product.href }}&quot;&gt;{{ product.name }}&lt;/a&gt;&lt;/h4&gt;\n              &lt;p&gt;{{ product.description }}&lt;/p&gt;\n              {% if product.rating %}\n              &lt;div class=&quot;rating&quot;&gt; {% for j in 1..5 %}\n                {% if product.rating &lt; j %} &lt;span class=&quot;fa fa-stack&quot;&gt;&lt;i class=&quot;fa fa-star-o fa-stack-1x&quot;&gt;&lt;/i&gt;&lt;/span&gt; {% else %} &lt;span class=&quot;fa fa-stack&quot;&gt;&lt;i class=&quot;fa fa-star fa-stack-1x&quot;&gt;&lt;/i&gt;&lt;i class=&quot;fa fa-star-o fa-stack-1x&quot;&gt;&lt;/i&gt;&lt;/span&gt; {% endif %}\n                {% endfor %} &lt;/div&gt;\n              {% endif %}\n              {% if product.price %}\n              &lt;p class=&quot;price&quot;&gt; {% if not product.special %}\n                {{ product.price }}\n                {% else %} &lt;span class=&quot;price-new&quot;&gt;{{ product.special }}&lt;/span&gt; &lt;span class=&quot;price-old&quot;&gt;{{ product.price }}&lt;/span&gt; {% endif %}\n                {% if product.tax %} &lt;span class=&quot;price-tax&quot;&gt;{{ text_tax }} {{ product.tax }}&lt;/span&gt; {% endif %} &lt;/p&gt;\n              {% endif %} &lt;/div&gt;\n            &lt;div class=&quot;button-group&quot;&gt;\n              &lt;button type=&quot;button&quot; onclick=&quot;cart.add(\'{{ product.product_id }}\', \'{{ product.minimum }}\');&quot;&gt;&lt;span class=&quot;hidden-xs hidden-sm hidden-md&quot;&gt;{{ button_cart }}&lt;/span&gt; &lt;i class=&quot;fa fa-shopping-cart&quot;&gt;&lt;/i&gt;&lt;/button&gt;\n              \n             \n            &lt;/div&gt;\n          &lt;/div&gt;\n        &lt;/div&gt;\n        {% if column_left and column_right and (i + 1) % 2 == 0 %}\n        &lt;div class=&quot;clearfix visible-md visible-sm&quot;&gt;&lt;/div&gt;\n        {% elseif column_left or column_right and (i + 1) % 3 == 0 %}\n        &lt;div class=&quot;clearfix visible-md&quot;&gt;&lt;/div&gt;\n        {% elseif (i + 1) % 4 == 0 %}\n        &lt;div class=&quot;clearfix visible-md&quot;&gt;&lt;/div&gt;\n        {% endif %}\n        {% set i = i + 1 %}\n        {% endfor %} &lt;/div&gt;\n        {% endif %}\n        {% if tags %}\n        &lt;p&gt;{{ text_tags }}\n        {% for i in 0..tags|length %}\n        {% if i &lt; (tags|length - 1) %} &lt;a href=&quot;{{ tags[i].href }}&quot;&gt;{{ tags[i].tag }}&lt;/a&gt;,\n        {% else %} &lt;a href=&quot;{{ tags[i].href }}&quot;&gt;{{ tags[i].tag }}&lt;/a&gt; {% endif %}\n        {% endfor %} &lt;/p&gt;\n        {% endif %}\n      {{ content_bottom }}&lt;/div&gt;\n    {{ column_right }}&lt;/div&gt;\n&lt;/div&gt;\n&lt;script type=&quot;text/javascript&quot;&gt;&lt;!--\n$(\'select[name=\\\'recurring_id\\\'], input[name=&quot;quantity&quot;]\').change(function(){\n	$.ajax({\n		url: \'index.php?route=product/product/getRecurringDescription\',\n		type: \'post\',\n		data: $(\'input[name=\\\'product_id\\\'], input[name=\\\'quantity\\\'], select[name=\\\'recurring_id\\\']\'),\n		dataType: \'json\',\n		beforeSend: function() {\n			$(\'#recurring-description\').html(\'\');\n		},\n		success: function(json) {\n			$(\'.alert-dismissible, .text-danger\').remove();\n\n			if (json[\'success\']) {\n				$(\'#recurring-description\').html(json[\'success\']);\n			}\n		}\n	});\n});\n//--&gt;&lt;/script&gt; \n&lt;script type=&quot;text/javascript&quot;&gt;&lt;!--\n$(\'#button-cart\').on(\'click\', function() {\n	$.ajax({\n		url: \'index.php?route=checkout/cart/add\',\n		type: \'post\',\n		data: $(\'#product input[type=\\\'text\\\'], #product input[type=\\\'hidden\\\'], #product input[type=\\\'radio\\\']:checked, #product input[type=\\\'checkbox\\\']:checked, #product select, #product textarea\'),\n		dataType: \'json\',\n		beforeSend: function() {\n			$(\'#button-cart\').button(\'loading\');\n		},\n		complete: function() {\n			$(\'#button-cart\').button(\'reset\');\n		},\n		success: function(json) {\n			$(\'.alert-dismissible, .text-danger\').remove();\n			$(\'.form-group\').removeClass(\'has-error\');\n\n			if (json[\'error\']) {\n				if (json[\'error\'][\'option\']) {\n					for (i in json[\'error\'][\'option\']) {\n						var element = $(\'#input-option\' + i.replace(\'_\', \'-\'));\n\n						if (element.parent().hasClass(\'input-group\')) {\n							element.parent().after(\'&lt;div class=&quot;text-danger&quot;&gt;\' + json[\'error\'][\'option\'][i] + \'&lt;/div&gt;\');\n						} else {\n							element.after(\'&lt;div class=&quot;text-danger&quot;&gt;\' + json[\'error\'][\'option\'][i] + \'&lt;/div&gt;\');\n						}\n					}\n				}\n\n				if (json[\'error\'][\'recurring\']) {\n					$(\'select[name=\\\'recurring_id\\\']\').after(\'&lt;div class=&quot;text-danger&quot;&gt;\' + json[\'error\'][\'recurring\'] + \'&lt;/div&gt;\');\n				}\n\n				// Highlight any found errors\n				$(\'.text-danger\').parent().addClass(\'has-error\');\n			}\n\n			if (json[\'success\']) {\n				$(\'.breadcrumb\').after(\'&lt;div class=&quot;alert alert-success alert-dismissible&quot;&gt;\' + json[\'success\'] + \'&lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;alert&quot;&gt;&amp;times;&lt;/button&gt;&lt;/div&gt;\');\n\n				$(\'#cart &gt; button\').html(\'&lt;span id=&quot;cart-total&quot;&gt;&lt;i class=&quot;fa fa-shopping-cart&quot;&gt;&lt;/i&gt; \' + json[\'total\'] + \'&lt;/span&gt;\');\n\n				$(\'html, body\').animate({ scrollTop: 0 }, \'slow\');\n\n				$(\'#cart &gt; ul\').load(\'index.php?route=common/cart/info ul li\');\n			}\n		},\n        error: function(xhr, ajaxOptions, thrownError) {\n            alert(thrownError + &quot;\\r\\n&quot; + xhr.statusText + &quot;\\r\\n&quot; + xhr.responseText);\n        }\n	});\n});\n//--&gt;&lt;/script&gt; \n&lt;script type=&quot;text/javascript&quot;&gt;&lt;!--\n$(\'.date\').datetimepicker({\n	language: \'{{ datepicker }}\',\n	pickTime: false\n});\n\n$(\'.datetime\').datetimepicker({\n	language: \'{{ datepicker }}\',\n	pickDate: true,\n	pickTime: true\n});\n\n$(\'.time\').datetimepicker({\n	language: \'{{ datepicker }}\',\n	pickDate: false\n});\n\n$(\'button[id^=\\\'button-upload\\\']\').on(\'click\', function() {\n	var node = this;\n\n	$(\'#form-upload\').remove();\n\n	$(\'body\').prepend(\'&lt;form enctype=&quot;multipart/form-data&quot; id=&quot;form-upload&quot; style=&quot;display: none;&quot;&gt;&lt;input type=&quot;file&quot; name=&quot;file&quot; /&gt;&lt;/form&gt;\');\n\n	$(\'#form-upload input[name=\\\'file\\\']\').trigger(\'click\');\n\n	if (typeof timer != \'undefined\') {\n    	clearInterval(timer);\n	}\n\n	timer = setInterval(function() {\n		if ($(\'#form-upload input[name=\\\'file\\\']\').val() != \'\') {\n			clearInterval(timer);\n\n			$.ajax({\n				url: \'index.php?route=tool/upload\',\n				type: \'post\',\n				dataType: \'json\',\n				data: new FormData($(\'#form-upload\')[0]),\n				cache: false,\n				contentType: false,\n				processData: false,\n				beforeSend: function() {\n					$(node).button(\'loading\');\n				},\n				complete: function() {\n					$(node).button(\'reset\');\n				},\n				success: function(json) {\n					$(\'.text-danger\').remove();\n\n					if (json[\'error\']) {\n						$(node).parent().find(\'input\').after(\'&lt;div class=&quot;text-danger&quot;&gt;\' + json[\'error\'] + \'&lt;/div&gt;\');\n					}\n\n					if (json[\'success\']) {\n						alert(json[\'success\']);\n\n						$(node).parent().find(\'input\').val(json[\'code\']);\n					}\n				},\n				error: function(xhr, ajaxOptions, thrownError) {\n					alert(thrownError + &quot;\\r\\n&quot; + xhr.statusText + &quot;\\r\\n&quot; + xhr.responseText);\n				}\n			});\n		}\n	}, 500);\n});\n//--&gt;&lt;/script&gt; \n&lt;script type=&quot;text/javascript&quot;&gt;&lt;!--\n$(\'#review\').delegate(\'.pagination a\', \'click\', function(e) {\n    e.preventDefault();\n\n    $(\'#review\').fadeOut(\'slow\');\n\n    $(\'#review\').load(this.href);\n\n    $(\'#review\').fadeIn(\'slow\');\n});\n\n$(\'#review\').load(\'index.php?route=product/product/review&amp;product_id={{ product_id }}\');\n\n$(\'#button-review\').on(\'click\', function() {\n	$.ajax({\n		url: \'index.php?route=product/product/write&amp;product_id={{ product_id }}\',\n		type: \'post\',\n		dataType: \'json\',\n		data: $(&quot;#form-review&quot;).serialize(),\n		beforeSend: function() {\n			$(\'#button-review\').button(\'loading\');\n		},\n		complete: function() {\n			$(\'#button-review\').button(\'reset\');\n		},\n		success: function(json) {\n			$(\'.alert-dismissible\').remove();\n\n			if (json[\'error\']) {\n				$(\'#review\').after(\'&lt;div class=&quot;alert alert-danger alert-dismissible&quot;&gt;&lt;i class=&quot;fa fa-exclamation-circle&quot;&gt;&lt;/i&gt; \' + json[\'error\'] + \'&lt;/div&gt;\');\n			}\n\n			if (json[\'success\']) {\n				$(\'#review\').after(\'&lt;div class=&quot;alert alert-success alert-dismissible&quot;&gt;&lt;i class=&quot;fa fa-check-circle&quot;&gt;&lt;/i&gt; \' + json[\'success\'] + \'&lt;/div&gt;\');\n\n				$(\'input[name=\\\'name\\\']\').val(\'\');\n				$(\'textarea[name=\\\'text\\\']\').val(\'\');\n				$(\'input[name=\\\'rating\\\']:checked\').prop(\'checked\', false);\n			}\n		}\n	});\n});\n\n$(document).ready(function() {\n	$(\'.thumbnails\').magnificPopup({\n		type:\'image\',\n		delegate: \'a\',\n		gallery: {\n			enabled: true\n		}\n	});\n});\n//--&gt;&lt;/script&gt; \n{{ footer }} \n', '2018-10-22 16:55:39'),
 (379, 0, 'default', 'extension/module/featured', '&lt;section class=&quot;services scrollspy&quot; id=&quot;Catalog&quot;&gt;\n  &lt;div class=&quot;container&quot;&gt;\n		&lt;h2 class=&quot;animated fadeIn services-h2&quot;&gt;Каталог&lt;/h2&gt;\n		&lt;hr class=&quot;animated zoomIn services-hr&quot;&gt;\n		&lt;p class=&quot;animated fadeIn lead center services-p&quot;&gt;Здесь представлены самые лучшие модели 2017 - 2018 годов.&lt;/p&gt;\n&lt;div class=&quot;row&quot;&gt;\n {% for product in products %}\n  &lt;div class=&quot;product-layout col-lg-3 col-md-3 col-sm-6 col-xs-12&quot;&gt;\n    &lt;div class=&quot;product-thumb transition&quot;&gt;\n      &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;{{ product.href }}&quot;&gt;&lt;img src=&quot;{{ product.thumb }}&quot; alt=&quot;{{ product.name }}&quot; title=&quot;{{ product.name }}&quot; class=&quot;img-responsive img-thumbnail&quot; /&gt;&lt;/a&gt;&lt;/div&gt;\n      &lt;div class=&quot;caption justify-content-around&quot;&gt;\n        &lt;h4&gt;&lt;a href=&quot;{{ product.href }}&quot;&gt;{{ product.name }}&lt;/a&gt;&lt;/h4&gt;\n       &lt;!-- &lt;p&gt;{{ product.description }}&lt;/p&gt; --&gt;\n        {% if product.rating %}\n        &lt;div class=&quot;rating&quot;&gt;\n          {% for i in 5 %}\n          {% if product.rating &lt; i %}\n          &lt;span class=&quot;fa fa-stack&quot;&gt;&lt;i class=&quot;fa fa-star-o fa-stack-2x&quot;&gt;&lt;/i&gt;&lt;/span&gt;\n          {% else %}\n          &lt;span class=&quot;fa fa-stack&quot;&gt;&lt;i class=&quot;fa fa-star fa-stack-2x&quot;&gt;&lt;/i&gt;&lt;i class=&quot;fa fa-star-o fa-stack-2x&quot;&gt;&lt;/i&gt;&lt;/span&gt;\n          {% endif %}\n          {% endfor %}\n        &lt;/div&gt;\n        {% endif %}\n        {% if product.price %}\n        &lt;p class=&quot;price&quot;&gt;\n          {% if not product.special %}\n          {{ product.price }}\n          {% else %}\n          &lt;span class=&quot;price-new&quot;&gt;{{ product.special }}&lt;/span&gt; &lt;span class=&quot;price-old&quot;&gt;{{ product.price }}&lt;/span&gt;\n          {% endif %}\n          {% if product.tax %}\n         \n          {% endif %}\n        &lt;/p&gt;\n        {% endif %}\n      &lt;/div&gt;\n      &lt;div class=&quot;button-group&quot;&gt;\n        &lt;button class=&quot;center&quot; type=&quot;button&quot; onclick=&quot;cart.add(\'{{ product.product_id }}\');&quot;&gt; &lt;span&gt;{{ button_cart }}&lt;/span&gt;&lt;/button&gt;\n       \n      &lt;/div&gt;\n    &lt;/div&gt;\n  &lt;/div&gt;\n  {% endfor %}\n&lt;/div&gt;\n    &lt;/div&gt;\n&lt;/section&gt;', '2018-10-24 14:47:12'),
-(360, 0, 'default', 'common/header', '&lt;!DOCTYPE html&gt;\n&lt;!--[if IE]&gt;&lt;![endif]--&gt;\n&lt;!--[if IE 8 ]&gt;&lt;html dir=&quot;{{ direction }}&quot; lang=&quot;{{ lang }}&quot; class=&quot;ie8&quot;&gt;&lt;![endif]--&gt;\n&lt;!--[if IE 9 ]&gt;&lt;html dir=&quot;{{ direction }}&quot; lang=&quot;{{ lang }}&quot; class=&quot;ie9&quot;&gt;&lt;![endif]--&gt;\n&lt;!--[if (gt IE 9)|!(IE)]&gt;&lt;!--&gt;\n&lt;html dir=&quot;{{ direction }}&quot; lang=&quot;{{ lang }}&quot;&gt;\n&lt;!--&lt;![endif]--&gt;\n&lt;head&gt;\n&lt;meta charset=&quot;UTF-8&quot; /&gt;\n&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;\n&lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;\n&lt;title&gt;{{ title }}&lt;/title&gt;\n&lt;base href=&quot;{{ base }}&quot; /&gt;\n{% if description %}\n&lt;meta name=&quot;description&quot; content=&quot;{{ description }}&quot; /&gt;\n{% endif %}\n{% if keywords %}\n&lt;meta name=&quot;keywords&quot; content=&quot;{{ keywords }}&quot; /&gt;\n{% endif %}\n&lt;script src=&quot;catalog/view/javascript/jquery/jquery-2.1.1.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;\n&lt;link href=&quot;catalog/view/javascript/bootstrap/css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot; media=&quot;screen&quot; /&gt;\n&lt;script src=&quot;catalog/view/javascript/bootstrap/js/bootstrap.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;\n&lt;link href=&quot;catalog/view/javascript/font-awesome/css/font-awesome.min.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; /&gt;\n&lt;link href=&quot;catalog/view/theme/default/stylesheet/stylesheet.css&quot; rel=&quot;stylesheet&quot;&gt;\n  &lt;link href=&quot;catalog/view/theme/default/assets/stylesheet/animate.css&quot; rel=&quot;stylesheet&quot;&gt;\n  &lt;link href=&quot;catalog/view/theme/default/assets/stylesheet/stylesheet.min.css&quot; rel=&quot;stylesheet&quot;&gt;\n  &lt;script type=&quot;text/javascript&quot; src=&quot;catalog/view/javascript/smoothscroll/smoothscroll.min.js&quot;&gt;&lt;/script&gt;\n{% for style in styles %}\n&lt;link href=&quot;{{ style.href }}&quot; type=&quot;text/css&quot; rel=&quot;{{ style.rel }}&quot; media=&quot;{{ style.media }}&quot; /&gt;\n{% endfor %}\n{% for script in scripts %}\n&lt;script src=&quot;{{ script }}&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;\n{% endfor %}\n&lt;script src=&quot;catalog/view/theme/default/assets/js/libs.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;\n   \n   \n &lt;!-- &lt;script src=&quot;catalog/view/javascript/plugins.js&quot;&gt;&lt;/script&gt; --&gt;\n   \n{% for link in links %}\n&lt;link href=&quot;{{ link.href }}&quot; rel=&quot;{{ link.rel }}&quot; /&gt;\n{% endfor %}\n{% for analytic in analytics %}\n{{ analytic }}\n{% endfor %}\n&lt;/head&gt;\n&lt;body id=&quot;home&quot; data-spy=&quot;scroll&quot; data-target=&quot;#navbar-example&quot;&gt;\n  &lt;div class=&quot;wrapper&quot;&gt;\n  &lt;div class=&quot;main-top&quot;&gt;\n  &lt;a class=&quot;navbar-brand&quot; href=&quot;/&quot;&gt;Интернет-магазин фотоловушек &quot;ФИЛИН&quot; Российского производства&lt;/a&gt;\n     &lt;div class=&quot;main-cart&quot;&gt;\n       &lt;div class=&quot;info-block&quot;&gt;\n        &lt;div class=&quot;info-cart&quot;&gt;\n          В вашей &amp;nbsp;&lt;a href=&quot;/index.php?route=checkout/cart&quot;&gt;&lt;strong&gt;КОРЗИНЕ&lt;/strong&gt;&lt;/a&gt;&amp;nbsp;&amp;nbsp;  {{ cart }} \n        &lt;/div&gt;&lt;br&gt;\n       \n       &lt;img src=&quot;image/cart-img.jpg&quot;&gt;\n       &lt;span class=&quot;link-left&quot;&gt;&lt;a href=&quot;index.php?route=checkout/cart&quot;&gt;&lt;strong&gt;&lt;i class=&quot;fa fa-shopping-cart&quot;&gt;&lt;/i&gt; Перейти в корзину&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;\n       &lt;span class=&quot;link-right&quot;&gt;&lt;a href=&quot;index.php?route=checkout/checkout&quot;&gt;&lt;strong&gt;&lt;i class=&quot;fa fa-share&quot;&gt;&lt;/i&gt; Оформить заказ&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;\n     &lt;/div&gt;\n       &lt;/div&gt;\n  &lt;/div&gt;\n\n  \n \n      &lt;!-- &lt;a href=&quot;{{ checkout }}&quot; title=&quot;{{ text_checkout }}&quot;&gt;&lt;i class=&quot;fa fa-share&quot;&gt;&lt;/i&gt; &lt;span class=&quot;hidden-sm&quot;&gt;{{ text_checkout }}&lt;/span&gt;&lt;/a&gt; --&gt;\n  ', '2018-10-23 09:41:57'),
 (321, 0, 'default', 'product/category', '{{ header }}\n&lt;div id=&quot;product-category&quot; class=&quot;container&quot;&gt;\n  \n  &lt;div class=&quot;row&quot;&gt;{{ column_left }}\n    {% if column_left and column_right %}\n    {% set class = \'col-sm-6\' %}\n    {% elseif column_left or column_right %}\n    {% set class = \'col-sm-9\' %}\n    {% else %}\n    {% set class = \'col-sm-12\' %}\n    {% endif %}\n    &lt;div id=&quot;content&quot; class=&quot;{{ class }}&quot;&gt;{{ content_top }}\n     \n      {% if thumb or description %}\n      \n      &lt;hr&gt;\n      {% endif %}\n      {% if categories %}\n      &lt;h3&gt;{{ text_refine }}&lt;/h3&gt;\n      {% if categories|length &lt;= 5 %}\n      &lt;div class=&quot;row&quot;&gt;\n       \n      &lt;/div&gt;\n      {% else %}\n      &lt;div class=&quot;row&quot;&gt;{% for category in categories|batch((categories|length / 4)|round(1, \'ceil\')) %}\n       \n        {% endfor %}&lt;/div&gt;\n      &lt;br /&gt;\n      {% endif %}\n      {% endif %}\n      {% if products %}\n     \n      &lt;div class=&quot;row&quot;&gt; {% for product in products %}\n        &lt;div class=&quot;product-layout product-list col-xs-12&quot;&gt;\n          &lt;div class=&quot;product-thumb&quot;&gt;\n            &lt;div class=&quot;image&quot;&gt;&lt;a href=&quot;{{ product.href }}&quot;&gt;&lt;img src=&quot;{{ product.thumb }}&quot; alt=&quot;{{ product.name }}&quot; title=&quot;{{ product.name }}&quot; class=&quot;img-responsive&quot; /&gt;&lt;/a&gt;&lt;/div&gt;\n            &lt;div&gt;\n              &lt;div class=&quot;caption&quot;&gt;\n                &lt;h4&gt;&lt;a href=&quot;{{ product.href }}&quot;&gt;{{ product.name }}&lt;/a&gt;&lt;/h4&gt;\n                &lt;p&gt;{{ product.description }}&lt;/p&gt;\n                {% if product.price %}\n                &lt;p class=&quot;price&quot;&gt; {% if not product.special %}\n                  {{ product.price }}\n                  {% else %} &lt;span class=&quot;price-new&quot;&gt;{{ product.special }}&lt;/span&gt; &lt;span class=&quot;price-old&quot;&gt;{{ product.price }}&lt;/span&gt; {% endif %}\n                  {% if product.tax %}  {% endif %} &lt;/p&gt;\n                {% endif %}\n                {% if product.rating %}\n                &lt;div class=&quot;rating&quot;&gt; {% for i in 1..5 %}\n                  {% if product.rating &lt; i %} &lt;span class=&quot;fa fa-stack&quot;&gt;&lt;i class=&quot;fa fa-star-o fa-stack-2x&quot;&gt;&lt;/i&gt;&lt;/span&gt; {% else %} &lt;span class=&quot;fa fa-stack&quot;&gt;&lt;i class=&quot;fa fa-star fa-stack-2x&quot;&gt;&lt;/i&gt;&lt;i class=&quot;fa fa-star-o fa-stack-2x&quot;&gt;&lt;/i&gt;&lt;/span&gt;{% endif %}\n                  {% endfor %} &lt;/div&gt;\n                {% endif %} &lt;/div&gt;\n              &lt;div class=&quot;button-group&quot;&gt;\n                &lt;button type=&quot;button&quot; onclick=&quot;cart.add(\'{{ product.product_id }}\', \'{{ product.minimum }}\');&quot;&gt;&lt;i class=&quot;fa fa-shopping-cart&quot;&gt;&lt;/i&gt; &lt;span class=&quot;hidden-xs hidden-sm hidden-md&quot;&gt;{{ button_cart }}&lt;/span&gt;&lt;/button&gt;\n               \n              &lt;/div&gt;\n            &lt;/div&gt;\n          &lt;/div&gt;\n        &lt;/div&gt;\n        {% endfor %} &lt;/div&gt;\n      &lt;div class=&quot;row&quot;&gt;\n        &lt;div class=&quot;col-sm-6 text-left&quot;&gt;{{ pagination }}&lt;/div&gt;\n        &lt;div class=&quot;col-sm-6 text-right&quot;&gt;{{ results }}&lt;/div&gt;\n      &lt;/div&gt;\n      {% endif %}\n      {% if not categories and not products %}\n      &lt;p&gt;{{ text_empty }}&lt;/p&gt;\n      &lt;div class=&quot;buttons&quot;&gt;\n        &lt;div class=&quot;pull-right&quot;&gt;&lt;a href=&quot;{{ continue }}&quot; class=&quot;btn btn-primary&quot;&gt;{{ button_continue }}&lt;/a&gt;&lt;/div&gt;\n      &lt;/div&gt;\n      {% endif %}\n      {{ content_bottom }}&lt;/div&gt;\n    {{ column_right }}&lt;/div&gt;\n&lt;/div&gt;\n{{ footer }} \n', '2018-10-15 11:45:19'),
-(320, 0, 'default', 'extension/module/banner', '&lt;div class=&quot;swiper-viewport hidden&quot;&gt;\n  &lt;div id=&quot;banner{{ module }}&quot; class=&quot;swiper-container&quot;&gt;\n    &lt;div class=&quot;swiper-wrapper&quot;&gt;{% for banner in banners %}\n      &lt;div class=&quot;swiper-slide&quot;&gt;{% if banner.link %}&lt;a href=&quot;{{ banner.link }}&quot;&gt;&lt;img src=&quot;{{ banner.image }}&quot; alt=&quot;{{ banner.title }}&quot; class=&quot;img-responsive&quot; /&gt;&lt;/a&gt;{% else %}&lt;img src=&quot;{{ banner.image }}&quot; alt=&quot;{{ banner.title }}&quot; class=&quot;img-responsive&quot; /&gt;{% endif %}&lt;/div&gt;\n      {% endfor %}&lt;/div&gt;\n  &lt;/div&gt;\n&lt;/div&gt;\n&lt;script type=&quot;text/javascript&quot;&gt;&lt;!--\n$(\'#banner{{ module }}\').swiper({\n	effect: \'fade\',\n	autoplay: 2500,\n    autoplayDisableOnInteraction: false\n});\n--&gt;&lt;/script&gt; ', '2018-10-15 11:44:23');
+(320, 0, 'default', 'extension/module/banner', '&lt;div class=&quot;swiper-viewport hidden&quot;&gt;\n  &lt;div id=&quot;banner{{ module }}&quot; class=&quot;swiper-container&quot;&gt;\n    &lt;div class=&quot;swiper-wrapper&quot;&gt;{% for banner in banners %}\n      &lt;div class=&quot;swiper-slide&quot;&gt;{% if banner.link %}&lt;a href=&quot;{{ banner.link }}&quot;&gt;&lt;img src=&quot;{{ banner.image }}&quot; alt=&quot;{{ banner.title }}&quot; class=&quot;img-responsive&quot; /&gt;&lt;/a&gt;{% else %}&lt;img src=&quot;{{ banner.image }}&quot; alt=&quot;{{ banner.title }}&quot; class=&quot;img-responsive&quot; /&gt;{% endif %}&lt;/div&gt;\n      {% endfor %}&lt;/div&gt;\n  &lt;/div&gt;\n&lt;/div&gt;\n&lt;script type=&quot;text/javascript&quot;&gt;&lt;!--\n$(\'#banner{{ module }}\').swiper({\n	effect: \'fade\',\n	autoplay: 2500,\n    autoplayDisableOnInteraction: false\n});\n--&gt;&lt;/script&gt; ', '2018-10-15 11:44:23'),
+(411, 0, 'default', 'common/header', '&lt;!DOCTYPE html&gt;\n&lt;!--[if IE]&gt;&lt;![endif]--&gt;\n&lt;!--[if IE 8 ]&gt;&lt;html dir=&quot;{{ direction }}&quot; lang=&quot;{{ lang }}&quot; class=&quot;ie8&quot;&gt;&lt;![endif]--&gt;\n&lt;!--[if IE 9 ]&gt;&lt;html dir=&quot;{{ direction }}&quot; lang=&quot;{{ lang }}&quot; class=&quot;ie9&quot;&gt;&lt;![endif]--&gt;\n&lt;!--[if (gt IE 9)|!(IE)]&gt;&lt;!--&gt;\n&lt;html dir=&quot;{{ direction }}&quot; lang=&quot;{{ lang }}&quot;&gt;\n&lt;!--&lt;![endif]--&gt;\n&lt;head&gt;\n&lt;meta charset=&quot;UTF-8&quot; /&gt;\n&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1, maximum-scale=1&quot;&gt;\n&lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;\n&lt;title&gt;{{ title }}&lt;/title&gt;\n&lt;base href=&quot;{{ base }}&quot; /&gt;\n{% if description %}\n&lt;meta name=&quot;description&quot; content=&quot;{{ description }}&quot; /&gt;\n  &lt;!-- Chrome, Firefox OS and Opera --&gt;\n	&lt;meta name=&quot;theme-color&quot; content=&quot;#000&quot;&gt;\n	&lt;!-- Windows Phone --&gt;\n	&lt;meta name=&quot;msapplication-navbutton-color&quot; content=&quot;#000&quot;&gt;\n	&lt;!-- iOS Safari --&gt;\n	&lt;meta name=&quot;apple-mobile-web-app-status-bar-style&quot; content=&quot;#000&quot;&gt;\n{% endif %}\n{% if keywords %}\n&lt;meta name=&quot;keywords&quot; content=&quot;{{ keywords }}&quot; /&gt;\n{% endif %}\n&lt;script src=&quot;catalog/view/javascript/jquery/jquery-2.1.1.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;\n  &lt;link rel=&quot;stylesheet&quot; href=&quot;catalog/view/javascript/bootstrap/css/bootstrap.min.css&quot;&gt;\n\n&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js&quot; integrity=&quot;sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;\n&lt;script src=&quot;https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js&quot; integrity=&quot;sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;\n&lt;link href=&quot;catalog/view/javascript/font-awesome/css/font-awesome.min.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; /&gt;\n&lt;link href=&quot;catalog/view/theme/default/stylesheet/stylesheet.css&quot; rel=&quot;stylesheet&quot;&gt;\n  &lt;link href=&quot;catalog/view/theme/default/assets/stylesheet/animate.css&quot; rel=&quot;stylesheet&quot;&gt;\n  &lt;link href=&quot;catalog/view/theme/default/assets/stylesheet/stylesheet.min.css&quot; rel=&quot;stylesheet&quot;&gt;\n  &lt;script type=&quot;text/javascript&quot; src=&quot;catalog/view/javascript/smoothscroll/smoothscroll.min.js&quot;&gt;&lt;/script&gt;\n{% for style in styles %}\n&lt;link href=&quot;{{ style.href }}&quot; type=&quot;text/css&quot; rel=&quot;{{ style.rel }}&quot; media=&quot;{{ style.media }}&quot; /&gt;\n{% endfor %}\n{% for script in scripts %}\n&lt;script src=&quot;{{ script }}&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;\n{% endfor %}\n&lt;script src=&quot;catalog/view/theme/default/assets/js/libs.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;\n   \n   \n &lt;!-- &lt;script src=&quot;catalog/view/javascript/plugins.js&quot;&gt;&lt;/script&gt; --&gt;\n   \n{% for link in links %}\n&lt;link href=&quot;{{ link.href }}&quot; rel=&quot;{{ link.rel }}&quot; /&gt;\n{% endfor %}\n{% for analytic in analytics %}\n{{ analytic }}\n{% endfor %}\n&lt;/head&gt;\n&lt;body id=&quot;home&quot; data-spy=&quot;scroll&quot; data-target=&quot;#navbar-example&quot;&gt;\n  &lt;div class=&quot;wrapper&quot;&gt;\n  &lt;div class=&quot;main-top px-3 d-flex flex-column flex-xl-row   justify-content-between align-items-center&quot;&gt;\n  &lt;a class=&quot;navbar-brand flex-sm-wrap&quot; href=&quot;/&quot;&gt;Интернет-магазин фотоловушек &quot;ФИЛИН&quot; Российского производства&lt;/a&gt;\n     &lt;div class=&quot;main-cart&quot;&gt;\n       &lt;div class=&quot;info-block&quot;&gt;\n        &lt;div class=&quot;info-cart d-flex flex-row align-items-center justify-content-center&quot;&gt;\n          В вашей &amp;nbsp;&lt;a href=&quot;/index.php?route=checkout/cart&quot;&gt;&lt;strong&gt;КОРЗИНЕ&lt;/strong&gt;&lt;/a&gt;&amp;nbsp;&amp;nbsp;  {{ cart }} \n        &lt;/div&gt;&lt;br&gt;\n       \n       &lt;img src=&quot;image/cart-img.jpg&quot;&gt;\n       &lt;span class=&quot;link-left&quot;&gt;&lt;a href=&quot;index.php?route=checkout/cart&quot;&gt;&lt;strong&gt;&lt;i class=&quot;fa fa-shopping-cart&quot;&gt;&lt;/i&gt; Перейти в корзину&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;\n       &lt;span class=&quot;link-right&quot;&gt;&lt;a href=&quot;index.php?route=checkout/checkout&quot;&gt;&lt;strong&gt;&lt;i class=&quot;fa fa-share&quot;&gt;&lt;/i&gt; Оформить заказ&lt;/strong&gt;&lt;/a&gt;&lt;/span&gt;\n     &lt;/div&gt;\n       &lt;/div&gt;\n  &lt;/div&gt;\n\n  \n \n      &lt;!-- &lt;a href=&quot;{{ checkout }}&quot; title=&quot;{{ text_checkout }}&quot;&gt;&lt;i class=&quot;fa fa-share&quot;&gt;&lt;/i&gt; &lt;span class=&quot;hidden-sm&quot;&gt;{{ text_checkout }}&lt;/span&gt;&lt;/a&gt; --&gt;\n  ', '2018-10-26 19:27:49');
 
 -- --------------------------------------------------------
 
@@ -8503,548 +8589,456 @@ ALTER TABLE `oc_zone_to_geo_zone`
 --
 ALTER TABLE `oc_address`
   MODIFY `address_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT для таблицы `oc_api`
 --
 ALTER TABLE `oc_api`
   MODIFY `api_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
-
 --
 -- AUTO_INCREMENT для таблицы `oc_api_ip`
 --
 ALTER TABLE `oc_api_ip`
   MODIFY `api_ip_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
-
 --
 -- AUTO_INCREMENT для таблицы `oc_api_session`
 --
 ALTER TABLE `oc_api_session`
   MODIFY `api_session_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
-
 --
 -- AUTO_INCREMENT для таблицы `oc_attribute`
 --
 ALTER TABLE `oc_attribute`
   MODIFY `attribute_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
-
 --
 -- AUTO_INCREMENT для таблицы `oc_attribute_group`
 --
 ALTER TABLE `oc_attribute_group`
   MODIFY `attribute_group_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
-
 --
 -- AUTO_INCREMENT для таблицы `oc_banner`
 --
 ALTER TABLE `oc_banner`
   MODIFY `banner_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
-
 --
 -- AUTO_INCREMENT для таблицы `oc_banner_image`
 --
 ALTER TABLE `oc_banner_image`
   MODIFY `banner_image_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=99;
-
 --
 -- AUTO_INCREMENT для таблицы `oc_cart`
 --
 ALTER TABLE `oc_cart`
-  MODIFY `cart_id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
-
+  MODIFY `cart_id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT для таблицы `oc_category`
 --
 ALTER TABLE `oc_category`
   MODIFY `category_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
-
 --
 -- AUTO_INCREMENT для таблицы `oc_country`
 --
 ALTER TABLE `oc_country`
   MODIFY `country_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=258;
-
 --
 -- AUTO_INCREMENT для таблицы `oc_coupon`
 --
 ALTER TABLE `oc_coupon`
   MODIFY `coupon_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
-
 --
 -- AUTO_INCREMENT для таблицы `oc_coupon_history`
 --
 ALTER TABLE `oc_coupon_history`
   MODIFY `coupon_history_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT для таблицы `oc_coupon_product`
 --
 ALTER TABLE `oc_coupon_product`
   MODIFY `coupon_product_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT для таблицы `oc_currency`
 --
 ALTER TABLE `oc_currency`
   MODIFY `currency_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
-
 --
 -- AUTO_INCREMENT для таблицы `oc_customer`
 --
 ALTER TABLE `oc_customer`
   MODIFY `customer_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT для таблицы `oc_customer_activity`
 --
 ALTER TABLE `oc_customer_activity`
-  MODIFY `customer_activity_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
-
+  MODIFY `customer_activity_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 --
 -- AUTO_INCREMENT для таблицы `oc_customer_approval`
 --
 ALTER TABLE `oc_customer_approval`
   MODIFY `customer_approval_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT для таблицы `oc_customer_group`
 --
 ALTER TABLE `oc_customer_group`
   MODIFY `customer_group_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
-
 --
 -- AUTO_INCREMENT для таблицы `oc_customer_history`
 --
 ALTER TABLE `oc_customer_history`
   MODIFY `customer_history_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT для таблицы `oc_customer_ip`
 --
 ALTER TABLE `oc_customer_ip`
   MODIFY `customer_ip_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT для таблицы `oc_customer_login`
 --
 ALTER TABLE `oc_customer_login`
   MODIFY `customer_login_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT для таблицы `oc_customer_reward`
 --
 ALTER TABLE `oc_customer_reward`
   MODIFY `customer_reward_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT для таблицы `oc_customer_search`
 --
 ALTER TABLE `oc_customer_search`
   MODIFY `customer_search_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT для таблицы `oc_customer_transaction`
 --
 ALTER TABLE `oc_customer_transaction`
   MODIFY `customer_transaction_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT для таблицы `oc_custom_field`
 --
 ALTER TABLE `oc_custom_field`
   MODIFY `custom_field_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT для таблицы `oc_custom_field_value`
 --
 ALTER TABLE `oc_custom_field_value`
   MODIFY `custom_field_value_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT для таблицы `oc_download`
 --
 ALTER TABLE `oc_download`
   MODIFY `download_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT для таблицы `oc_event`
 --
 ALTER TABLE `oc_event`
   MODIFY `event_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
-
 --
 -- AUTO_INCREMENT для таблицы `oc_extension`
 --
 ALTER TABLE `oc_extension`
   MODIFY `extension_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=44;
-
 --
 -- AUTO_INCREMENT для таблицы `oc_extension_install`
 --
 ALTER TABLE `oc_extension_install`
   MODIFY `extension_install_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT для таблицы `oc_extension_path`
 --
 ALTER TABLE `oc_extension_path`
   MODIFY `extension_path_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT для таблицы `oc_filter`
 --
 ALTER TABLE `oc_filter`
   MODIFY `filter_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT для таблицы `oc_filter_group`
 --
 ALTER TABLE `oc_filter_group`
   MODIFY `filter_group_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT для таблицы `oc_geo_zone`
 --
 ALTER TABLE `oc_geo_zone`
   MODIFY `geo_zone_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
-
 --
 -- AUTO_INCREMENT для таблицы `oc_information`
 --
 ALTER TABLE `oc_information`
   MODIFY `information_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
-
 --
 -- AUTO_INCREMENT для таблицы `oc_language`
 --
 ALTER TABLE `oc_language`
   MODIFY `language_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
-
 --
 -- AUTO_INCREMENT для таблицы `oc_layout`
 --
 ALTER TABLE `oc_layout`
   MODIFY `layout_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
-
 --
 -- AUTO_INCREMENT для таблицы `oc_layout_module`
 --
 ALTER TABLE `oc_layout_module`
   MODIFY `layout_module_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=144;
-
 --
 -- AUTO_INCREMENT для таблицы `oc_layout_route`
 --
 ALTER TABLE `oc_layout_route`
   MODIFY `layout_route_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=86;
-
 --
 -- AUTO_INCREMENT для таблицы `oc_length_class`
 --
 ALTER TABLE `oc_length_class`
   MODIFY `length_class_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
-
 --
 -- AUTO_INCREMENT для таблицы `oc_location`
 --
 ALTER TABLE `oc_location`
   MODIFY `location_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT для таблицы `oc_manufacturer`
 --
 ALTER TABLE `oc_manufacturer`
   MODIFY `manufacturer_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
-
 --
 -- AUTO_INCREMENT для таблицы `oc_marketing`
 --
 ALTER TABLE `oc_marketing`
   MODIFY `marketing_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT для таблицы `oc_modification`
 --
 ALTER TABLE `oc_modification`
   MODIFY `modification_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT для таблицы `oc_module`
 --
 ALTER TABLE `oc_module`
   MODIFY `module_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=38;
-
 --
 -- AUTO_INCREMENT для таблицы `oc_option`
 --
 ALTER TABLE `oc_option`
   MODIFY `option_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
-
 --
 -- AUTO_INCREMENT для таблицы `oc_option_value`
 --
 ALTER TABLE `oc_option_value`
   MODIFY `option_value_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=49;
-
 --
 -- AUTO_INCREMENT для таблицы `oc_order`
 --
 ALTER TABLE `oc_order`
-  MODIFY `order_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
-
+  MODIFY `order_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
 --
 -- AUTO_INCREMENT для таблицы `oc_order_history`
 --
 ALTER TABLE `oc_order_history`
-  MODIFY `order_history_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
-
+  MODIFY `order_history_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=36;
 --
 -- AUTO_INCREMENT для таблицы `oc_order_option`
 --
 ALTER TABLE `oc_order_option`
   MODIFY `order_option_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT для таблицы `oc_order_product`
 --
 ALTER TABLE `oc_order_product`
-  MODIFY `order_product_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
-
+  MODIFY `order_product_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
 --
 -- AUTO_INCREMENT для таблицы `oc_order_recurring`
 --
 ALTER TABLE `oc_order_recurring`
   MODIFY `order_recurring_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT для таблицы `oc_order_recurring_transaction`
 --
 ALTER TABLE `oc_order_recurring_transaction`
   MODIFY `order_recurring_transaction_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT для таблицы `oc_order_shipment`
 --
 ALTER TABLE `oc_order_shipment`
   MODIFY `order_shipment_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT для таблицы `oc_order_status`
 --
 ALTER TABLE `oc_order_status`
   MODIFY `order_status_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
-
 --
 -- AUTO_INCREMENT для таблицы `oc_order_total`
 --
 ALTER TABLE `oc_order_total`
-  MODIFY `order_total_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=67;
-
+  MODIFY `order_total_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=69;
 --
 -- AUTO_INCREMENT для таблицы `oc_order_voucher`
 --
 ALTER TABLE `oc_order_voucher`
   MODIFY `order_voucher_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT для таблицы `oc_product`
 --
 ALTER TABLE `oc_product`
   MODIFY `product_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
-
 --
 -- AUTO_INCREMENT для таблицы `oc_product_discount`
 --
 ALTER TABLE `oc_product_discount`
   MODIFY `product_discount_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT для таблицы `oc_product_image`
 --
 ALTER TABLE `oc_product_image`
   MODIFY `product_image_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2362;
-
 --
 -- AUTO_INCREMENT для таблицы `oc_product_option`
 --
 ALTER TABLE `oc_product_option`
   MODIFY `product_option_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT для таблицы `oc_product_option_value`
 --
 ALTER TABLE `oc_product_option_value`
   MODIFY `product_option_value_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT для таблицы `oc_product_reward`
 --
 ALTER TABLE `oc_product_reward`
   MODIFY `product_reward_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT для таблицы `oc_product_special`
 --
 ALTER TABLE `oc_product_special`
   MODIFY `product_special_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT для таблицы `oc_recurring`
 --
 ALTER TABLE `oc_recurring`
   MODIFY `recurring_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT для таблицы `oc_return`
 --
 ALTER TABLE `oc_return`
   MODIFY `return_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT для таблицы `oc_return_action`
 --
 ALTER TABLE `oc_return_action`
   MODIFY `return_action_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
-
 --
 -- AUTO_INCREMENT для таблицы `oc_return_history`
 --
 ALTER TABLE `oc_return_history`
   MODIFY `return_history_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT для таблицы `oc_return_reason`
 --
 ALTER TABLE `oc_return_reason`
   MODIFY `return_reason_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
-
 --
 -- AUTO_INCREMENT для таблицы `oc_return_status`
 --
 ALTER TABLE `oc_return_status`
   MODIFY `return_status_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
-
 --
 -- AUTO_INCREMENT для таблицы `oc_review`
 --
 ALTER TABLE `oc_review`
   MODIFY `review_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT для таблицы `oc_seo_url`
 --
 ALTER TABLE `oc_seo_url`
   MODIFY `seo_url_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=849;
-
 --
 -- AUTO_INCREMENT для таблицы `oc_setting`
 --
 ALTER TABLE `oc_setting`
   MODIFY `setting_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=313;
-
 --
 -- AUTO_INCREMENT для таблицы `oc_statistics`
 --
 ALTER TABLE `oc_statistics`
   MODIFY `statistics_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
-
 --
 -- AUTO_INCREMENT для таблицы `oc_stock_status`
 --
 ALTER TABLE `oc_stock_status`
   MODIFY `stock_status_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
-
 --
 -- AUTO_INCREMENT для таблицы `oc_store`
 --
 ALTER TABLE `oc_store`
   MODIFY `store_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT для таблицы `oc_tax_class`
 --
 ALTER TABLE `oc_tax_class`
   MODIFY `tax_class_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
-
 --
 -- AUTO_INCREMENT для таблицы `oc_tax_rate`
 --
 ALTER TABLE `oc_tax_rate`
   MODIFY `tax_rate_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=88;
-
 --
 -- AUTO_INCREMENT для таблицы `oc_tax_rule`
 --
 ALTER TABLE `oc_tax_rule`
   MODIFY `tax_rule_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=129;
-
 --
 -- AUTO_INCREMENT для таблицы `oc_theme`
 --
 ALTER TABLE `oc_theme`
-  MODIFY `theme_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=382;
-
+  MODIFY `theme_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=412;
 --
 -- AUTO_INCREMENT для таблицы `oc_translation`
 --
 ALTER TABLE `oc_translation`
   MODIFY `translation_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT для таблицы `oc_upload`
 --
 ALTER TABLE `oc_upload`
   MODIFY `upload_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT для таблицы `oc_user`
 --
 ALTER TABLE `oc_user`
   MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
-
 --
 -- AUTO_INCREMENT для таблицы `oc_user_group`
 --
 ALTER TABLE `oc_user_group`
   MODIFY `user_group_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
-
 --
 -- AUTO_INCREMENT для таблицы `oc_voucher`
 --
 ALTER TABLE `oc_voucher`
   MODIFY `voucher_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT для таблицы `oc_voucher_history`
 --
 ALTER TABLE `oc_voucher_history`
   MODIFY `voucher_history_id` int(11) NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT для таблицы `oc_voucher_theme`
 --
 ALTER TABLE `oc_voucher_theme`
   MODIFY `voucher_theme_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
-
 --
 -- AUTO_INCREMENT для таблицы `oc_weight_class`
 --
 ALTER TABLE `oc_weight_class`
   MODIFY `weight_class_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
-
 --
 -- AUTO_INCREMENT для таблицы `oc_zone`
 --
 ALTER TABLE `oc_zone`
   MODIFY `zone_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4239;
-
 --
 -- AUTO_INCREMENT для таблицы `oc_zone_to_geo_zone`
 --
 ALTER TABLE `oc_zone_to_geo_zone`
   MODIFY `zone_to_geo_zone_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=110;
-COMMIT;
-
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
