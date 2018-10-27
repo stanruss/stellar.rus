@@ -50,6 +50,9 @@ gulp.task('libs', function() {
 		// 'assets/templates/Stas/app/js/jquery.min.js',
 		// 'assets/templates/Stas/app/js/bootstrap.min.js',
 		'catalog/view/theme/default/assets/libs/jQuery.equalHeights/jquery.equalheights.min.js',
+		'catalog/view/javascript/modernizr.js',
+		'catalog/view/javascript/drawfillsvg.min.js',
+		'catalog/view/javascript/waypoints.min.js',
 		'catalog/view/javascript/common.js'
 		])
 		.pipe(concat('libs.min.js'))

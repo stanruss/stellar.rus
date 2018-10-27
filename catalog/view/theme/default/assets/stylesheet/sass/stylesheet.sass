@@ -127,14 +127,16 @@ section.services
 		position: absolute
 	.link-left
 		position: absolute
-		bottom: 7px
+		bottom: 0
+		margin-bottom: 6px
 		left: 20px
 		font-size: $fzbutton
 		font-weight: 100			
 	.link-right
 		position: absolute
-		bottom: 7px
+		bottom: 0
 		right: 20px
+		margin-bottom: 6px
 		font-size: $fzbutton
 		font-weight: 100
 	
@@ -288,6 +290,62 @@ footer
 		justify-content: center
 		align-items: center
 
+.triangles-container
+	color: $white
+	font-size: $fzbutton
+	margin: 20px 0 0
+	text-align: center
+.tc-item
+	width: 318px
+	height: 128px
+	display: flex
+	flex-direction: row
+	align-items: center
+	position: relative
+	margin-left: -45px
+	vertical-align: middle
+	cursor: default
+	transition: all .5s ease
+	&:first-child
+		margin-left: 0
+		.tc-content
+			margin-left: 30px
+	&:hover
+		transform: scale(1.08)
+		z-index: 3
+		color: $black
+		&>.tc-content
+			text-shadow: none
+		path
+			fill-opacity: 0!important
+			stroke-opacity: 1!important
+	svg
+		position: absolute
+		top: 0
+		left: 0
+		z-index: 0
+	.tc-content
+		position: relative
+		z-index: 1
+		display: flex
+		flex-direction: row
+		+ts(1px,1px,1px,$black)
+		align-items: center
+		margin-left: 60px
+		text-align: left
+		padding-left: 30px
+		padding-right: 30px
+		opacity: 0
+		transition: all 1s ease
+		&-on
+			opacity: 1
+		p
+			font-size: $fzbutton
+			margin-left: -22px
+			margin-bottom: 0
+			position: absolute
+			
+			
 
 
 @import "media"
