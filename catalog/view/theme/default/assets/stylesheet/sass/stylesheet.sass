@@ -41,12 +41,13 @@ h1, h2, h3, h4, h5, h6
 	position: fixed
 	top: 150px
 	right: 50px
+	padding-right: 50px
 	z-index: 1200
 	a
 		color: #00697c
 	
 .alert-dismissable .close, .alert-dismissible .close
-	right: -10px
+	right: 0
 	color: #00697c
 
 
@@ -72,22 +73,22 @@ section.services
 	#content
 		color: $font-color
 .checkout-checkout
-	background-color: #fff
+	background-color: #ededed
 	color: #00697c
 	.form-control
 		background-color: #fff
 		color: #00697c
 #content 
-	h3
+	h4
 		text-align: center
-		color: #00697c
+		
 	.oform
 		color: #ededed
-#checkout-cart
-	padding-top: 90px
+
 	
-#checkout-checkout, #error-not-found
-	padding-top: 70px
+	
+#checkout-checkout, #error-not-found, #checkout-cart
+	padding: 70px 20px
 	
 #common-success
 	padding-top: 100px
@@ -115,56 +116,52 @@ section.services
 	margin-bottom: 28px		
 
 .main-cart
-	height: 102px	
+	height: 117px
 	+border(1px, $accent-color, all)	
 	+grad-l(darken($bg-color, 10%), $bg-color)
 	position: relative
-	img
+	.cart-img
 		left: 50%
 		margin-left: -77px
 		bottom: 0
 		position: absolute
-	.link-left		
-		width: 145px
+	.link-left
 		position: absolute
-		bottom: 5px
-		height: 30px
+		bottom: 7px
 		left: 20px
-		line-height: 30px
-		a
-			font-size: 0.8rem
-			
-	.link-right		
-		width: 145px
+		font-size: $fzbutton
+		font-weight: 100			
+	.link-right
 		position: absolute
-		bottom: 5px
-		height: 30px
+		bottom: 7px
 		right: 20px
-		line-height: 30px
-		a
-			font-size: 0.8rem
-			float: right
+		font-size: $fzbutton
+		font-weight: 100
+	
 .info-cart
 	background-color: $white
-	height: 30px
 	width: 600px	
-	margin: 30px 10px 0 10px
+	margin: 8px 10px 0 10px
 	font-size: .9rem
-	padding: 3px 35px
+	padding: 20px 35px
 	font-weight: bold
 	letter-spacing: 1px
 	color: #00697c
-	
 	button
 		color: #00697c
 		background-color: #ededed
 	a
-		text-decoration: underline
-		color: #00697c
+		font-size: $fzbutton
+		font-weight: 100
+		
 #cart
 	margin: 0
 	font-size: 0.7rem
-.checkout-table, .checkout-table a
+	button
+		font-size: $fzbutton
+	.dropdown-menu
+		transform: translate3d(0px, 72px, 0px)!important
+.checkout-table, .checkout-table 
 	color: #00697c
 	background-color: #ededed
 
@@ -172,7 +169,7 @@ section.services
 .navbar-collapse
 	padding: 0
 #Catalog
-	padding-top: 42px
+	padding-top: 82px
 	margin-top: -42px
 	-webkit-background-clip: content-box
 	background-clip: content-box
@@ -232,6 +229,7 @@ footer
 	height: 100%
 .main-top
 	flex: 0 0 auto
+	+grad-l(darken($bg-color, 10%), $bg-color)
 #common-home, #checkout-cart, #checkout-checkout, #error-not-found, #product-product, #common-success
 	flex: 1 0 auto
 .product-layout

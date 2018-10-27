@@ -167,8 +167,6 @@ div.required .control-label:before {
 	margin-bottom: 10px;
 }
 #cart > .btn {
-	font-size: 15px;
-	line-height: 18px;
 	color: #FFF;
 }
 #cart.open > .btn {
@@ -179,20 +177,13 @@ div.required .control-label:before {
 	box-shadow: none;
 	text-shadow: none;
 }
-#cart.open > .btn:hover {
-	color: #444;
-}
+
 #cart .dropdown-menu {
 	background: #eee;
 	z-index: 1001;
 }
-#cart .dropdown-menu a, #cart .table-bordered td {
-	color: #222;
-	font-weight: 700;
-}
-#cart .dropdown-menu a:hover{
-	color: #555;
-}
+
+
 #cart .dropdown-menu {
 	min-width: 100%;
 }
@@ -409,7 +400,7 @@ footer h5 {
 	margin: 1em 0;
 }
 .btn {
-	padding: 7.5px 12px;
+	
 	font-size: 12px;
 	border: 1px solid #cccccc;
 	border-radius: 4px;
