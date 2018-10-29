@@ -4,6 +4,8 @@ var	postcss      = require('gulp-postcss');
 var changed      = require('gulp-changed');
 var imagemin     = require('gulp-imagemin');
 var	assets       = require('postcss-assets');
+var cache        = require('gulp-cache');
+var del          = require('del');
 var	nested       = require('postcss-nested');
 var	short        = require('postcss-short');
 var concat       = require('gulp-concat');
@@ -64,7 +66,9 @@ gulp.task('watch', ['sass', 'libs','browser-sync'], function() {
 	gulp.watch(['catalog/view/javascript/**/*.js', 'catalog/view/javascript/common.js'], ['libs']);
 	gulp.watch('*.php', browserSync.reload);
 });
-
+gulp.task('cache:clear', function () {
+  cache.clearAll();
+});
 gulp.task('imagemin', function() {
    var imgSrc = 'catalog/**/*.+(png|jpg|gif)',
    imgDst = 'build/images';
@@ -77,4 +81,4 @@ gulp.task('imagemin', function() {
 
 
 
-gulp.task('default', ['watch', 'sass']);
+gulp.task('default', ['watch', 'sass', 'cache:clear']);

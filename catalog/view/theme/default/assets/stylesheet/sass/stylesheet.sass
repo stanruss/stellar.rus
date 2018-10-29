@@ -116,7 +116,7 @@ section.services
 	margin-bottom: 28px		
 
 .main-cart
-	height: 117px
+	height: 118px
 	+border(1px, $accent-color, all)	
 	+grad-l(darken($bg-color, 10%), $bg-color)
 	position: relative
@@ -143,6 +143,8 @@ section.services
 .info-cart
 	background-color: $white
 	width: 600px	
+	height: 68px
+	font-family: HelveticaHeavy, sans-serif
 	margin: 8px 10px 0 10px
 	font-size: .9rem
 	padding: 20px 35px
@@ -158,9 +160,10 @@ section.services
 		
 #cart
 	margin: 0
-	font-size: 0.7rem
 	button
 		font-size: $fzbutton
+	.dropdown-toggle::after
+		vertical-align: 2px
 	.dropdown-menu
 		transform: translate3d(0px, 72px, 0px)!important
 .checkout-table, .checkout-table 
