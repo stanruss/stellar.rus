@@ -501,10 +501,10 @@ $(document).delegate('.agree', 'click', function(e) {
 $(window).scroll(function () {
 
 	if ($(this).scrollTop() > 174) {
-		$('.navbar-default').addClass('navbar-fixed-top animated fadeInDown');
+		$('.navbar').addClass('fixed-top animated fadeInDown');
 		
 	} else {
-		$('.navbar-default').removeClass('navbar-fixed-top animated fadeInDown');
+		$('.navbar').removeClass('fixed-top animated fadeInDown');
 		
 	}
 
@@ -518,32 +518,3 @@ $(function(){
  });
 
 
-$(document).ready(function() {
-
-	
-	var waypointsvg = new Waypoint({
-
-		element: $(".section_5"),
-		handler: function(dir) {
-			
-			if (dir === "down") {
-
-				$(".section_5 .tc-item").each(function(index) {
-					var ths = $(this);
-					setTimeout(function() {
-						var myAnimation = new DrawFillSVG({
-							elementId: "tc-svg-" + index
-						});
-						ths.children(".tc-content").addClass("tc-content-on");
-					}, 500*index);
-				});
-
-			};
-			this.destroy();
-		},
-		offset: '65%'
-	});
-
-	
-
-});
